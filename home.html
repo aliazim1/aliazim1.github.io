@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portfolio Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+
+    <!-- box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <!-- nav bar section design -->
+    <nav >
+      <!-- class="header" -->
+      <a href="/home.html"><img src="/logo.png" alt="logo" class="logo"></a>
+      <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+      <i class='bx bx-exit-fullscreen exit-icon' id="exit-icon"></i>
+      <ul class="nav-menu">
+        <li><a href="#main-home" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li> <a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- home/profile section design -->
+    <main class="home" id="home">
+      <div class="main-intro">
+        <div class="main-home">
+          <img src="picture.png"  alt="profile piccture">
+          <h1>Hi, I am Ali Azimi</h1>
+          <p class="wmu">A Computer Science Student @ <span>WMU</span></p>
+          <p class="intro-bio" id="myIntro">
+            I am currently an Undergraduate student working towards my bachelor degree in 
+            computer science at Western Michigan University.
+            My interests include software design and development, artificial intelligence, 
+            and machine learning. Throughout my studies, I have been learning a little about multiple 
+            disciplines to get a feel for what sparks my interest the most. 
+            As of now, I have the most interest in software engineering and web
+            development. Currently, I am involved in building and developing a 
+            website for the department of Psychology which will be used to assess
+            children with autism.
+          </p>
+        </div>
+        <a href="#" class="download">Download Resume <i class='bx bx-download' ></i></a>
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    
+        <!-- skills section design -->
+        <div class="skills" id="skills">
+          <h1 class="heading">Tech Stack</h1>
+          <div class="line"></div>
+            <div class="row">
+              <div class="col">
+                <div class="python"><i class='bx bxl-python'></i></div>
+                <h1>Python</h1>
+              </div>
+
+              <div class="col">
+                <div class="python"><i class='bx bx-laptop' ></i></div>
+                <h1>HTML</h1>
+              </div>
+
+              <div class="col">
+                <div class="python"><i class='bx bx-laptop' ></i></div>
+                <h1>CSS</h1>
+              </div>
+
+              <div class="col">
+                <div class="js"><i class='bx bx-code-alt'></i></div>
+                <h1>JavaScript</h1>
+              </div>
+
+              <div class="col">
+                <div class="js"><i class='bx bxl-jquery' ></i></div>
+                <h1>jQuery</h1>
+              </div>
+              <div class="col">
+                <div class="php"><i class='bx bxl-php'></i></div>
+                <h1>PHP</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- projects section design -->
+      <div class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="line"></div>
+        <div class="proj-container">
+          <div class="proj-box">
+            <img src="/mac.png" alt="Average Down Calculator">
+            <h1>AD Calculator</h1>
+            <p>Average Down Calculator is a website where the 
+              users can calculate their stock shares, and find out thier average 
+              cost of their stocks.</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+              <h3>PHP</h3>
+            </div>
+          </div>
+
+          <div class="proj-box">
+            <img src="/mac.png" alt="Average Down Calculator">
+            <h1>CWA Assessment</h1>
+            <p>Children With Autism Assessment is a website 
+              where the Professors use it to assess children with autism, without 
+              any verbal communication</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+              <h3>PHP</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- contact section design -->
+      <div class="contact" id="contact">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <div class="line"></div>
+        <div class="row">
+          <div class="contact-col">
+            <div class="js"><i class='bx bx-envelope' ></i></div>
+            <h1>ali.azimi@wmich.edu</h1>
+          </div>
+
+          <div class="contact-col">
+            <div class="js"><i class='bx bx-phone-call'></i></div>
+            <h1>+1 616-752-9529</h1>
+          </div>
+
+          <div class="contact-col">
+            <div class="php"><i class='bx bx-current-location'></i></div>
+            <h1>Michigan, USA</h1>
+          </div>
+        </div>
+
+        <!-- main row -->
+        <div class="main-row">
+          <div class="row data-col">
+            <div>
+              <input type="text" placeholder="First Name" class="data"><br>
+              <input type="email" placeholder="Last Name" class="data"><br>
+              <input type="text" placeholder="Email Address" class="data"><br>
+            </div>
+            <div>
+              <textarea class="txt-area" placeholder="type a message..."></textarea>
+            </div>
+          </div>
+          <div class="row data-col">
+            <div>
+              <button class="btn">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer section design -->
+    <footer class="footer">
+      <div class="footer-social-media">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="icon-up-div">
+        <a href="/home.html" class="up-icon-link"><i class='bx bx-up-arrow-alt up-icon'></i></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
