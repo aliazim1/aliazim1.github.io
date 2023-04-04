@@ -463,54 +463,6 @@ span {
     padding-right: 5rem;
 }
 
-
-
-/*  ==========================================================================================
-                                        loader styling
-    ========================================================================================== */
-
-
-.loader {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: fixed;
-  background-color: rgb(249, 252, 255);
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.75s, visibility 0.75s;
-}
-
-.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.loader::after {
-  content: "";
-  height: 20px;
-  width: 20px;
-  border: 3px solid #11276a;
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-radius: 50%;
-  -webkit-animation: spin 0.75 linear infinite;
-  animation: spin 0.75s linear infinite;
-}
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-
-/* for safari */
-@-webkit-keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-    
-
-
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
