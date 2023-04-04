@@ -15,7 +15,9 @@
 // }))
 
 window.addEventListener("load", function() {
+    const navbar = this.document.querySelector("nav");
     const loader = this.document.querySelector(".loader");
+    navbar.classList.add("navbar");
     loader.classList.add("loader-hidden");
 
     loader.addEventListener("transitionend", function () {
