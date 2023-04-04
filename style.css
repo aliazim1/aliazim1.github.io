@@ -18,7 +18,7 @@ html {
     font-size: 62.5%;
 }
 
-p {   
+p {
     font-size: 1.6rem;
 }
 
@@ -27,6 +27,7 @@ main {
     width: 85%;
     margin: auto auto;
     padding: 10rem 15rem 0 15rem;
+    z-index: 100;
 }
 
 /* all the headings styling */
@@ -46,9 +47,15 @@ main {
 
 /* nav bar styling */
 nav {
-    position: sticky;
+    position:sticky;
     height: 7rem;
     width: 100%;
+    background-color: #333b4a;
+    z-index: 100000;
+}
+
+nav.sticky { 
+    position: fixed;
 }
 
 .logo {
@@ -100,9 +107,6 @@ a:hover, a.active {
 
 
 /* name and pic section styling */
-/* .main-intro {
-    display: none;
-} */
 .home {
     display: block;
     justify-content: center;
@@ -335,9 +339,6 @@ span {
 }
 
 /* contact section styling */
-/* .contact  {
-    display: none;
-} */
 .contact .contact-title {
     margin-top: 5rem;
 }
@@ -351,7 +352,6 @@ span {
     border-radius: 10px;
     background-color: #2d38498d;
     transition: width 0.5s, height 0.5s, transform 0.5s ease;
-
 }
 
 .contact-col:hover {
@@ -435,7 +435,6 @@ span {
     align-items: center;
     width: 65%;
     margin: 2rem auto 0 auto;
-    margin-left: 7%;
     padding-left: 1.3rem;
 }
 .footer .footer-social-media a {
@@ -456,15 +455,6 @@ span {
     background-color: #F1C500;
     transform: scale(1.05);
 }
-
-.icon-up-div {
-    font-size: 4rem;
-    float: right;
-    position: relative;
-    padding-right: 5rem;
-}
-
-
 
 /* ##################################### */
 /* ---------responsive styling---------- */
@@ -614,9 +604,6 @@ span {
      .footer .footer-social-media {
         margin-left: 2%;
     }
-     .icon-up-div {
-        display: none;
-    }
 }
 
 
@@ -669,9 +656,6 @@ span {
     .main-row {
         margin-bottom: -3rem;
     }
-    .icon-up-div {
-        display: none;
-    }
 
     .data:hover, .txt-area:hover, .btn:hover {
         transform: scale(1);
@@ -685,3 +669,4 @@ span {
         margin: 0 auto;
     }
 }
+
