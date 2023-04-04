@@ -219,6 +219,7 @@ span {
 }
 
 .download:hover {
+    color: #f8f8f8;
     background-color: #d3ac00c7;
     transform: scale(1.04);
 }
@@ -669,4 +670,3 @@ span {
         margin: 0 auto;
     }
 }
-
