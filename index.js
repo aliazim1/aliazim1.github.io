@@ -16,6 +16,5 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
 
 window.addEventListener("scroll", function() {
     var navbar = this.document.querySelector("nav");
-
-    up_icon.classList.toggle("showUP", this.scrollY > 1);
+    navbar.classList.toggle("sticky", this.scrollY > 0);
 })
