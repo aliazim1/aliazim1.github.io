@@ -305,7 +305,9 @@ span {
 
 .proj-box h1 {
     font-size: 3rem;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: left;
 }
 
 .proj-box p {
@@ -354,11 +356,11 @@ span {
 
 .contact-col:hover {
     background-color: #0064d625;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .contact-col h1 {
     margin-top: -2.7rem;
-    font-size: 1.8rem;
+    transform: scale(1.02);
 }
 
 .data {
@@ -368,13 +370,13 @@ span {
     font-size: 1.8rem;
     color: #1f242e;
     border-radius: 1rem;
-    background-color: #f8f8f8df;
+    background-color: #f8f8f8e9;
     transition: width 0.5s, height 0.5s, transform 0.5s ease;
 }
 
 .data:hover {
     background-color: #ffffffc7;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .data-col {
@@ -389,12 +391,12 @@ span {
     color: #1f242e;
     font-size: 1.8rem;
     padding: 2rem;
-    background-color: #f8f8f8df;
+    background-color: #f8f8f8e9;
     transition: width 0.5s, height 0.5s, transform 0.5s ease;
 }
 .txt-area:hover {
     background-color: #ffffffc7;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .btn {
