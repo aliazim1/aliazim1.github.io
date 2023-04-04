@@ -13,3 +13,14 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
     navIcon.classList.remove('active');
     navMenu.classList.remove('active');
 }))
+
+
+
+window.addEventListener("load", function() {
+    const loader = this.document.querySelector(".loader");
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", function () {
+        document.body.removeChild("loader");
+    })
+})
