@@ -13,3 +13,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
     navIcon.classList.remove('active');
     navMenu.classList.remove('active');
 }))
+
+window.addEventListener("scroll", function() {
+    var navbar = this.document.querySelector("nav");
+
+    up_icon.classList.toggle("showUP", this.scrollY > 1);
+})
