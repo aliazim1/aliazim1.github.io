@@ -49,12 +49,7 @@ nav {
     position: sticky;
     height: 7rem;
     width: 100%;
-    visibility: hidden;
 }
-.navbar {
-    visibility: visible;
-}
-
 .logo {
     width: 4rem;
     height: 3rem;
