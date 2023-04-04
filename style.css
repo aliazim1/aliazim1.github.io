@@ -50,6 +50,7 @@ nav {
     height: 7rem;
     width: 100%;
 }
+
 .logo {
     width: 4rem;
     height: 3rem;
@@ -463,6 +464,8 @@ span {
     padding-right: 5rem;
 }
 
+
+
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
@@ -682,4 +685,3 @@ span {
         margin: 0 auto;
     }
 }
-
