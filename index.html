@@ -11,6 +11,7 @@
     <!-- box icons link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <div class="loader"></div>
@@ -20,17 +21,16 @@
       <!-- class="header" -->
       <a href="/index.html"><img src="/logo.png" alt="logo" class="logo"></a>
       <i class='bx bx-menu menu-icon' id="menu-icon"></i>
-      <i class='bx bx-exit-fullscreen exit-icon' id="exit-icon"></i>
       <ul class="nav-menu">
-        <li><a href="#main-home" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li> <a href="#contact" class="nav-link">Contact</a></li>
+        <li onclick="mainVisible()"  id="about" class="nav-link">About</li>
+        <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
+        <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
       </ul>
     </nav>
 
     <!-- home/profile section design -->
     <main class="home" id="home">
-      <div class="main-intro">
+      <div class="main-intro" id="main-intro">
         <div class="main-home">
           <img src="picture2.png"  alt="profile piccture">
           <h1>Hi, I am Ali Azimi</h1>
@@ -57,8 +57,7 @@
     
         <!-- skills section design -->
         <div class="skills" id="skills">
-          <h1 class="heading">Tech Stack</h1>
-          <div class="line"></div>
+          <h1 class="heading">Skills & Languages</h1>
             <div class="row">
               <div class="col">
                 <div class="python"><i class='bx bxl-python'></i></div>
@@ -91,7 +90,7 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
       <!-- projects section design -->
       <div class="projects" id="projects">
         <h1 class="heading">Projects</h1>
@@ -154,17 +153,18 @@
         <div class="main-row">
           <div class="row data-col">
             <div>
-              <input type="text" placeholder="First Name" class="data"><br>
-              <input type="email" placeholder="Last Name" class="data"><br>
-              <input type="text" placeholder="Email Address" class="data"><br>
+              <input type="text" placeholder="First Name" class="data" id="name"><br>
+              <input type="email" placeholder="Last Name" class="data" id="lname"><br>
+              <input type="text" placeholder="Email Address" class="data" id="email"><br>
             </div>
             <div>
-              <textarea class="txt-area" placeholder="type a message..."></textarea>
+              <textarea class="txt-area" placeholder="type a message..." id="textArea"></textarea>
             </div>
           </div>
           <div class="row data-col">
             <div>
-              <button class="btn">Send Message</button>
+              <p id="msg-disp"></p>
+              <button class="btn" id="sendBtn">Send Message</button>
             </div>
           </div>
         </div>
