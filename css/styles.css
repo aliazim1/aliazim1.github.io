@@ -5,7 +5,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: green;
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -591,7 +591,7 @@ header h1 {
   }
   #parameters {
     width: 21rem;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   #parameters h2 {
     font-size: 1.7rem;
@@ -684,7 +684,7 @@ header h1 {
   }
   #parameters {
     width: 21rem;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   #parameters h2 {
     font-size: 1.7rem;
@@ -824,6 +824,7 @@ header h1 {
     margin-bottom: 0.5rem;
   }
   #parameters {
+    margin-top: 3rem;
     margin-left: 0;
     width: 22rem;
     padding-bottom: 3rem;
