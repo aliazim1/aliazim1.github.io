@@ -23,7 +23,7 @@ h2 {
 }
 #parameters {
   margin-left: 3rem;
-  width: 22rem;
+  /* width: 22rem; */
 }
 #parameters h2 {
   width: 22rem;
@@ -333,18 +333,12 @@ img iframe {
   color: #0b0c0e;
   background-color: transparent;
   box-shadow: none;
-  letter-spacing: 13px;
+  letter-spacing: 12px;
 }
 /* the line under the "Results" text  */
 #graph-res-title hr {
   width: 40%;
   margin: 0px auto;
-}
-/* style for Result header section */
-#first-sec {
-  margin: 10px auto;
-  font-size: 60vmin;
-  letter-spacing: 5px;
 }
 
 .results .res {
@@ -355,22 +349,51 @@ img iframe {
 }
 
 /* graph and outcomes section as a row */
-
 .results .row {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  margin-top: -2rem;
 }
-
-.results .col {
+.results #col1 {
+  width: 29rem;
   margin: 10px;
-  width: 450px;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(68, 94, 118);
-  background-color: #eeeeee92;
+  margin: 10px 1rem auto 12.5%;
   display: flex;
   flex-direction: column;
+}
+
+/* both columns styling */
+.results #col1, #chart-div {
+  width: 29rem;
+  border-radius: 10px;
+  border: solid 5px rgb(68, 94, 118);
+  background-color: #eeeeee92;
+}
+
+/* second col, chart's parent div  */
+.results #col2 {
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  display: block;
+  height: 25rem;
+  width: 30rem;
+  margin-top: 10px;
+}
+
+/* div for chart */
+#chart-div {
+  height: 20rem;
+  margin: 0 auto;
+  padding: 2rem 0 0 0.9rem;
+}
+
+/* applies flexbox layout properties to buttons */
+.btn-div {
+  display: flex;
+  width: 20.3rem;
+  margin: 0.8rem auto;
 }
 
 /* assessment page text */
@@ -403,11 +426,8 @@ img iframe {
   text-align: center;
 }
 
-/* applies flexbox layout properties to buttons */
-.btn-div {
-  display: flex;
-  float: right;
-  margin: -15px 15px 90px auto;
+#btn-size {
+  width: 9.7rem;
 }
 
 /* button spacing, borders, and color scheme */
@@ -465,12 +485,170 @@ img iframe {
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
+@media (max-width: 1400px) {
+ /* index page */
+ header {
+  text-align: center;
+}
+/* header title */
+header h1 {
+  margin-top: 2rem;
+}
+/* text indents */
+.indent {
+  margin-left: 0%;
+  margin-right: 0;
+}
+.indent p {
+  margin: 0 auto;
+  text-align: justify;
+  align-items: center;
+  padding: 1rem auto;
+}
+/* instruction text */
+.inst-text {
+  margin-top: 1rem;
+  margin-bottom: -0.09rem;
+  margin-left: 0rem;
+}
+/* add new stim & assess parameter div as flex */
+#par_stim {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50rem;
+}
+/* add new stimulu */
+#new-video-box {
+  width: 18rem;
+}
+#new-video-box h2 {
+  font-size: 1.7rem;
+  width: 14rem;
+  margin-bottom: 0.5rem;
+}
+#parameters {
+  width: 21rem;
+  margin-left: 2rem;
+}
+#parameters h2 {
+  font-size: 1.7rem;
+  width: 21rem;
+  margin-bottom: 1.2rem;
+}
+.vid_bnk_title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+#start-button {
+  display: block;
+  text-align: center;
+}
+.both-btn {
+  margin-bottom: 0.5rem;
+}
+}
+
+@media (max-width: 1024px){
+  /* index page */
+  header {
+    text-align: center;
+  }
+  /* header title */
+  header h1 {
+    margin-top: 2rem;
+  }
+  /* text indents */
+  .indent {
+    margin-left: 0%;
+    margin-right: 0;
+  }
+  .indent p {
+    margin: 0 auto;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem auto;
+  }
+  /* instruction text */
+  .inst-text {
+    margin-top: 1rem;
+    margin-bottom: -0.09rem;
+    margin-left: 0rem;
+  }
+  /* add new stim & assess parameter div as flex */
+  #par_stim {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+  /* add new stimulu */
+  #new-video-box {
+    width: 18rem;
+  }
+  #new-video-box h2 {
+    font-size: 1.7rem;
+    width: 14rem;
+    margin-bottom: 0.5rem;
+  }
+  #parameters {
+    width: 21rem;
+    margin-left: 0.5rem;
+  }
+  #parameters h2 {
+    font-size: 1.7rem;
+    width: 21rem;
+    margin-bottom: 1.2rem;
+  }
+  .vid_bnk_title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #start-button {
+    display: block;
+    text-align: center;
+  }
+  .both-btn {
+    margin-bottom: 0.5rem;
+  }
+
+  /* result page  */
+  /* div for chart */
+  .results section {
+    width: 85%;
+    margin: 0px auto;
+  }
+  .results .row {
+    background-color: #28a745;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  .results #col1, .results #col2{
+    width: 29rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .results #chart-div {
+    margin: 0px auto;
+    height: auto;
+    width: 29rem;
+    padding: 2rem 0 0.9rem 1rem;
+  }
+
+  #graph-res-title h1 {
+    letter-spacing: 7px;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 952px) {
   header h1 {
     margin-top: 2rem;
   }
   #par_stim {
     display: block;
+
   }
   #new-video-box h2 {
     width: 15rem;
@@ -499,9 +677,36 @@ img iframe {
     width: 22rem;
     margin-bottom: 1.2rem;
   }
+
+
+   /* result page  */
+  /* div for chart */
+  .results section {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .results #col1, #col2{
+    width: 29rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .results #chart-div {
+    margin: 0px auto;
+    height: auto;
+    width: 29rem;
+    padding: 2rem 0 0.9rem 1rem;
+  }
+
+  #graph-res-title h1 {
+    letter-spacing: 7px;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
+  /* index page */
   header h1 {
     margin-top: 2rem;
   }
@@ -535,6 +740,8 @@ img iframe {
     width: 22rem;
     margin-bottom: 1.2rem;
   }
+
+  /* decision page */
    .decision {
     align-items: center;
     text-align: center;
@@ -552,30 +759,56 @@ img iframe {
    .decision-buttons {
     margin-bottom: 0.2rem;
    }
+
+   /* result page  */
+  /* div for chart */
+  .results section {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .results #col1, #col2{
+    width: 29rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .results #chart-div {
+    margin: 0px auto;
+    height: auto;
+    width: 29rem;
+    padding: 2rem 0 0.9rem 1rem;
+  }
+
+  #graph-res-title h1 {
+    letter-spacing: 7px;
+    font-size: 2rem;
+  }
 }
 
 /* -----------for cell phones----------- */
 @media  (max-width: 480px) {
-  /* result page */
-  #first-sec{
-    width: 20rem;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
-  } 
-  section {
-    align-items: center;
+  /* index page */
+  header {
     text-align: center;
   }
-  #both-box {
-    width: 30rem;
+  header h1 {
+    margin-top: 2rem;
   }
-  #graph-res-title {
-    margin: -4rem auto -3rem auto;
+  .indent {
+    margin-left: 0%;
+    margin-right: 0;
   }
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
+  .indent p {
+    margin: 0 auto;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem auto;
+  }
+  .inst-text {
+    margin-top: 1rem;
+    margin-bottom: -0.09rem;
+    margin-left: -1.8rem;
   }
 
   /* decision page */
@@ -596,6 +829,30 @@ img iframe {
   }
   .decision-buttons {
     margin-bottom: -2rem;
+  }
+    /* result page */
+  /* div for chart */
+  .results section {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .results #col1 {
+    width: 23rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .results #chart-div {
+    margin: 0px auto;
+    height: auto;
+    width: 23rem;
+    padding: 2rem 0 0.9rem 1rem;
+  }
+
+  #graph-res-title h1 {
+    letter-spacing: 7px;
+    font-size: 2rem;
   }
 }
 
