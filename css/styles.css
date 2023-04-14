@@ -617,7 +617,6 @@ header h1 {
     margin: 0px auto;
   }
   .results .row {
-    background-color: #28a745;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -791,6 +790,7 @@ header h1 {
   /* index page */
   header {
     text-align: center;
+    width: 90%;
   }
   header h1 {
     margin-top: 2rem;
@@ -810,6 +810,16 @@ header h1 {
     margin-bottom: -0.09rem;
     margin-left: -1.8rem;
   }
+  #par_stim {
+    display: block;
+    width: 100%;
+  }
+  /* instruction text */
+.inst-text {
+  margin-top: 1rem;
+  margin-bottom: -0.09rem;
+  margin-left: 0rem;
+}
 
   /* decision page */
   #vid-bnk {
@@ -855,5 +865,4 @@ header h1 {
     font-size: 2rem;
   }
 }
-
 /*=================== new styling END ==================== */
