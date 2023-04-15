@@ -2,6 +2,9 @@
                                         General Styling
     ========================================================================================== */  
 
+    *{
+      font-family:sans-serif;
+    }
 body {
   padding: 0;
   margin: 0;
@@ -21,14 +24,6 @@ header {
 h2 { 
   margin-bottom: 20px;
 }
-#parameters {
-  margin-left: 3rem;
-  /* width: 22rem; */
-}
-#parameters h2 {
-  width: 22rem;
-  margin-bottom: 2.5rem;
-}
 
 /*sets an extra wide margin for div elements on large devices*/
 @media screen and (min-height: 825px) {
@@ -44,7 +39,6 @@ h2 {
     margin-bottom: max(25px, 1.75%);
   }
 }
-
 
 /*footer background: set color and position*/
 footer {
@@ -120,6 +114,15 @@ footer p {
   cursor: pointer;
 }
 
+/* parameters div styling */
+#parameters {
+  margin-left: 3rem;
+  width: 22rem;
+}
+#parameters h2 {
+  width: 22rem;
+  margin-bottom: 2.5rem;
+}
 /*adds a bottom margin for small screens 
 so that the 'add video' button is not cut off*/
 @media (max-width: 800px), (max-height: 800px) {
@@ -131,7 +134,6 @@ so that the 'add video' button is not cut off*/
     margin-bottom: 75px;
   }
 }
-
 
 /*center the start button and add a margin*/
 #start-button { 
@@ -391,19 +393,11 @@ img iframe {
   padding: 2rem 0 0 0.9rem;
 }
 
-/* applies flexbox layout properties to buttons */
-.btn-div {
-  display: flex;
-  width: 20.3rem;
-  margin: 0.8rem auto;
-}
-
 /* assessment page text */
 .results .assess-title h2, .graph-text {
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: clamp(20px, 6vmin, 45px); /*sets a minimum and maximum font size*/
-  font-family: Garamond, "Times New Roman", Times, serif;
   text-align: center;
 }
 
@@ -411,13 +405,11 @@ img iframe {
 .video-table {
   margin: 7.5px 5vw 15px 7vw;
   font-size: clamp(20px, 2.5vmin, 30px); /*sets a minimum and maximum font size*/
-  font-family: Garamond, "Times New Roman", Times, serif;
 }
 
 .duration {
   margin: 20px 5vw 50px 5vw;
   font-size: clamp(20px, 2.5vmin, 30px);
-  font-family: Garamond, "Times New Roman", Times, serif;
 }
 
 .duration h2 {
@@ -428,16 +420,16 @@ img iframe {
   text-align: center;
 }
 
+/* applies flexbox layout properties to buttons */
+.btn-div {
+  display: flex;
+  width: 18.9rem;
+  margin: 0.8rem auto;
+}
 #btn-size {
-  width: 9.7rem;
-}
-
-/* button spacing, borders, and color scheme */
-.b-main {
-  margin-right: 1vw;
-}
-.b-main .refresh {
-  padding: auto;
+  width: 9rem;
+  font-size: 0.91rem;
+  margin-left: 0.4rem;
 }
 
 /*==========================================================================================
@@ -483,486 +475,485 @@ img iframe {
   to {transform: rotate(360deg);}
 }
 
-
-/* ##################################### */
-/* ---------responsive styling---------- */
-/* ##################################### */
+/*==============================================================
+                          responsive styling
+  ==============================================================*/
 @media only screen and  (max-width: 1400px) {
- /* index page */
- header {
-  text-align: center;
-}
-/* header title */
-header h1 {
-  margin-top: 2rem;
-}
-/* text indents */
-.indent {
-  margin-left: 0%;
-  margin-right: 0;
-}
-.indent p {
-  margin: 0 auto;
-  text-align: justify;
-  align-items: center;
-  padding: 1rem auto;
-}
-/* instruction text */
-.inst-text {
-  margin-top: 1rem;
-  margin-bottom: -0.09rem;
-  margin-left: 0rem;
-}
-/* add new stim & assess parameter div as flex */
-#par_stim {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50rem;
-}
-/* add new stimulu */
-#new-video-box {
-  width: 18rem;
-}
-#new-video-box h2 {
-  font-size: 1.7rem;
-  width: 14rem;
-  margin-bottom: 0.5rem;
-}
-#parameters {
-  width: 21rem;
-  margin-left: 3rem;
-}
-#parameters h2 {
-  font-size: 1.7rem;
-  width: 21rem;
-  margin-bottom: 1.2rem;
-}
-.vid_bnk_title {
-  font-size: 1.3rem;
-  text-align: center;
-}
-#start-button {
-  display: block;
-  text-align: center;
-}
-.both-btn {
-  margin-bottom: 0.5rem;
-}
-}
-
-@media only screen and  (max-width: 1200px) {
   /* index page */
   header {
-    text-align: center;
-  }
-  /* header title */
-  header h1 {
-    margin-top: 2rem;
-  }
-  /* text indents */
-  .indent {
-    margin-left: 0%;
-    margin-right: 0;
-  }
-  .indent p {
-    margin: 0 auto;
-    text-align: justify;
-    align-items: center;
-    padding: 1rem auto;
-  }
-  /* instruction text */
-  .inst-text {
-    margin-top: 1rem;
-    margin-bottom: -0.09rem;
-    margin-left: 0rem;
-  }
-  /* add new stim & assess parameter div as flex */
-  #par_stim {
-    display: flex;
-    flex-wrap: wrap;
-    width: 45rem;
-  }
-  /* add new stimulu */
-  #new-video-box {
-    width: 18rem;
-  }
-  #new-video-box h2 {
-    font-size: 1.7rem;
-    width: 14rem;
-    margin-bottom: 0.5rem;
-  }
-  #parameters {
-    width: 21rem;
-    margin-left: 3rem;
-  }
-  #parameters h2 {
-    font-size: 1.7rem;
-    width: 21rem;
-    margin-bottom: 1.2rem;
-  }
-  .vid_bnk_title {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  #start-button {
-    display: block;
-    text-align: center;
-  }
-  .both-btn {
-    margin-bottom: 0.5rem;
-  }
-
-  /* result page  */
-  /* div for chart */
-  .results section {
-    width: 85%;
-    margin: 0px auto;
-  }
-  .results .row {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: -2rem;
-  }
-  .results #col1, .results #col2{
-    width: 29rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .results #chart-div {
-    margin: 0px auto;
-    height: auto;
-    width: 29rem;
-    padding: 2rem 0 0.9rem 1rem;
-  }
-
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
-  }
+   text-align: center;
  }
-
- @media only screen and  (max-width: 1024px){
-  /* index page */
-  header {
-    text-align: center;
-  }
-  /* header title */
-  header h1 {
-    margin-top: 2rem;
-  }
-  /* text indents */
-  .indent {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .indent p {
-    margin: 0 auto;
-    text-align: justify;
-    align-items: center;
-    padding: 1rem auto;
-  }
-  /* instruction text */
-  .inst-text {
-    margin-top: 1rem;
-    margin-bottom: -0.09rem;
-    margin-left: 0rem;
-  }
-  /* add new stim & assess parameter div as flex */
-  #par_stim {
-    display: block;
-    flex-wrap: wrap;
-    width: 40rem;
-  }
-  /* add new stimulu */
-  #new-video-box {
-    width: 18rem;
-  }
-  #new-video-box h2 {
-    font-size: 1.7rem;
-    width: 14rem;
-    margin-bottom: 0.5rem;
-  }
-  #parameters {
-    width: 21rem;
-    margin-left: 0px;
-  }
-  #parameters h2 {
-    font-size: 1.7rem;
-    width: 21rem;
-    margin-bottom: 1.2rem;
-  }
-  .vid_bnk_title {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  #start-button {
-    display: block;
-    text-align: center;
-  }
-  .both-btn {
-    margin-bottom: 0.5rem;
-  }
-
-  /* result page  */
-  /* div for chart */
-  .results section {
-    width: 85%;
-    margin: 0px auto;
-  }
-  .results .row {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: -2rem;
-  }
-  .results #col1, .results #col2{
-    width: 29rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .results #chart-div {
-    margin: 0px auto;
-    height: auto;
-    width: 29rem;
-    padding: 2rem 0 0.9rem 1rem;
-  }
-
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and  (max-width: 820px) {
-  header h1 {
-    margin-top: 2rem;
-  }
-  #par_stim {
-    display: block;
-
-  }
-  #new-video-box h2 {
-    width: 15rem;
-    margin-bottom: 0.5rem;
-  }
-  .vid_bnk_title {
-    font-size: 1.3rem;
-  }
-  #parameters h2 {
-    width: 19rem;
-    margin-top: -3rem;
-  }
-  #start-button {
-    display: block;
-    text-align: center;
-  }
-  .both-btn {
-    margin-bottom: 0.5rem;
-  }
-  #parameters {
-    margin-left: 0;
-    margin-top: 4rem;
-    width: 22rem;
-    padding-bottom: 3rem;
-  }
-  #parameters h2 {
-    width: 22rem;
-    margin-bottom: 1.2rem;
-  }
-
+ /* header title */
+ header h1 {
+   margin-top: 2rem;
+ }
+ /* text indents */
+ .indent {
+   margin-left: 0%;
+   margin-right: 0;
+ }
+ .indent p {
+   margin: 0 auto;
+   text-align: justify;
+   align-items: center;
+   padding: 1rem auto;
+ }
+ /* instruction text */
+ .inst-text {
+   margin-top: 1rem;
+   margin-bottom: -0.09rem;
+   margin-left: 0rem;
+ }
+ /* add new stim & assess parameter div as flex */
+ #par_stim {
+   display: flex;
+   flex-wrap: wrap;
+   width: 50rem;
+ }
+ /* add new stimulu */
+ #new-video-box {
+   width: 18rem;
+ }
+ #new-video-box h2 {
+   font-size: 1.7rem;
+   width: 14rem;
+   margin-bottom: 0.5rem;
+ }
+ #parameters {
+   width: 21rem;
+   margin-left: 3rem;
+ }
+ #parameters h2 {
+   font-size: 1.7rem;
+   width: 21rem;
+   margin-bottom: 1.2rem;
+ }
+ .vid_bnk_title {
+   font-size: 1.3rem;
+   text-align: center;
+ }
+ #start-button {
+   display: block;
+   text-align: center;
+ }
+ .both-btn {
+   margin-bottom: 0.5rem;
+ }
+ }
+ 
+ @media only screen and  (max-width: 1200px) {
+   /* index page */
+   header {
+     text-align: center;
+   }
+   /* header title */
+   header h1 {
+     margin-top: 2rem;
+   }
+   /* text indents */
+   .indent {
+     margin-left: 0%;
+     margin-right: 0;
+   }
+   .indent p {
+     margin: 0 auto;
+     text-align: justify;
+     align-items: center;
+     padding: 1rem auto;
+   }
+   /* instruction text */
+   .inst-text {
+     margin-top: 1rem;
+     margin-bottom: -0.09rem;
+     margin-left: 0rem;
+   }
+   /* add new stim & assess parameter div as flex */
+   #par_stim {
+     display: flex;
+     flex-wrap: wrap;
+     width: 45rem;
+   }
+   /* add new stimulu */
+   #new-video-box {
+     width: 18rem;
+   }
+   #new-video-box h2 {
+     font-size: 1.7rem;
+     width: 14rem;
+     margin-bottom: 0.5rem;
+   }
+   #parameters {
+     width: 21rem;
+     margin-left: 3rem;
+   }
+   #parameters h2 {
+     font-size: 1.7rem;
+     width: 21rem;
+     margin-bottom: 1.2rem;
+   }
+   .vid_bnk_title {
+     font-size: 1.3rem;
+     text-align: center;
+   }
+   #start-button {
+     display: block;
+     text-align: center;
+   }
+   .both-btn {
+     margin-bottom: 0.5rem;
+   }
+ 
    /* result page  */
-  /* div for chart */
-  .results section {
-    width: 100%;
-    margin: 10px auto;
+   /* div for chart */
+   .results section {
+     width: 85%;
+     margin: 0px auto;
+   }
+   .results .row {
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     margin-top: -2rem;
+   }
+   .results #col1, .results #col2{
+     width: 29rem;
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+   }
+   .results #chart-div {
+     margin: 0px auto;
+     height: auto;
+     width: 29rem;
+     padding: 2rem 0 0.9rem 1rem;
+   }
+ 
+   #graph-res-title h1 {
+     letter-spacing: 7px;
+     font-size: 2rem;
+   }
   }
-
-  .results #col1, #col2{
-    width: 29rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .results #chart-div {
-    margin: 0px auto;
-    height: auto;
-    width: 29rem;
-    padding: 2rem 0 0.9rem 1rem;
-  }
-
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  /* index page */
-  header h1 {
-    margin-top: 2rem;
-  }
-  #par_stim {
-    display: block;
-  }
-  /* video bank parent div bottom magrin */
-  #vid-bnk {
-    margin-bottom: 2rem;
-  }
-  #new-video-box h2 {
-    width: 15rem;
-    margin-bottom: 0.5rem;
-  }
-  .vid_bnk_title {
-    font-size: 1.3rem;
-  }
-  #parameters h2 {
-    width: 19rem;
-    margin-top: -3rem;
-  }
-  #start-button {
-    display: block;
-    text-align: center;
-  }
-  .both-btn {
-    margin-bottom: 0.5rem;
-  }
-  #parameters {
-    margin-top: 3rem;
-    margin-left: 0;
-    width: 22rem;
-    padding-bottom: 3rem;
-  }
-  #parameters h2 {
-    width: 22rem;
-    margin-bottom: 1.2rem;
-  }
-
-  /* decision page */
+ 
+  @media only screen and  (max-width: 1024px){
+   /* index page */
+   header {
+     text-align: center;
+   }
+   /* header title */
+   header h1 {
+     margin-top: 2rem;
+   }
+   /* text indents */
+   .indent {
+     margin-left: 0px;
+     margin-right: 0px;
+   }
+   .indent p {
+     margin: 0 auto;
+     text-align: justify;
+     align-items: center;
+     padding: 1rem auto;
+   }
+   /* instruction text */
+   .inst-text {
+     margin-top: 1rem;
+     margin-bottom: -0.09rem;
+     margin-left: 0rem;
+   }
+   /* add new stim & assess parameter div as flex */
+   #par_stim {
+     display: block;
+     flex-wrap: wrap;
+     width: 40rem;
+   }
+   /* add new stimulu */
+   #new-video-box {
+     width: 18rem;
+   }
+   #new-video-box h2 {
+     font-size: 1.7rem;
+     width: 14rem;
+     margin-bottom: 0.5rem;
+   }
+   #parameters {
+     width: 21rem;
+     margin-left: 0px;
+   }
+   #parameters h2 {
+     font-size: 1.7rem;
+     width: 21rem;
+     margin-bottom: 1.2rem;
+   }
+   .vid_bnk_title {
+     font-size: 1.3rem;
+     text-align: center;
+   }
+   #start-button {
+     display: block;
+     text-align: center;
+   }
+   .both-btn {
+     margin-bottom: 0.5rem;
+   }
+ 
+   /* result page  */
+   /* div for chart */
+   .results section {
+     width: 85%;
+     margin: 0px auto;
+   }
+   .results .row {
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     margin-top: -2rem;
+   }
+   .results #col1, .results #col2{
+     width: 29rem;
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+   }
+   .results #chart-div {
+     margin: 0px auto;
+     height: auto;
+     width: 29rem;
+     padding: 2rem 0 0.9rem 1rem;
+   }
+ 
+   #graph-res-title h1 {
+     letter-spacing: 7px;
+     font-size: 2rem;
+   }
+ }
+ 
+ @media only screen and  (max-width: 820px) {
+   header h1 {
+     margin-top: 2rem;
+   }
+   #par_stim {
+     display: block;
+ 
+   }
+   #new-video-box h2 {
+     width: 15rem;
+     margin-bottom: 0.5rem;
+   }
+   .vid_bnk_title {
+     font-size: 1.3rem;
+   }
+   #parameters h2 {
+     width: 19rem;
+     margin-top: -3rem;
+   }
+   #start-button {
+     display: block;
+     text-align: center;
+   }
+   .both-btn {
+     margin-bottom: 0.5rem;
+   }
+   #parameters {
+     margin-left: 0;
+     margin-top: 4rem;
+     width: 22rem;
+     padding-bottom: 3rem;
+   }
+   #parameters h2 {
+     width: 22rem;
+     margin-bottom: 1.2rem;
+   }
+ 
+    /* result page  */
+   /* div for chart */
+   .results section {
+     width: 100%;
+     margin: 10px auto;
+   }
+ 
+   .results #col1, #col2{
+     width: 29rem;
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+   }
+   .results #chart-div {
+     margin: 0px auto;
+     height: auto;
+     width: 29rem;
+     padding: 2rem 0 0.9rem 1rem;
+   }
+ 
+   #graph-res-title h1 {
+     letter-spacing: 7px;
+     font-size: 2rem;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   /* index page */
+   header h1 {
+     margin-top: 2rem;
+   }
+   #par_stim {
+     display: block;
+   }
+   /* video bank parent div bottom magrin */
+   #vid-bnk {
+     margin-bottom: 2rem;
+   }
+   #new-video-box h2 {
+     width: 15rem;
+     margin-bottom: 0.5rem;
+   }
+   .vid_bnk_title {
+     font-size: 1.3rem;
+   }
+   #parameters h2 {
+     width: 19rem;
+     margin-top: -3rem;
+   }
+   #start-button {
+     display: block;
+     text-align: center;
+   }
+   .both-btn {
+     margin-bottom: 0.5rem;
+   }
+   #parameters {
+     margin-top: 3rem;
+     margin-left: 0;
+     width: 22rem;
+     padding-bottom: 3rem;
+   }
+   #parameters h2 {
+     width: 22rem;
+     margin-bottom: 1.2rem;
+   }
+ 
+   /* decision page */
+    .decision {
+     align-items: center;
+     text-align: center;
+    }
+    #res-title {
+     text-align: center;
+     align-items: center;
+    }
+    #res-title h1 {
+     letter-spacing: 3px;
+ 
+     margin: 1rem auto -3rem auto;
+     width: 27rem;
+    }
+    .decision-buttons {
+     margin-bottom: 0.2rem;
+    }
+ 
+    /* result page  */
+   /* div for chart */
+   .results section {
+     width: 100%;
+     margin: 10px auto;
+   }
+ 
+   .results #col1, #col2{
+     width: 29rem;
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+   }
+   .results #chart-div {
+     margin: 0px auto;
+     height: auto;
+     width: 29rem;
+     padding: 2rem 0 0.9rem 1rem;
+   }
+ 
+   #graph-res-title h1 {
+     letter-spacing: 7px;
+     font-size: 2rem;
+   }
+ }
+ 
+ /* -----------for cell phones----------- */
+ @media only screen and  (max-width: 480px) {
+   /* index page */
+   header {
+     text-align: center;
+     width: 90%;
+   }
+   header h1 {
+     margin-top: 2rem;
+   }
+   .indent {
+     margin-left: 0%;
+     margin-right: 0;
+   }
+   .indent p {
+     margin: 0 auto;
+     text-align: justify;
+     align-items: center;
+     padding: 1rem auto;
+   }
+   .inst-text {
+     margin-top: 1rem;
+     margin-bottom: -0.09rem;
+     margin-left: -1.8rem;
+   }
+   #par_stim {
+     display: block;
+     width: 100%;
+   }
+   /* instruction text */
+ .inst-text {
+   margin-top: 1rem;
+   margin-bottom: -0.09rem;
+   margin-left: 0rem;
+ }
+ 
+   /* decision page */
+   #vid-bnk {
+     margin-top: -5rem;
+   }
    .decision {
-    align-items: center;
-    text-align: center;
+     align-items: center;
+     text-align: center;
    }
    #res-title {
-    text-align: center;
-    align-items: center;
+     text-align: center;
    }
    #res-title h1 {
-    letter-spacing: 3px;
-
-    margin: 1rem auto -3rem auto;
-    width: 27rem;
+     letter-spacing: 2px;
+     margin: 5rem auto -3rem -6%;
+     width: 22rem;
    }
    .decision-buttons {
-    margin-bottom: 0.2rem;
+     margin-bottom: -2rem;
    }
-
-   /* result page  */
-  /* div for chart */
-  .results section {
-    width: 100%;
-    margin: 10px auto;
-  }
-
-  .results #col1, #col2{
-    width: 29rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .results #chart-div {
-    margin: 0px auto;
-    height: auto;
-    width: 29rem;
-    padding: 2rem 0 0.9rem 1rem;
-  }
-
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
-  }
-}
-
-/* -----------for cell phones----------- */
-@media only screen and  (max-width: 480px) {
-  /* index page */
-  header {
-    text-align: center;
-    width: 90%;
-  }
-  header h1 {
-    margin-top: 2rem;
-  }
-  .indent {
-    margin-left: 0%;
-    margin-right: 0;
-  }
-  .indent p {
-    margin: 0 auto;
-    text-align: justify;
-    align-items: center;
-    padding: 1rem auto;
-  }
-  .inst-text {
-    margin-top: 1rem;
-    margin-bottom: -0.09rem;
-    margin-left: -1.8rem;
-  }
-  #par_stim {
-    display: block;
-    width: 100%;
-  }
-  /* instruction text */
-.inst-text {
-  margin-top: 1rem;
-  margin-bottom: -0.09rem;
-  margin-left: 0rem;
-}
-
-  /* decision page */
-  #vid-bnk {
-    margin-top: -5rem;
-  }
-  .decision {
-    align-items: center;
-    text-align: center;
-  }
-  #res-title {
-    text-align: center;
-  }
-  #res-title h1 {
-    letter-spacing: 2px;
-    margin: 5rem auto -3rem -6%;
-    width: 22rem;
-  }
-  .decision-buttons {
-    margin-bottom: -2rem;
-  }
-    /* result page */
-  /* div for chart */
-  .results section {
-    width: 100%;
-    margin: 20px auto;
-  }
-
-  .results #col1 {
-    width: 23rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .results #chart-div {
-    margin: 0px auto;
-    height: auto;
-    width: 23rem;
-    padding: 2rem 0 0.9rem 1rem;
-  }
-
-  #graph-res-title h1 {
-    letter-spacing: 7px;
-    font-size: 2rem;
-  }
-}
-/*=================== new styling END ==================== */
+     /* result page */
+   /* div for chart */
+   .results section {
+     width: 100%;
+     margin: 20px auto;
+   }
+ 
+   .results #col1 {
+     width: 23rem;
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+   }
+   .results #chart-div {
+     margin: 0px auto;
+     height: auto;
+     width: 23rem;
+     padding: 2rem 0 0.9rem 1rem;
+   }
+ 
+   #graph-res-title h1 {
+     letter-spacing: 7px;
+     font-size: 2rem;
+   }
+ }
+ /*=================== new styling END ==================== */
