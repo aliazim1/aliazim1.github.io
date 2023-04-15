@@ -90,7 +90,10 @@ footer p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /*add a shadow effect*/
   padding: 15px;
 }
-
+/* video bank parent div bottom magrin */
+#vid-bnk {
+  margin-bottom: 5rem;
+}
 #video-bank { 
   margin-left: 5%;
   margin-bottom: 35px;
@@ -357,8 +360,7 @@ img iframe {
 }
 .results #col1 {
   width: 29rem;
-  margin: 10px;
-  margin: 10px 1rem auto 12.5%;
+  margin: 10px 1rem 3rem 12.5%;
   display: flex;
   flex-direction: column;
 }
@@ -804,6 +806,10 @@ header h1 {
   }
   #par_stim {
     display: block;
+  }
+  /* video bank parent div bottom magrin */
+  #vid-bnk {
+    margin-bottom: 2rem;
   }
   #new-video-box h2 {
     width: 15rem;
