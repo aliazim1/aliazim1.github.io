@@ -423,13 +423,17 @@ img iframe {
 /* applies flexbox layout properties to buttons */
 .btn-div {
   display: flex;
-  width: 20rem;
+  width: 19.7rem;
   margin: 0.8rem auto;
+  background-color: #1a3147;
 }
 #btn-size {
   width: 9.2rem;
   font-size: 0.91rem;
   margin-left: 0.4rem;
+}
+#dnld {
+  font-size: 0.91rem;
 }
 /*==========================================================================================
                                         loader styling
