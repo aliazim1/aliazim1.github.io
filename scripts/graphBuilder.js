@@ -77,7 +77,7 @@ const myChart = new Chart(ctx, {
         // added an x-axis title
         scaleLabel: {
           display: true,
-          labelString: "Picture"
+          labelString: "Stimulus"
         }
       }]
     },
@@ -109,7 +109,7 @@ window.downloadChart = function downloadChart() {
     downloadLink.href = newChart.toDataURL();
     // let user enter a custom file name
     const custome_name = prompt("Enter a custom name:", "Result");
-    
+    //if the user enters a name, then download the file with that name
     if (custome_name !== null) {
       downloadLink.setAttribute('download', custome_name);
     }
