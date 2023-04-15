@@ -529,7 +529,7 @@ header h1 {
 }
 #parameters {
   width: 21rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 #parameters h2 {
   font-size: 1.7rem;
@@ -580,7 +580,7 @@ header h1 {
   #par_stim {
     display: flex;
     flex-wrap: wrap;
-    width: 40rem;
+    width: 45rem;
   }
   /* add new stimulu */
   #new-video-box {
@@ -593,7 +593,7 @@ header h1 {
   }
   #parameters {
     width: 21rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
   #parameters h2 {
     font-size: 1.7rem;
@@ -655,8 +655,8 @@ header h1 {
   }
   /* text indents */
   .indent {
-    margin-left: 0%;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .indent p {
     margin: 0 auto;
@@ -672,7 +672,7 @@ header h1 {
   }
   /* add new stim & assess parameter div as flex */
   #par_stim {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     width: 40rem;
   }
@@ -687,7 +687,7 @@ header h1 {
   }
   #parameters {
     width: 21rem;
-    margin-left: 1rem;
+    margin-left: 0px;
   }
   #parameters h2 {
     font-size: 1.7rem;
