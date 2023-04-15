@@ -423,9 +423,9 @@ img iframe {
 /* applies flexbox layout properties to buttons */
 .btn-div {
   display: flex;
-  width: 19rem;
+  width: 19.2rem;
   margin: 0.8rem auto;
-  background-color: #28a745;
+  background-color: gray;
 }
 #btn-size {
   width: 9rem;
