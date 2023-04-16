@@ -8,7 +8,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: green;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -428,13 +428,14 @@ img iframe {
   background-color: #1a3147;
 }
 #btn-size {
-  width: 9.2rem;
+  width: 9rem;
   font-size: 0.91rem;
   margin-left: 0.4rem;
 }
 #dnld {
-  font-size: 0.91rem;
+  font-size: 0.9rem;
 }
+
 /*==========================================================================================
                                         loader styling
 ========================================================================================== */
@@ -728,6 +729,9 @@ img iframe {
      letter-spacing: 7px;
      font-size: 2rem;
    }
+   #btn-size {
+    width: 9.5rem;
+  }
  }
  
  @media only screen and  (max-width: 820px) {
