@@ -485,6 +485,7 @@ img iframe {
   /* index page */
   header {
    text-align: center;
+    background-color: purple;
  }
  /* header title */
  header h1 {
@@ -548,6 +549,7 @@ img iframe {
    /* index page */
    header {
      text-align: center;
+     background-color: pink;
    }
    /* header title */
    header h1 {
@@ -641,6 +643,7 @@ img iframe {
    /* index page */
    header {
      text-align: center;
+     background-color: yellow;
    }
    /* header title */
    header h1 {
@@ -736,6 +739,7 @@ img iframe {
  @media only screen and  (max-width: 820px) {
    header h1 {
      margin-top: 2rem;
+     background-color: red;
    }
    #par_stim {
      display: block;
@@ -800,6 +804,8 @@ img iframe {
    /* index page */
    header h1 {
      margin-top: 2rem;
+     background-color: black;
+
    }
    #par_stim {
      display: block;
@@ -888,6 +894,7 @@ img iframe {
    header {
      text-align: center;
      width: 90%;
+     background-color: blue;
    }
    header h1 {
      margin-top: 2rem;
