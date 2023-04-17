@@ -1,114 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- added a viewport for the page to fit into the user screen & not scrollable by x-axis-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portfolio Profile</title>
+    <link rel="stylesheet" href="style.css">
 
-    <title>Paired Preference</title> <!-- For display in tabs and bookmarks. -->
-
-    <!-- box icon link -->
+    <!-- box icons link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="loader"></div>
 
+    <!-- nav bar section design -->
+    <nav >
+      <!-- class="header" -->
+      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+      <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+      <ul class="nav-menu">
+        <li onclick="mainVisible()"  id="about" class="nav-link">About</li>
+        <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
+        <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
+      </ul>
+    </nav>
 
-    <!-- External stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- icon library link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- loader file js link -->
-    <script src="/scripts/loader.js"></script>
-
-    <script src="scripts/addDeleteVideo.js" type="module"></script> <!-- Storing new videos from the user -->
-    <script src="scripts/videoList.js" type="module"></script> <!-- Generating a list of video checkboxes from cookies -->
-    <script src="scripts/startAssessment.js" type="module"></script> <!-- Verification and starting the assessment -->
-    <script src="scripts/instructionsDropdown.js" type="module"></script> <!-- Verification and starting the assessment -->
-</head>
-
-<body onload="fillVideoList()"> <!-- When the page loads, populate the list of video checkboxes -->
-<div class="loader"></div>
-<header>
-    <h1>Paired Stimulus Preference Assessment Tool</h1>
-</header>
-
-<main id="index">
-    <div class="row pt-4">
-        <!-- Instructions -->
-        <div class="col-sm-8">
-            <section class="indent">
-                <p><b>Welcome!</b> This website is a tool designed for researchers and educators to assess the favorite rewards
-                of autistic children. Using a series of video trials, subjects will be able to choose their preferred rewards
-                without relying on verbal communication.
-                </p>
-                <!-- by clicking, the user can display/hide the instruction steps -->
-                <h2 class="inst-text" onclick="toggleInstructionsDropdown()">Instructions <i id="inst-icon" class='bx bx-chevron-down-circle up-icon'></i></h2>
-                <div id="instructions-box" class="foreground-box">
-                    <ol>
-                        <li>Add your videos by pasting their YouTube URLs below. (max 20 videos).</li>
-                        <li>Set the timer (3 - 90 seconds).</li>
-                        <li>Select video location as Vertical/Horizontal.</li>
-                        <li>Select the video presentation as thumbnails or the video player.</li>
-                        <li>Select the videos you want to include in the test from the video bank. Then press "Start Test."</li>
-                    </ol>
-                    <p><b>After the test concludes, you will see the result and can download the Chart.</b></p>
-                </div>
-            </section>
-            <div id="par_stim" class="row pt-3">
-                <!-- Add New Videos -->
-                <div class="col-sm-4" id="new-video-box">
-                    <h2>Add New Stimulus</h2>
-                    <form id="new-video" action="javascript:storeNewVideo();" onsubmit="return validateNewVideo()" method="post">
-                        <label>Title:</label><input type="text" name="video-title" size="30" placeholder="Video title....">
-                        <br><br>
-                        <!-- YouTube URL. Has placeholder text to inform user of correct format. -->
-                        <label>URL:</label><input type="text" name="video-url" size="30" placeholder="https://www.youtube.com/watch?v=??????">
-                        <br><br>
-                        <input type="submit" value="Add Stimulus" class="btn btn-dark text-light border-dark">
-                    </form>
-                </div>
-                <!-- Parameters -->
-                <div class="col-sm-4" id="parameters">
-                    <h2>Assessment Parameters</h2>
-                    <label>Time to Selection (seconds):</label> <!-- 1st Parameter (number range) -->
-                    <input type="number" min="3" max="90" name="time-to-selection" size="13" value="15" form="start-assessment"/>
-                    <br><br>
-                    <label>Playtime for Selections (seconds):</label> <!-- 2nd Parameter (number range) -->
-                    <input type="number" min="3" max="90" name="playtime" size="13" value="15" form="start-assessment"/>
-                    <br><br>
-                    <label>Location of Stimuli:</label>
-                    <select name="video-location" form="start-assessment"> <!-- 3rd Parameter (dropdown) -->
-                        <option value="horizontal">Horizontal</option>
-                        <option value="vertical">Vertical</option>
-                    </select>
-                    <br><br>
-                    <label>Stimulus Option Displays:</label><select name="video-presentation" form="start-assessment"> <!-- 4th Parameter (dropdown) -->
-                    <option value="video">Video Playback</option>
-                    <option value="still">Still Images</option>
-                    </select>
-                </div>
-            </div>
+    <!-- home/profile section design -->
+    <main class="home" id="home">
+      <div class="main-intro" id="main-intro">
+        <div class="main-home">
+          <img src="/images/picture2.png"  alt="profile piccture">
+          <h1>Hi, I am Ali Azimi</h1>
+          <p class="wmu">A Computer Science Student @ <span>WMU</span></p>
+          <p class="intro-bio" id="myIntro">
+            I am currently an Undergraduate student working towards my bachelor degree in 
+            computer science at Western Michigan University.
+            My interests include software design and development, artificial intelligence, 
+            and machine learning. Throughout my studies, I have been learning a little about multiple 
+            disciplines to get a feel for what sparks my interest the most. 
+            As of now, I have the most interest in software engineering and web
+            development. Currently, I am involved in building and developing a 
+            website for the department of Psychology which will be used to assess
+            children with autism.
+          </p>
         </div>
-        <!-- Video Bank -->
-        <div id="vid-bnk" class="col-sm-4">
-            <div class="foreground-box">
-                <section id="video-bank">
-                    <h2 class="vid_bnk_title">Stimulus Library</h2>
-                    <!-- An empty form that is populated using videoList.js -->
-                    <form id="start-assessment" action="javascript:startAssessment();" onsubmit="return validateStartAssessment()" method="post"></form>
-                </section>
-                <section id="start-button">
-                    <input type="submit" form="start-assessment" value="Start Test" class="btn btn-success text-light border-dark both-btn">
-                    <!-- added a button for user to remove the video(s)-->
-                    <button class="btn btn-danger text-light border-dark both-btn" onclick="removeVideos()">Delete <i class="fa fa-trash"></i></button>
-                </section>
-            </div>
+        <a href="/files/myResume.pdf" download class="download">Download Resume <i class='bx bxs-download'></i></a>
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="https://github.com/aliazim1"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
         </div>
-    </div>
-</main>
-<footer>
-    <p><em>A website for Dr. Curiel.</em></p>
-</footer>
+    
+        <!-- skills section design -->
+        <div class="skills" id="skills">
+          <h1 class="heading">Skills & Languages</h1>
+            <div class="row">
+              <div class="col">
+                <div class="python"><i class='bx bxl-python'></i></div>
+                <h1>Python</h1>
+              </div>
 
-</body>
+              <div class="col">
+                <div class="python"><i class='bx bx-laptop' ></i></div>
+                <h1>HTML</h1>
+              </div>
+
+              <div class="col">
+                <div class="python"><i class='bx bx-laptop' ></i></div>
+                <h1>CSS</h1>
+              </div>
+
+              <div class="col">
+                <div class="js"><i class='bx bx-code-alt'></i></div>
+                <h1>JavaScript</h1>
+              </div>
+
+              <div class="col">
+                <div class="js"><i class='bx bxl-jquery' ></i></div>
+                <h1>jQuery</h1>
+              </div>
+              <div class="col">
+                <div class="php"><i class='bx bxl-php'></i></div>
+                <h1>PHP</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- projects section design -->
+      <div class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="line"></div>
+        <div class="proj-container">
+          <div class="proj-box">
+            <img src="/images/calc.png" alt="Average Down Calculator">
+            <h1>AD Calculator</h1>
+            <p>Average Down Calculator is a website where the 
+              users can calculate their stock shares, and find out thier average 
+              cost of their stocks.</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+              <h3>PHP</h3>
+            </div>
+          </div>
+
+          <div class="proj-box">
+            <img src="/images/mac.png" alt="Average Down Calculator">
+            <h1>CWA Assessment</h1>
+            <p>Children With Autism Assessment is a website 
+              where you can use it to assess children with autism, without 
+              any verbal communication</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+              <h3>PHP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact section design -->
+      <div class="contact" id="contact">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <div class="line"></div>
+        <div class="row">
+          <div class="contact-col">
+            <div class="js"><i class='bx bx-envelope' ></i></div>
+            <h1>ali.azimi@wmich.edu</h1>
+          </div>
+
+          <div class="contact-col">
+            <div class="js"><i class='bx bx-phone-call'></i></div>
+            <h1>+1 616-752-9529</h1>
+          </div>
+
+          <div class="contact-col">
+            <div class="php"><i class='bx bxs-map'></i></div>
+            <h1>Kalamazoo MI, USA</h1>
+          </div>
+        </div>
+
+        <!-- main row -->
+        <div class="main-row">
+          <div class="row data-col">
+            <div>
+              <input type="text" placeholder="First Name" class="data" id="name"><br>
+              <input type="email" placeholder="Last Name" class="data" id="lname"><br>
+              <input type="text" placeholder="Email Address" class="data" id="email"><br>
+            </div>
+            <div>
+              <textarea class="txt-area" placeholder="type a message..." id="textArea"></textarea>
+            </div>
+          </div>
+          <div class="row data-col">
+            <div>
+              <p id="msg-disp"></p>
+              <button class="btn" id="sendBtn">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer section design -->
+    <footer class="footer">
+      <div class="footer-social-media">
+        <a href="ali.azimi.144181"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="https://github.com/aliazim1"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
