@@ -38,10 +38,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
     navMenu.classList.remove('active');
 }))
 // navbar sticky function
-window.addEventListener("scroll", function() {
-    var navbar = this.document.querySelector("nav");
-    navbar.classList.toggle("sticky", this.scrollY > 0);
-})
+// window.addEventListener("scroll", function() {
+//     var navbar = this.document.querySelector("nav");
+//     navbar.classList.toggle("sticky", this.scrollY > 0);
+// })
 
 
 // contact visivility
