@@ -24,7 +24,6 @@
 }
 
 body {
-    /* background-color:#FFFFFF; */
     background-color: #263042;
 }
 
@@ -64,7 +63,6 @@ nav {
     position:sticky;
     height: 7rem;
     width: 100%;
-    /* background-color: #532E1F; */
     background-color: #263042;
     z-index: 100000;
 }
@@ -142,7 +140,7 @@ a:hover, a.active {
     border-radius: 50%;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    border: 0.5rem solid #a3a3a3;
+    border: 0.5rem solid #546785;
 }
 .main-home h1 {
     font-size: 5rem;
@@ -243,9 +241,6 @@ span {
 
 .python, .js, .php, .jq, .bootstr {
     display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
     width: 7rem;
     height: 7rem;
     background-color: #F1C500;
@@ -267,7 +262,7 @@ span {
 .col {
     margin: 0.5rem 1rem;
     padding: 15px;
-    width: 13rem;
+    width: 15rem;
     height: 14rem;
     border: 0.2rem solid #5467858d;
     border-radius: 0.5rem;
