@@ -517,6 +517,10 @@ input:-webkit-autofill:active {
     .projects h1 {
         padding-top: 2rem;
     }
+    .row .contact-col {
+        max-width: 33rem;
+        min-width: 30rem;
+    }
     .main-row {
         margin-bottom: -3rem;
     }
