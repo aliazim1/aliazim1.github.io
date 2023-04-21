@@ -520,6 +520,7 @@ input:-webkit-autofill:active {
     .row .contact-col {
         max-width: 33rem;
         min-width: 30rem;
+        background-color: red;
     }
     .main-row {
         margin-bottom: -3rem;
