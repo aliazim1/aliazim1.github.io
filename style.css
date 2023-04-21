@@ -518,9 +518,11 @@ input:-webkit-autofill:active {
         padding-top: 2rem;
     }
     .row .contact-col {
-        max-width: 33rem;
-        min-width: 30rem;
-        background-color: red;
+        width: 30rem;
+        background-color: #d3ac00;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
     }
     .main-row {
         margin-bottom: -3rem;
