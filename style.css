@@ -143,10 +143,9 @@ a:hover, a.active {
     border: 0.5rem solid #546785;
 }
 .main-home h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    letter-spacing: 0.4rem;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -609,8 +608,7 @@ input:-webkit-autofill:active {
         left: 0;
      }
      .row .contact-col {
-        max-width: 33rem;
-        min-width: 33rem;
+        width: 33rem;
     }
     .input-col {
         width: 33rem;
@@ -627,8 +625,6 @@ input:-webkit-autofill:active {
         margin-left: 2%;
     }
 }
-
-
 /* -----------for cell phones----------- */
 @media (max-width: 480px) {
     main {
@@ -655,8 +651,8 @@ input:-webkit-autofill:active {
     }
     
     .main-home .wmu {
-        font-size: 2rem;
-    }    
+        font-size: 1.6rem;
+    }
     .intro-bio {
         padding: .8rem .8rem;
     }
