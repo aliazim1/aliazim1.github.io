@@ -477,6 +477,12 @@ input:-webkit-autofill:active {
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
+@media (max-width: 1200px) {
+    .row .contact-col {
+        max-width: 33rem;
+        min-width: 33rem;
+    }
+}
 
 @media (max-width: 1024px) {
     label.logo {
@@ -519,7 +525,6 @@ input:-webkit-autofill:active {
     }
     .row .contact-col {
         width: 30rem;
-        background-color: #d3ac00;
     }
     .row .contact-col h1 {
         font-size: 2rem;
