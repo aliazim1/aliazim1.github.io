@@ -25,7 +25,7 @@ btnClick.addEventListener("click", function(){
     }
 })
 
-// responsive page handling function
+// responsive navbar handling function for small screen
 let navIcon = document.querySelector('.menu-icon');
 let navMenu = document.querySelector('.nav-menu');
 navIcon.addEventListener("click", () => {
@@ -66,4 +66,21 @@ function contactVisible() {
     document.getElementById('cont').style.color = '#00abf0';
     document.getElementById('about').style.color = '#f8f8f8';
     document.getElementById('proj').style.color = '#f8f8f8';
+}
+
+// downloading the resume as pdf
+function downloadResume() {
+    const url = "/images/myResume.pdf" ;
+    // const url = '1SY0JTrUqt-gGywceIh3LVi1IO0RcP4Wb';
+    const fileName = 'myResume.pdf';
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link)
+        });
 }
