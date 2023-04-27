@@ -67,17 +67,3 @@ function contactVisible() {
     document.getElementById('about').style.color = '#f8f8f8';
     document.getElementById('proj').style.color = '#f8f8f8';
 }
-const downloadBtn = document.getElementById('downloadResume');
-downloadBtn.addEventListener('click', downloadPDF);
-
-
-function downloadPDF() {
-  const fileName = "/images/myResume.pdf";
-  const fileUrl = `./${fileName}`;
-  const link = document.createElement('a');
-  link.href = fileUrl;
-  link.download = fileName;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
