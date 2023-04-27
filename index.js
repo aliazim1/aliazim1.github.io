@@ -37,66 +37,33 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
     navIcon.classList.remove('active');
     navMenu.classList.remove('active');
 }))
-// navbar sticky function
-// window.addEventListener("scroll", function() {
-//     var navbar = this.document.querySelector("nav");
-//     navbar.classList.toggle("sticky", this.scrollY > 0);
-// })
 
-
-// contact visivility
+// about me visivility
 function mainVisible() {
-    if (document.getElementById('main-intro').style.display == 'block') {
-        document.getElementById('main-intro').style.display = 'block';
-        document.getElementById('about').style.color = '#F1C500';
-        document.getElementById('proj').style.color = '#f8f8f8';
-        document.getElementById('cont').style.color = '#f8f8f8';
-        document.getElementById("contact").style.display = "none";
-        document.getElementById('projects').style.display = 'none';
-    } else {
-        document.getElementById('main-intro').style.display = 'block';
-        document.getElementById('projects').style.display = 'none';
-        document.getElementById("contact").style.display = "none";
-        document.getElementById('about').style.color = '#F1C500';
-        document.getElementById('proj').style.color = '#f8f8f8';
-        document.getElementById('cont').style.color = '#f8f8f8';
-    }
+    document.getElementById('main-intro').style.display = "block";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('contact').style.display = "none";
+    document.getElementById('about').style.color = '#00abf0';
+    document.getElementById('proj').style.color = '#f8f8f8';
+    document.getElementById('cont').style.color = '#f8f8f8';
 }
 
 // projects visibility
 function projectVisible() {
-    if (document.getElementById('main-intro').style.display == 'block') {
-        document.getElementById('main-intro').style.display = 'none';
-        document.getElementById("contact").style.display = "none";
-        document.getElementById('projects').style.display = 'block';
-        document.getElementById('proj').style.color = '#F1C500';
-        document.getElementById('about').style.color = '#f8f8f8';
-        document.getElementById('cont').style.color = '#f8f8f8';
-    } else {
-        document.getElementById("contact").style.display = "none";
-        document.getElementById('main-intro').style.display = 'none';
-        document.getElementById('projects').style.display = 'block';
-        document.getElementById('proj').style.color = '#F1C500';
-        document.getElementById('about').style.color = '#f8f8f8';
-        document.getElementById('cont').style.color = '#f8f8f8';
-    }
+    document.getElementById('projects').style.display = "block";
+    document.getElementById('contact').style.display = "none";
+    document.getElementById('main-intro').style.display = "none";
+    document.getElementById('proj').style.color = '#00abf0';
+    document.getElementById('about').style.color = '#f8f8f8';
+    document.getElementById('cont').style.color = '#f8f8f8';
 }
 
 // contact visivility
 function contactVisible() {
-    if (document.getElementById('main-intro').style.display == 'block') {
-        document.getElementById('main-intro').style.display = 'none';
-        document.getElementById("contact").style.display = "block";
-        document.getElementById('projects').style.display = 'none';
-        document.getElementById('cont').style.color = '#F1C500';
-        document.getElementById('about').style.color = '#f8f8f8';
-        document.getElementById('proj').style.color = '#f8f8f8';
-    } else {
-        document.getElementById('main-intro').style.display = 'none';
-        document.getElementById('projects').style.display = 'none';
-        document.getElementById("contact").style.display = "block";
-        document.getElementById('cont').style.color = '#F1C500';
-        document.getElementById('about').style.color = '#f8f8f8';
-        document.getElementById('proj').style.color = '#f8f8f8';
-    }
+    document.getElementById('contact').style.display = "block";
+    document.getElementById('main-intro').style.display = "none";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('cont').style.color = '#00abf0';
+    document.getElementById('about').style.color = '#f8f8f8';
+    document.getElementById('proj').style.color = '#f8f8f8';
 }

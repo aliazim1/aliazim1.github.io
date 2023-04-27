@@ -1,14 +1,12 @@
-#projects, #contact {
+.projects, .contact {
     display: none;
 }
-#main-intro {
-    display: block;
-}
+
 .projects, .contact{
     margin-top: -10rem;
 }
-#about {
-    color: #F1C500;
+.about-link {
+    color: #00abf0;
 }
 
 * {
@@ -43,7 +41,7 @@ main {
     z-index: 100;
 }
 
-/* all the headings styling */
+/* ================= all heading ================= */
 .heading {
     font-size: 4rem;
     margin-top: 4rem;
@@ -55,10 +53,10 @@ main {
     margin-bottom: 4rem;
     width: 10rem;
     height: 0.01rem;
-    background-color: #f1c500b6;
+    background-color: #00abf0;
 }
 
-/* nav bar styling */
+/* ================= nav bar ================= */
 nav {
     position:sticky;
     height: 7rem;
@@ -77,30 +75,40 @@ nav {
 
 nav ul {
     float: right;
-    margin-right: 5rem;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 7rem;
-    margin: 0 1rem;
+    margin: 3rem 5rem auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-link {
-    color: #f8f8f8;
+    position: relative;
+    display: inline-block;
+    height: 3rem;
     font-size: 1.6rem;
     text-transform: uppercase;
-    padding: 1px 2rem;
+    margin: 1px 2rem;
+    z-index: 1;
+    overflow: hidden;
 }
-
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: #0d8fc2;
+    transition: 0.5s;
+}
+.nav-link:hover::before {
+    width: 100%;
+}
 .nav-link:hover {
     cursor: pointer;
 }
 
-a:hover, a.active {
-    color:  #F1C500;
-    transition: 0.5s;
-}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -117,7 +125,7 @@ a:hover, a.active {
     display: none
 }
 
-/* name and pic section styling */
+/* =================  Home section ================= */
 .home {
     display: block;
     justify-content: center;
@@ -140,7 +148,7 @@ a:hover, a.active {
     border-radius: 50%;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    border: 0.5rem solid #546785;
+    border: 0.5rem solid #00abf0;
 }
 .main-home h1 {
     font-size: 7rem;
@@ -159,7 +167,7 @@ a:hover, a.active {
     margin-bottom: 3rem;
 }
 span {
-    color:  #F1C500;
+    color:  #00abf0;
     font-weight: 600;
 }
 .about-me {
@@ -206,32 +214,42 @@ span {
 }
 
 .social-media a:hover {
-    background-color: #F1C500;
+    background-color: #00abf0;
     transform: scale(1.05);
 }
 
-.download {
+
+.btn, .main-intro .download {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 1.4rem 0 ;
-    margin: 0 auto;
+    padding: 1.2rem;
     margin-top: 3rem;
-    width: 15rem;
-    font-size: 1.3rem;
+    width: auto;
+    font-size: 1.5rem;
     color: #f8f8f8;
-    background-color: #d3ac00;
-    border-radius: 1rem;
-    transition: width 0.5s, height 0.5s, transform 0.5s ease;
+    border-radius: 0.5rem;
+    background-color: #00abf0;
+    z-index: 1;
+    overflow: hidden;
+}
+.main-intro .download::before, .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0d8fc2;
+    transition: 0.5s;
+    z-index: -1;
+}
+.main-intro .download:hover::before, .btn:hover::before{
+    width: 100%;
 }
 
-.download:hover {
-    color: #f8f8f8;
-    background-color: #d3ac00c7;
-    transform: scale(1.04);
-}
-
-/* skills section styling */
+/* ================= skills section styling ================= */
 .skills h1, .projects h1, .contact h1 {
     padding-top: 4rem;
     margin-bottom: 5rem;
@@ -240,9 +258,9 @@ span {
 
 .python, .js, .php, .jq, .bootstr {
     display: inline-block;
-    width: 7rem;
-    height: 7rem;
-    background-color: #F1C500;
+    width: 6rem;
+    height: 6rem;
+    background-color: #00abf0;
     border-radius: 50%;
     font-size: 5rem;
     transition: 0.5s ease;
@@ -259,25 +277,39 @@ span {
 }
 
 .col {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     margin: 0.5rem 1rem;
     padding: 15px;
-    width: 15rem;
-    height: 14rem;
+    width: 14rem;
+    height: 13rem;
     border: 0.2rem solid #5467858d;
     border-radius: 0.5rem;
     background-color: #2d38498d;
     transition: width 0.5s, height 0.5s, transform 0.5s ease;
 }
 
-.col:hover {
-    background-color: #0064d625;
-    transform: scale(1.05);
+.col::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #42536c8d;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.col:hover::before {
+    width: 100%;
 }
 .col h1 {
     margin-top: -3rem;
 }
 
-/* ---------- projects section styling ---------- */
+/* ================= projects section styling =================  */
 
 .proj-container {
     display: flex;
@@ -329,12 +361,12 @@ span {
 .langs h3 {
     width: 8rem;
     padding: 1.5rem 0 1.5rem 0;
-    background-color: #d3ac00;
+    background-color:#00abf0;
     margin: 1rem 1rem;
     border-radius: 1rem;
 }
 
-/* contact section styling */
+/* ================= contact section styling ================= */
 .contact .contact-title {
     margin-top: 5rem;
 }
@@ -347,15 +379,30 @@ span {
     border: 0.2rem solid #5467858d;
     border-radius: 0.5rem;
     background-color: #2d38498d;
-    transition: width 0.5s, height 0.5s, transform 0.5s ease;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0.5rem 1rem;
+}
+.row .contact-col::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #42536c8d;
+    transition: 0.5s;
+    z-index: -1;
+}
+.row .contact-col:hover::before {
+    width: 100%;
 }
 #msg-disp {
     margin-bottom: 2rem;
 }
-.contact-col:hover {
-    background-color: #0064d625;
-    transform: scale(1.02);
-}
+
 .contact-col h1 {
     margin-top: -2.7rem;
     transform: scale(1.02);
@@ -409,27 +456,12 @@ input:-webkit-autofill:active {
 
 .inputBox input:valid ~ label, .inputBox input:focus ~ label,
 .inputBox textarea:valid ~ label, .inputBox textarea:focus ~ label {
-    top: 1px;
+    top: -2px;
     left: 7px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-
-.btn {
-    padding: 1.2rem 2rem;
-    margin-top: 3rem;
-    width: auto;
-    font-size: 1.8rem;
-    color: #f8f8f8;
-    background-color: #d3ac00;
-    border-radius: 0.5rem;
-    transition: width 0.5s, height 0.5s, transform 0.5s ease;
-}
-.btn:hover {
-    background-color: #d3ac00c7;
-    transform: scale(1.05);
-}
 .main-row {
     padding-bottom: 3rem auto;
 }
@@ -469,7 +501,7 @@ input:-webkit-autofill:active {
 }
 
 .footer-social-media a:hover {
-    background-color: #F1C500;
+    background-color: #00abf0;
     transform: scale(1.05);
 }
 
@@ -598,11 +630,13 @@ input:-webkit-autofill:active {
      }
      .nav-menu li {
         display: block;
-        margin: 0.7rem auto;
+        margin: 5rem auto;
      }
-     
+     .nav-link:hover::before {
+        width: 0;
+    }
      .nav-link.hover, .nav-link.active {
-        color:#F1C500;
+        color:#00abf0;
      }
     .nav-menu.active {
         left: 0;
