@@ -22,7 +22,8 @@
 }
 
 body {
-    background-color: #263042;
+    background-color: red;
+    /* background-color: #263042; */
 }
 
 html {
