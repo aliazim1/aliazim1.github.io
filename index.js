@@ -26,16 +26,26 @@ btnClick.addEventListener("click", function(){
 })
 
 // responsive navbar handling function for small screen
-let navIcon = document.querySelector('.menu-icon');
-let navMenu = document.querySelector('.nav-menu');
+var navIcon = document.querySelector('.menu-icon');
+var exitIcon = document.querySelector('.exit-icon');
+var navMenu = document.querySelector('.nav-menu');
+
 navIcon.addEventListener("click", () => {
     navIcon.classList.toggle('active');
     navMenu.classList.toggle('active');
+
 })
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
 () => {
-    navIcon.classList.remove('active');
+    exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
+
+}))
+document.querySelectorAll(".exit-icon").forEach(n => n.addEventListener("click",
+() => {
+    exitIcon.classList.remove('active');
+    navMenu.classList.remove('active');
+
 }))
 
 // about me visivility
