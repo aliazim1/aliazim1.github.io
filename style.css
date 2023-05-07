@@ -480,13 +480,13 @@ input:-webkit-autofill:active {
 }
 
 .footer .footer-social-media {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 65%;
     margin: 2rem auto 0 auto;
     padding-left: 1.3rem;
 }
+
 .footer .footer-social-media a {
     display: inline-flex;
     justify-content: center;
@@ -657,7 +657,7 @@ input:-webkit-autofill:active {
         width: 33rem;
     }
      .footer .footer-social-media {
-        margin-left: 2%;
+        margin: 2rem auto 0 auto;
     }
 }
 /* -----------for cell phones----------- */
