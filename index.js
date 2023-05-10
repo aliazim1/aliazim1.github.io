@@ -1,79 +1,115 @@
-// send message btn handling
-var btnClick = document.querySelector(".btn");
-btnClick.addEventListener("click", function(){
-    var name = document.getElementById("name").value;
-    var lname = document.getElementById("lname").value;
-    var email = document.getElementById("email").value;
-    var msg = document.getElementById("textArea").value;
-    var msgDisp = document.getElementById("msg-disp");
-    if (name === "" || lname === "" || email === "" || msg === "") {
-        msgDisp.textContent= "Please fill out the above fields";
-        msgDisp.style.color =  "#ff0011";
-        setTimeout(function() {
-          msgDisp.textContent = "";
-        }, 5000);
-    }else {
-        document.getElementById("name").value = "";
-        document.getElementById("lname").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("textArea").value = "";
-        msgDisp.textContent= "Thanks for your message!";
-        msgDisp.style.color =  "#e8e8e8";
-        setTimeout(function() {
-          msgDisp.textContent = "";
-        }, 5000);
+// Average down the stock 
+function calculate() {
+    // get all the into from user input
+    var share1 = parseFloat($('#share1').val());
+    var cost1 = parseFloat($('#cost1').val());
+    var share2 = parseFloat($('#share2').val());
+    var cost2 = parseFloat($('#cost2').val());
+
+    // display for user the new shares & cost
+    var disp_shares = $("#total_share");
+    var disp_amount = $("#total_amount");
+    var disp_avg = $("#avg_cost");
+
+    // sum the total amount for the purchases
+    var amount1 = share1 * cost1;
+    var amount2 = share2 * cost2;
+    var total_amount = amount1 + amount2;
+
+    // calculate the total shares & average down
+    var total_share = share1 + share2;
+    var new_costs = total_amount / total_share;
+    var new_cost = new_costs.toFixed(2);
+    total_amount = total_amount.toFixed(2);
+    total_share = total_share.toFixed(2);
+    if (document.getElementById("share1").value == "") {
+        return;
     }
-})
+    else {
+        if (disp_shares.value != "" && disp_avg.value != "") {
+            disp_shares.empty();
+            disp_avg.empty();
+            disp_shares.text("Total Shares: " + total_share);
+            disp_amount.text("Total Amount: " + "$" + total_amount);
+            disp_avg.text("Average Cost: " + "$" + new_cost);
+        }
+        if (disp_shares.value == "" && disp_avg.value != "") {
+            disp_shares.text("Total Shares: " + total_share);
+            disp_amount.text("Total Shares: " + "$" + total_amount);
+            disp_avg.text("Average Cost: " + "$" + new_cost);
+        }
+    }
+};
 
-// responsive navbar handling function for small screen
-var navIcon = document.querySelector('.menu-icon');
-var exitIcon = document.querySelector('.exit-icon');
-var navMenu = document.querySelector('.nav-menu');
+// remove all the values
+function removeAll() {
+    document.getElementById("share1").value = "";
+    document.getElementById("cost1").value = "";
+    document.getElementById("share2").value = "";
+    document.getElementById("cost2").value = "";
+    $("#total_share").empty();
+    $("#total_amount").empty();
+    $("#avg_cost").empty(); 
+};
 
-navIcon.addEventListener("click", () => {
-    navIcon.classList.toggle('active');
-    navMenu.classList.toggle('active');
+// divide amount per share
+function divid() {
+    var amount = parseFloat($('#amount').val());
+    var price = parseFloat($('#price').val());
+    var shares = document.getElementById("shares");
 
-})
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
-() => {
-    exitIcon.classList.remove('active');
-    navMenu.classList.remove('active');
+    var total_shares = amount / price;
+    var total_sh = total_shares.toFixed(2);
 
-}))
-document.querySelectorAll(".exit-icon").forEach(n => n.addEventListener("click",
-() => {
-    exitIcon.classList.remove('active');
-    navMenu.classList.remove('active');
+    if (document.getElementById("amount").value == "" ) {
+        return;
+    }
+    else {
+        shares.innerHTML = "Total Shares: " + total_sh;
+    }
+};
 
-}))
 
-// about me visivility
+function rmvAll() {
+    document.getElementById("amount").value = "";
+    document.getElementById("price").value = "";
+    $("#shares").empty();
+};
+
+
+// multiply share by average price
+function multp() {
+    var nShares = parseFloat($('#nshares').val());
+    var avPrice = parseFloat($('#avprice').val());
+    var showTotal = document.getElementById("showTotal");
+
+    var total_amount = nShares * avPrice;
+    var total = total_amount.toFixed(2);
+
+    if (document.getElementById("nshares").value == "" ) {
+        return;
+    }
+    else {
+        showTotal.innerHTML = "Total Amount : " + "$" + total;
+    }
+};
+
+
+function clrvAll() {
+    document.getElementById("nshares").value = "";
+    document.getElementById("avprice").value = "";
+    $("#showTotal").empty();
+};
+
+
+// show/hide each calculator
 function mainVisible() {
-    document.getElementById('main-intro').style.display = "block";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('contact').style.display = "none";
-    document.getElementById('about').style.color = '#00abf0';
-    document.getElementById('proj').style.color = '#f8f8f8';
-    document.getElementById('cont').style.color = '#f8f8f8';
+    document.getElementById('container1').style.display = "block";
+    document.getElementById('container2').style.display = "none";
+    document.getElementById('wlcm').innerHTML = "Welcome to <span>ADC</span>";
 }
-
-// projects visibility
-function projectVisible() {
-    document.getElementById('projects').style.display = "block";
-    document.getElementById('contact').style.display = "none";
-    document.getElementById('main-intro').style.display = "none";
-    document.getElementById('proj').style.color = '#00abf0';
-    document.getElementById('about').style.color = '#f8f8f8';
-    document.getElementById('cont').style.color = '#f8f8f8';
-}
-
-// contact visivility
-function contactVisible() {
-    document.getElementById('contact').style.display = "block";
-    document.getElementById('main-intro').style.display = "none";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('cont').style.color = '#00abf0';
-    document.getElementById('about').style.color = '#f8f8f8';
-    document.getElementById('proj').style.color = '#f8f8f8';
+function calcVisible() {
+    document.getElementById('container1').style.display = "none";
+    document.getElementById('container2').style.display = "block";
+    document.getElementById('wlcm').innerHTML = "";
 }
