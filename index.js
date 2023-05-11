@@ -11,17 +11,17 @@ btnClick.addEventListener("click", function(){
         msgDisp.style.color =  "#ff0011";
         setTimeout(function() {
           msgDisp.textContent = "";
-        }, 5000);
+        }, 12000);
     }else {
         document.getElementById("name").value = "";
         document.getElementById("lname").value = "";
         document.getElementById("email").value = "";
         document.getElementById("textArea").value = "";
-        msgDisp.textContent= "Thanks for your message!";
-        msgDisp.style.color =  "#e8e8e8";
+        msgDisp.textContent= "Sorry, I can't get your message due to hosting this website on GitHub. You may contact me via email/number. Thanks!";
+        msgDisp.style.color =  "#ff0011";
         setTimeout(function() {
           msgDisp.textContent = "";
-        }, 5000);
+        }, 12000);
     }
 })
 

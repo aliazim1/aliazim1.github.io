@@ -675,7 +675,9 @@ input:-webkit-autofill:active {
     #menu-icon {
         margin-right: 2.5rem;
     }
-
+    .main-home {
+        width: 100%;
+    }
     .main-home img {
         margin-top: -5rem;
     }
@@ -684,14 +686,12 @@ input:-webkit-autofill:active {
         font-weight: 500;
         letter-spacing: 0.1rem;
     }
-    
     .main-home .wmu {
         font-size: 1.6rem;
     }
     .intro-bio {
-        padding: .8rem .8rem;
+        width: 100%;
     }
-
     .projects h1 {
         padding-top: 4rem;
     }
