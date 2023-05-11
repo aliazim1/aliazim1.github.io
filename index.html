@@ -5,168 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-
-    <title>Stock Average Down Calculator</title>
-    <script src="index.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
-    <!-- nav bar section -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="/index.html" class="logo-txt">ADC</a>
-      </div>
-      <div>
-        <ul>
-          <li id="home" onclick="mainVisible()">Home</li>
-          <li id="calculator" onclick="calcVisible()">Calculator</li>
-        </ul>
-      </div>
+    <div class="loader"></div>
+
+    <!-- nav bar section design -->
+    <nav >
+      <!-- class="header" -->
+      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+      <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+      <ul class="nav-menu">
+        <i class='bx bx-x exit-icon' id="exit-icon" ></i>
+        <li onclick="mainVisible()"  id="about" class="nav-link about-link">About</li>
+        <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
+        <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
+      </ul>
     </nav>
 
-    <!-- first section -->
-    <div class="welcome">
-      <h1 id="wlcm">Welcome to <span>ADC</span></h1>
-    </div>
+    <!-- home/profile section design -->
+    <main class="home" id="home">
+      <div class="main-intro" id="main-intro">
+        <div class="main-home">
+          <img src="/images/picture2.png"  alt="profile piccture">
+          <h1>Hi, I am Ali Azimi</h1>
+          <p class="wmu">A Computer Science Student @ <span>WMU</span></p>
+          <p class="intro-bio" id="myIntro">
+            I am currently an Undergraduate student working towards my bachelor's degree in 
+            computer science at Western Michigan University.
+            My interests include software design and development, artificial intelligence, 
+            and machine learning. Throughout my studies, I have been learning about multiple 
+            disciplines to get a feel for what sparks my interest the most.
+          </p>
+        </div>
+        <a href="/images/myResume.pdf" class="download">See My Resume</a>
 
-    <!-- CALCULATOR SECTION -->
-    <div class="container1" id="container1" >
-      <h1 class="calc-title">AD Calculator</h1>
-      <div class="sec">
+        <!-- skills section design -->
+        <div class="skills" id="skills">
+          <h1 class="heading">Skills & Languages</h1>
+            <div class="row">
+              <div class="col">
+                <div class="skill"><i class='bx bxl-python'></i></div>
+                <h1>Python</h1>
+              </div>
+
+              <div class="col">
+                <div class="skill"><i class='bx bxl-html5' ></i></div>
+                <h1>HTML5</h1>
+              </div>
+
+              <div class="col">
+                <div class="skill"><i class='bx bxl-css3'></i></div>
+                <h1>CSS3</h1>
+              </div>
+              <div class="col">
+                <div class="skill"><i class='bx bxl-bootstrap'></i></div>
+                <h1>Bootstrap</h1>
+              </div>
+
+              <div class="col">
+                <div class="skill"><i class='bx bxl-javascript' ></i></div>
+                <h1>JavaScript</h1>
+              </div>
+
+              <div class="col">
+                <div class="skill"><i class='bx bxl-jquery' ></i></div>
+                <h1>jQuery</h1>
+              </div>
+              <div class="col">
+                <div class="skill"><i class='bx bxl-php'></i></div>
+                <h1>PHP</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- projects section design -->
+      <div class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="line"></div>
+        <div class="proj-container">
+          <div class="proj-box">
+            <img src="/images/calc.png" alt="Average Down Calculator">
+            <h1>AD Calculator</h1>
+            <p>Average Down is a website where the 
+              users can calculate their stock shares, and find out thier average 
+              cost of their stocks.</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+            </div>
+          </div>
+
+          <div class="proj-box">
+            <img src="/images/mac.png" alt="Average Down Calculator">
+            <h1>CWA Assessment</h1>
+            <p>Children With Autism Assessment is a website 
+              where you can use it to assess children with autism, without 
+              any verbal communication</p>
+            <div class="langs">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JavaScript</h3>
+              <h3>jQuery</h3>
+              <h3>PHP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact section design -->
+      <div class="contact" id="contact">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <div class="line"></div>
         <div class="row">
-          <div class="col">
-            <div class="inputBox">
-              <input class="data" id="share1" type="float" placeholder="0000" required>
-            <label>Previously Owned Shares</label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inputBox">
-              <input class="data" id="cost1" type="float" placeholder="0000" required>
-              <label>Price Per Share </label>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="inputBox">
-              <input class="data" id="share2" type="float" placeholder="0000" required>
-            <label>New Purchased shares</label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="inputBox">
-              <input class="data" id="cost2" type="float" placeholder="0000" required>
-              <label>Price Per Share </label>
-            </div>
+          <div class="contact-col">
+            <div class="c-icon"><i class='bx bx-envelope' ></i></div>
+            <h1>ali.azimi@wmich.edu</h1>
           </div>
 
-        </div>
-        <hr>
-        <div class="row" id="btns">
-          <div class="each-btn">
-            <button onclick="calculate()" class="calc cal1">Calculate </button>
+          <div class="contact-col">
+            <div  class="c-icon"><i class='bx bx-phone-call'></i></div>
+            <h1>+1 616-752-9529</h1>
           </div>
-  
-          <div class="each-btn">
-            <button onclick="removeAll()" class="calc clr">Clear </button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="calculated row">
-        <P id="total_amount"></P>
-      </div>
-      <div class="calculated row">
-        <P id="total_share"></P>
-      </div>
-      <div class="calculated row">
-          <P id="avg_cost"></P>
-      </div>
-    </div>
 
-    <!-- CALCULATOR SECTION -->
-    <div class="container2" id="container2">
-      <h1 class="calc-title">Calculator</h1>
-      <div>
-        <div class="first">
-          <div class="sec">
-            <div class="row">
-              <div class="col">
-                <div class="inputBox">
-                  <input class="data" id="amount" type="float" placeholder="0000" required>
-                <label>Amount $</label>
-                </div>
-              </div>
-    
-              <div class="col">
-                <div class="inputBox">
-                  <input class="data" id="price" type="float" placeholder="0000" required>
-                  <label>Price Per Share </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="btns">
-              <div class="each-btn">
-                <button id="btn" onclick="divid()" class="calc cal1">÷</button>
-              </div>
-      
-              <div class="each-btn">
-                <button id="btn" onclick="rmvAll()" class="calc clr">c</button>
-              </div>
-            </div>
-          </div>
-    
-          <div class="row">
-            <p id="shares"></p>
+          <div class="contact-col">
+            <div  class="c-icon"><i class='bx bxs-map'></i></div>
+            <h1>Kalamazoo MI, USA</h1>
           </div>
         </div>
-        <hr>
-        <div class="sec">
-          <div class="sec">
-            <div class="row">
-              <div class="col">
-                <div class="inputBox">
-                  <input class="data" id="nshares" type="float" placeholder="0000" required>
-                <label>Number of Share</label>
-                </div>
+
+        <!-- main row -->
+        <div class="main-row">
+          <div class="row data-col">
+            <div  class="input-col">
+              <div class="inputBox">
+                <input type="text" class="data" id="name" required>
+                <label>First Name</label>
               </div>
-    
-              <div class="col">
-                <div class="inputBox">
-                  <input class="data" id="avprice" type="float" placeholder="0000" required>
-                  <label>Price Per Share </label>
-                </div>
+              <div class="inputBox">
+                <input type="text" class="data" id="lname" required>
+                <label>Last Name</label>
+              </div>
+              <div class="inputBox">
+                <input type="email" class="data" id="email" required>
+                <label>Email Address</label>
               </div>
             </div>
-            <div class="row" id="btns">
-              <div class="each-btn">
-                <button id="btn" onclick="multp()" class="calc cal1">x</button>
-              </div>
-      
-              <div class="each-btn">
-                <button id="btn" onclick="clrvAll()" class="calc clr">c</button>
+            <div class="input-col">
+              <div class="inputBox">
+                <textarea type="text" class="txt-area" placeholder="type here . . . " id="textArea" required></textarea>
+                <label>Your Message</label>
               </div>
             </div>
           </div>
-    
-          <div class="row">
-            <p id="showTotal"></p>
+          <div class="row data-col">
+            <div>
+              <p id="msg-disp"></p>
+              <button class="btn" id="sendBtn">Send Message</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </main>
     <!-- footer section design -->
     <footer class="footer">
-      <div class="social-media">
+      <div class="footer-social-media">
         <a href="https://github.com/aliazim1" target="_blank"><i class='bx bxl-github'></i></a>
         <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="_blank"><i class='bx bxl-linkedin'></i></a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
-
