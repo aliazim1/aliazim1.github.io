@@ -659,6 +659,9 @@ input:-webkit-autofill:active {
     .btn:hover: {
         background-color: #00abf0;
     }
+    .social-media a:hover {
+          background: transparent;
+    }
      .footer .footer-social-media {
         margin: 2rem auto 0 auto;
     }
@@ -716,6 +719,9 @@ input:-webkit-autofill:active {
     }
     .btn:hover: {
         background-color: #00abf0;
+    }
+    .social-media a:hover {
+          background: transparent;
     }
     .main-row {
         margin-bottom: -3rem;
