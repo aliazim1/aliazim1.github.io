@@ -246,7 +246,7 @@ span {
     transition: 0.5s;
     z-index: -1;
 }
-.main-intro .download:hover::before, .btn:hover::before{
+.main-intro .download:hover, .btn:hover{
     background-color: #00cf61;
 }
 
