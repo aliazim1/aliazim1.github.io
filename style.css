@@ -185,9 +185,11 @@ span {
 .intro-bio {
     line-height: 3.5rem;
     font-weight: 100;
-    margin: 5.5rem auto 1rem auto;
+    margin-top: 7rem;
     text-align: justify;
-    align-items: center;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
     padding: 1rem auto;
     color: #e8e8e8;
 }
@@ -369,7 +371,9 @@ span {
     transform:scale(0.9);
 }
 #msg-disp {
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .contact-col h1 {
@@ -468,18 +472,33 @@ input:-webkit-autofill:active {
     .proj-box h1 {
         margin-top: 5rem;
     }
+    .contact {
+        width: 100%;
+    }
+    .cont-row {
+        width: 100%;
+    }
+    .row .contact-col {
+        width: 30rem;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
+    }
     .data, .txt-area {
-        width: 67%;
+        width: 63rem;
     }
     .btn {
         margin: 3rem auto;
-        width: 41%;
+        width: 30rem;
+    }
+    .btn:hover{
+        background-color: #00abf0;
     }
     .sendDiv {
         width: 100%;
     }
     #sendBtn {
-        width: 67%;
+        width: 63rem;
     }
 }
 
@@ -543,21 +562,33 @@ input:-webkit-autofill:active {
     .proj-box h1 {
         margin-top: 5rem;
     }
+    .contact {
+        width: 100%;
+    }
+    .cont-row {
+        width: 100%;
+    }
+    .row .contact-col {
+        width: 30rem;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
+    }
     .data, .txt-area {
-        width: 80%;
+        width: 63rem;
     }
     .btn {
         margin: 3rem auto;
-        width: 50%;
+        width: 30rem;
     }
     .btn:hover{
         background-color: #00abf0;
     }
     .sendDiv {
-        width: 80%;
+        width: 100%;
     }
     #sendBtn {
-        width: 100%;
+        width: 63rem;
     }
 }
 
@@ -579,6 +610,9 @@ input:-webkit-autofill:active {
         width: 80%;
         margin: 0 auto;
         padding: 10rem 2rem;
+    }
+    .main-home {
+        margin-top: 5rem;
     }
     .main-home img {
         margin-top: -5rem;
@@ -602,8 +636,36 @@ input:-webkit-autofill:active {
     .main-row {
         margin-bottom: -3rem;
     }
-}
 
+    .contact {
+        width: 100%;
+    }
+    .cont-row {
+        width: 100%;
+    }
+    .row .contact-col {
+        width: 30rem;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
+    }
+    .data, .txt-area {
+        width: 63rem;
+    }
+    .btn {
+        margin: 3rem auto;
+        width: 30rem;
+    }
+    .btn:hover{
+        background-color: #00abf0;
+    }
+    .sendDiv {
+        width: 100%;
+    }
+    #sendBtn {
+        width: 63rem;
+    }
+}
 
 @media (max-width: 768px) {
     #menu-icon, #exit-icon {
@@ -613,7 +675,7 @@ input:-webkit-autofill:active {
         position: fixed;
         width: 100%;
         height: 110%;
-        background-color: #263042;
+        background: linear-gradient(to bottom, #131720, #003b52, #00222f);
         top: -5rem; 
         left: 0;
         text-align: center;
@@ -686,21 +748,33 @@ input:-webkit-autofill:active {
     .proj-box h1 {
         margin-top: 5rem;
     }
+    .contact {
+        width: 100%;
+    }
+    .cont-row {
+        width: 90%;
+    }
+    .row .contact-col {
+        width: 90%;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
+    }
     .data, .txt-area {
-        width: 49%;
+        width: 54rem;
     }
     .btn {
         margin: 3rem auto;
-        width: 90%;
+        width: 36rem;
     }
     .btn:hover{
         background-color: #00abf0;
     }
     .sendDiv {
-        width: 48%;
+        width: 100%;
     }
     #sendBtn {
-        width: 100%;
+        width: 54rem;
     }
 }
 
@@ -721,6 +795,9 @@ input:-webkit-autofill:active {
         height: 85%;
         width: 90%;
         padding: 7rem 1rem;
+    }
+    .main-home {
+        margin-top: 5rem;
     }
     .main-intro {
         width: 100%;
@@ -765,8 +842,20 @@ input:-webkit-autofill:active {
     .projects, .contact {
         margin-top: -4rem;
     }
-    .data, .txt-area {
+    .contact {
         width: 100%;
+    }
+    .cont-row {
+        width: 100%;
+    }
+    .row .contact-col {
+        width: 100%;
+    }
+    .row .contact-col h1 {
+        font-size: 2rem;
+    }
+    .data, .txt-area {
+        width: 95%;
     }
     .btn {
         margin: 3rem auto;
@@ -779,6 +868,6 @@ input:-webkit-autofill:active {
         width: 100%;
     }
     #sendBtn {
-        width: 100%;
+        width: 95%;
     }
 }
