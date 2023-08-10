@@ -20,7 +20,7 @@
     <!-- nav bar section design -->
     <nav >
       <!-- class="header" -->
-      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo" title="Home Page"></a>
       <i class='bx bx-menu menu-icon' id="menu-icon"></i>
       <ul class="nav-menu">
         <i class='bx bx-x exit-icon' id="exit-icon" ></i>
@@ -31,74 +31,74 @@
     </nav>
 
     <!-- home/profile section design -->
-    <main class="home" id="home">
+    <main class="home" id="home">   <!-- for all divs -->
       <div class="main-intro" id="main-intro">
         <div class="main-home">
           <img src="/images/picture2.png"  alt="profile piccture">
           <h1>Hi, I am Ali Azimi</h1>
           <p class="wmu">A Computer Science Student @ <span>WMU</span></p>
           <p class="intro-bio" id="myIntro">
-            I am currently an Undergraduate student working towards my bachelor's degree in 
+            I am currently an undergraduate student working towards my bachelor's degree in 
             computer science at Western Michigan University.
             My interests include software design and development, artificial intelligence, 
             and machine learning. Throughout my studies, I have been learning about multiple 
             disciplines to get a feel for what sparks my interest the most.
           </p>
         </div>
-        <a href="/images/myResume.pdf" class="download">See My Resume</a>
-
+        <div class="main-home">
+          <a href="/images/myResume.pdf" target="_blank" class="btn" title="Click to see Resume">See My Resume</a>
+        </div>
         <!-- skills section design -->
         <div class="skills" id="skills">
-          <h1 class="heading">Languages & Skills</h1>
-            <div class="row">
-              <div class="col">
-                <div class="skill"><i class='bx bxl-python'></i></div>
-                <h1>Python</h1>
-              </div>
-              
-              <div class="col">
-                <div class="skill"><i class='bx bxl-django'></i></div>
-                <h1>django</h1>
-              </div>
+          <div><h1 id="headings">Languages & Skills</h1></div>
+          <div class="row">
+            <div class="col">
+              <div class="icons"><i class='bx bxl-python'></i></div>
+              <h1>Python</h1>
+            </div>
+            
+            <div class="col">
+              <div class="icons"><i class='bx bxl-django'></i></div>
+              <h1>django</h1>
+            </div>
 
-              <div class="col">
-                <div class="skill"><i class='bx bxl-html5' ></i></div>
-                <h1>HTML5</h1>
-              </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-html5' ></i></div>
+              <h1>HTML5</h1>
+            </div>
 
-              <div class="col">
-                <div class="skill"><i class='bx bxl-css3'></i></div>
-                <h1>CSS3</h1>
-              </div>
-              <div class="col">
-                <div class="skill"><i class='bx bxl-bootstrap'></i></div>
-                <h1>Bootstrap</h1>
-              </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-css3'></i></div>
+              <h1>CSS3</h1>
+            </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-bootstrap'></i></div>
+              <h1>Bootstrap</h1>
+            </div>
 
-              <div class="col">
-                <div class="skill"><i class='bx bxl-javascript' ></i></div>
-                <h1>JavaScript</h1>
-              </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-javascript' ></i></div>
+              <h1>JavaScript</h1>
+            </div>
 
-              <div class="col">
-                <div class="skill"><i class='bx bxl-jquery' ></i></div>
-                <h1>jQuery</h1>
-              </div>
-              <div class="col">
-                <div class="skill"><i class='bx bxl-php'></i></div>
-                <h1>PHP</h1>
-              </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-jquery' ></i></div>
+              <h1>jQuery</h1>
+            </div>
+            <div class="col">
+              <div class="icons"><i class='bx bxl-php'></i></div>
+              <h1>PHP</h1>
             </div>
           </div>
         </div>
       </div>
       <!-- projects section design -->
       <div class="projects" id="projects">
-        <h1 class="heading">Projects</h1>
+        <h1 id="headings">Projects</h1>
         <div class="line"></div>
         <div class="proj-container">
            <a href="https://github.com/aliazim1/averageDownCalculator">
-            <div class="proj-box">
+            <div class="proj-box" title="Click to open the project link">
               <img src="/images/calc.png" alt="Average Down Calculator">
               <h1>AD Calculator</h1>
               <p>Average Down is a website where the 
@@ -114,7 +114,7 @@
           </a>
           
           <a href="https://github.com/aliazim1/CWA">
-            <div class="proj-box">
+            <div class="proj-box" title="Click to open the project link">
               <img src="/images/mac.png" alt="Average Down Calculator">
               <h1>CWA Assessment</h1>
               <p>Children With Autism Assessment is a website 
@@ -131,68 +131,60 @@
           </a>
         </div>
       </div>
-
       <!-- contact section design -->
       <div class="contact" id="contact">
-        <h1 class="heading">Contact <span>Me</span></h1>
+        <h1 id="headings">Contact <span>Me</span></h1>
         <div class="line"></div>
         <div class="row">
           <div class="contact-col">
-            <div class="c-icon"><i class='bx bx-envelope' ></i></div>
+            <div class="icons"><i class='bx bx-envelope' ></i></div>
+            <h1>aliazmnzhd@gmail.com</h1>
+          </div>
+          <div class="contact-col">
+            <div class="icons"><i class='bx bx-envelope' ></i></div>
             <h1>ali.azimi@wmich.edu</h1>
           </div>
 
           <div class="contact-col">
-            <div  class="c-icon"><i class='bx bx-phone-call'></i></div>
+            <div  class="icons"><i class='bx bx-phone-call'></i></div>
             <h1>+1 616-752-9529</h1>
           </div>
 
           <div class="contact-col">
-            <div  class="c-icon"><i class='bx bxs-map'></i></div>
+            <div  class="icons"><i class='bx bxs-map'></i></div>
             <h1>Kalamazoo MI, USA</h1>
           </div>
         </div>
-
-        <!-- main row -->
-        <div class="main-row">
-          <div class="row data-col">
-            <div  class="input-col">
-              <div class="inputBox">
-                <input type="text" class="data" id="name" required>
-                <label>First Name</label>
-              </div>
-              <div class="inputBox">
-                <input type="text" class="data" id="lname" required>
-                <label>Last Name</label>
-              </div>
-              <div class="inputBox">
-                <input type="email" class="data" id="email" required>
-                <label>Email Address</label>
-              </div>
+        <!-- input row -->
+        <div class="row" id="input-col">
+          <div  class="input-col">
+            <div class="inputBox">
+              <input type="text" class="data" id="name" placeholder="First Name" required>
+              <!-- <label>First Name</label> -->
             </div>
-            <div class="input-col">
-              <div class="inputBox">
-                <textarea type="text" class="txt-area" placeholder="type here . . . " id="textArea" required></textarea>
-                <label>Your Message</label>
-              </div>
+            <div class="inputBox">
+              <input type="text" class="data" id="lname" placeholder="Last Name" required>
+              <!-- <label>Last Name</label> -->
+            </div>
+            <div class="inputBox">
+              <input type="email" class="data" id="email" placeholder="Email" required>
+              <!-- <label>Email Address</label> -->
             </div>
           </div>
-          <div class="row data-col">
-            <div>
-              <p id="msg-disp"></p>
-              <button class="btn" id="sendBtn">Send Message</button>
+          <div class="input-col">
+            <div class="inputBox">
+              <textarea type="text" class="txt-area" placeholder="type here . . . " id="textArea" required></textarea>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sendDiv">
+            <p id="msg-disp"></p>
+            <button class="btn" id="sendBtn">Send Message</button>
           </div>
         </div>
       </div>
     </main>
-    <!-- footer section design -->
-    <footer class="footer">
-      <div class="footer-social-media">
-        <a href="https://github.com/aliazim1" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-      </div>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>
