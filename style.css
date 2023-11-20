@@ -24,14 +24,12 @@ body {
     padding: 0;
     height: 100vh;
     background-size: cover;
-    /* background-color: #263042; */
-    background: linear-gradient(to bottom, #131720, #003b52, #00222f);
+    background: #081b29;
 }
 
 html {
     font-size: 62.5%;
 }
-
 p {
     font-size: 1.6rem;
 }
@@ -123,16 +121,15 @@ nav ul {
 
 /* =================  Home section ================= */
 .home {
-    height: 80%;
+    height: 85%;
     overflow-y: auto;
     width: 60%;
     margin: auto;
-    margin-bottom: 4rem; /* margin can be changed */
+    margin-top: 1rem;
+    margin-bottom: 4rem;
     padding: 10rem 7rem;
     z-index: 100;
     border-radius: 10px;
-    box-shadow: 5px 10px 15px #131720;
-    background: linear-gradient(to bottom, #131720, #003347, #00222f);
 }
 
 ::-webkit-scrollbar { /* hide the scroll-bar */
@@ -148,34 +145,51 @@ nav ul {
     text-align: center;
 }
 
-.main-home img {
-    width: 22rem;
-    height: 22rem;
-    border-radius: 50%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    border: 0.3rem solid #00abf0;
+.pic-name {
+    display: flex;
+    padding-bottom: 4rem;
+    border-bottom: .5px solid #00abf0;
 }
-.main-home h1 {
-    font-size: 6rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.main-home img {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 5rem;
+    border-radius: 50%;
+    margin-top: -2rem;
+    border: 0.3rem solid #00abf0;
+    transition: transform 0.3s ease;
 }
 
-.main-home .wmu {
-    font-size: 2.5rem;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 3rem;
+.main-home img:hover {
+    transform: translateY(-3px);
+}
+.name-college {
+    padding-left: 2rem;
+}
+.name-college h2 {
+    margin-top: 3rem;
+    text-align:left;
+    font-size: 1.7rem;
+
+
+}
+.name-college h1 {
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align:left;
+}
+
+
+.name-college .wmu {
+    font-size: 1.7rem;
+    align-items: left;
 }
 span {
     color:  #00abf0;
     font-weight: 600;
 }
+
 .about-me {
     font-size: 3rem;
     cursor: pointer;
@@ -185,7 +199,7 @@ span {
 .intro-bio {
     line-height: 3.5rem;
     font-weight: 100;
-    margin-top: 7rem;
+    margin-top: 4rem;
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
@@ -205,14 +219,16 @@ span {
     font-size: 1.5rem;
     border-radius: 0.5rem;
     background-color: #00abf0;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover{
-    background-color: #00cf61;
+    transform: translateY(-5px);
 }
 /* ================= skills section styling ================= */
 .skills h1, .projects h1, .contact h1 {
     padding-top: 4rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
     padding: 1rem auto;
     text-align: center;
@@ -254,25 +270,12 @@ span {
     border-radius: 0.5rem;
     background-color: transparent;
     cursor: pointer;
-    transition: width 0.5s, height 0.5s, transform 0.5s ease;
+    transition: transform 0.3s ease;
+}
+.col:hover {
+    transform: translateY(-10px);
 }
 
-.col::before {
-    content: "";
-    position: absolute;
-    border-radius: 0.5rem;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: -1;
-}
-
-.col:hover::before {
-    background: linear-gradient(to bottom, #131720, #003b52, #00222f);
-    transform:scale(0.8);
-}
 .col h1 {
     margin-top: -3rem;
 }
@@ -354,26 +357,17 @@ span {
     z-index: 1;
     overflow: hidden;
     margin: 0.5rem 1rem;
+    transition: transform 0.3s ease;
+
 }
-.row .contact-col::before {
-    content: "";
-    position: absolute;
-    border-radius: 0.5rem;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: -1;
+.row .contact-col:hover {
+    transform:translateY(-5px)
 }
-.row .contact-col:hover::before {
-    background: linear-gradient(to bottom, #131720, #003b52, #00222f);
-    transform:scale(0.9);
-}
+
 #msg-disp {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .contact-col h1 {
@@ -431,13 +425,12 @@ input:-webkit-autofill:active {
         width: 80%;
         padding: 7rem 1rem;
     }
-    .main-home h1 {
-        font-size: 6rem;
-        font-weight: 500;
+
+    .name-college h1 {
+        margin-top: 2rem;
+        font-size: 4rem;
     }
-    .main-home .wmu {
-        font-size: 3rem;
-    }
+    
     .main-intro {
         width: 90%;
         margin: auto;
@@ -522,18 +515,21 @@ input:-webkit-autofill:active {
         width: 85%;
         padding: 7rem 1rem;
     }
-    .main-home h1 {
-        font-size: 5rem;
-        font-weight: 500;
+    .name-college h1 {
+        margin-top: 2rem;
+        font-size: 4rem;
     }
-    .main-home .wmu {
-        font-size: 3rem;
-    }
+    
     .main-intro {
         width: 90%;
         margin: auto;
         margin-top: -4rem;
     }
+    .intro-bio {
+        width: 95%;
+        font-size: 2rem;
+    }
+   
     .intro-bio {
         width: 95%;
         font-size: 2rem;
@@ -614,20 +610,19 @@ input:-webkit-autofill:active {
     .main-home {
         margin-top: 5rem;
     }
-    .main-home img {
-        margin-top: -5rem;
-    }
-    .main-home h1 {
-        font-size: 3.5rem;
-        font-weight: 500;
-        letter-spacing: 0.1rem;
+    .name-college h1 {
+        margin-top: 2rem;
+        font-size: 4rem;
     }
     
-    .main-home .wmu {
-        font-size: 2rem;
-    }    
+    .main-intro {
+        width: 90%;
+        margin: auto;
+        margin-top: -4rem;
+    }
     .intro-bio {
-        padding: .8rem .8rem;
+        width: 95%;
+        font-size: 2rem;
     }
 
     .projects h1 {
@@ -649,21 +644,12 @@ input:-webkit-autofill:active {
     .row .contact-col h1 {
         font-size: 2rem;
     }
-    .data, .txt-area {
-        width: 63rem;
-    }
-    .btn {
-        margin: 3rem auto;
-        width: 30rem;
-    }
-    .btn:hover{
-        background-color: #00abf0;
-    }
-    .sendDiv {
-        width: 100%;
+    .data, .txt-area, .sendDiv {
+        width: 40rem;
     }
     #sendBtn {
-        width: 63rem;
+        margin-top: 2rem;
+        width: 40rem;
     }
 }
 
@@ -755,38 +741,83 @@ input:-webkit-autofill:active {
         width: 90%;
     }
     .row .contact-col {
-        width: 90%;
+        width: 28rem;
     }
     .row .contact-col h1 {
         font-size: 2rem;
     }
-    .data, .txt-area {
-        width: 54rem;
+    .data, .txt-area, #sendBtn, .sendDiv {
+        width: 28rem;
     }
-    .btn {
-        margin: 3rem auto;
-        width: 36rem;
-    }
-    .btn:hover{
-        background-color: #00abf0;
-    }
-    .sendDiv {
-        width: 100%;
-    }
-    #sendBtn {
-        width: 54rem;
-    }
+   
 }
 
 @media (max-width: 540px) {
-    .data, .txt-area {
-        width: 71.2%;
+    .main-intro {
+        width: 100%;
+        margin-top: -12rem;
+    }
+    .main-home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pic-name {
+        display: block;
+        padding-bottom: 2rem;
+        border-bottom: .1px solid #00abf0;
+    }
+    .main-home img {
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
+        border-radius: 50%;
+        margin-top: 0rem;
+        border: 0.3rem solid #00abf0;
+    }
+
+    .main-home img:hover {
+        transform: translateY(0px);
+    }
+    .name-college {
+        padding-left: 0px;
+    }   
+    .name-college {
+    margin-bottom: 3rem;
+    }
+
+    .name-college h1 {
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-align:center;
+    }
+    .name-college .wmu {
+        font-size: 1.7rem;
+        align-items: center;
+    }
+
+    .intro-bio {
+        line-height: normal;
+        font-weight: 0;
+        margin-top: 4rem;
+        padding: 0px;
+        color: #e8e8e8;
+    }
+    .btn {
+        margin: -1rem auto 3rem auto;
+        width: auto;
+    }
+    .row .contact-col, .data, .txt-area {
+        width: 30rem;
     }
     .sendDiv {
-        width: 100%;
+        width: 30rem;
     }
     #sendBtn {
-        width: 71.2%;
+        margin-top: 2rem;
+        width: 30rem;
     }
 }
 /* -----------for cell phones----------- */
