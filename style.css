@@ -437,8 +437,7 @@ input:-webkit-autofill:active {
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 95%;
-        font-size: 2rem;
+        width: 100%;
     }
     .skills h1, .projects h1, .contact h1 {
         padding-top: 1rem;
@@ -526,13 +525,7 @@ input:-webkit-autofill:active {
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 95%;
-        font-size: 2rem;
-    }
-   
-    .intro-bio {
-        width: 95%;
-        font-size: 2rem;
+        width: 100%;
     }
     .skills h1, .projects h1, .contact h1 {
         padding-top: 1rem;
@@ -621,8 +614,7 @@ input:-webkit-autofill:active {
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 95%;
-        font-size: 2rem;
+        width: 100%;
     }
 
     .projects h1 {
@@ -708,7 +700,7 @@ input:-webkit-autofill:active {
         font-size: 1.6rem;
     }
     .intro-bio {
-        width: 95%;
+        width: 100%;
     }
     .skills h1, .projects h1, .contact h1 {
         padding-top: 1rem;
@@ -799,11 +791,7 @@ input:-webkit-autofill:active {
     }
 
     .intro-bio {
-        line-height: normal;
-        font-weight: 0;
-        margin-top: 4rem;
-        padding: 0px;
-        color: #e8e8e8;
+        width: 100%;
     }
     .btn {
         margin: -1rem auto 3rem auto;
@@ -850,7 +838,7 @@ input:-webkit-autofill:active {
         font-size: 1.6rem;
     }
     .intro-bio {
-        width: 95%;
+        width: 100%;
     }
     .skills h1, .projects h1, .contact h1 {
         padding-top: 1rem;
@@ -890,11 +878,9 @@ input:-webkit-autofill:active {
     }
     .btn {
         margin: 3rem auto;
-        width: 90%;
+        width: 100%;
     }
-    .btn:hover{
-        background-color: #00abf0;
-    }
+   
     .sendDiv {
         width: 100%;
     }
