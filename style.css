@@ -81,6 +81,7 @@ nav ul {
     margin: 1px 2rem;
     z-index: 1;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 .nav-link::before {
     content: "";
@@ -92,6 +93,9 @@ nav ul {
     border-radius: 1rem;
     background-color: #0d8fc2;
     transition: 0.5s;
+}
+.nav-link:hover {
+    transform: translateY(-3px);
 }
 .nav-link:hover::before {
     width: 100%;
@@ -121,12 +125,11 @@ nav ul {
 
 /* =================  Home section ================= */
 .home {
-    height: 85%;
+    height: auto;
     overflow-y: auto;
     width: 60%;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-top: 0rem;
     padding: 10rem 7rem;
     z-index: 100;
     border-radius: 10px;
@@ -147,8 +150,9 @@ nav ul {
 
 .pic-name {
     display: flex;
+    margin-top: 3rem;
     padding-bottom: 4rem;
-    border-bottom: .5px solid #00abf0;
+    border-bottom: .1px solid #00abf0;
 }
 .main-home img {
     width: 15rem;
@@ -157,6 +161,7 @@ nav ul {
     border-radius: 50%;
     margin-top: -2rem;
     border: 0.3rem solid #00abf0;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
@@ -420,8 +425,8 @@ input:-webkit-autofill:active {
 /* ##################################### */
 @media (max-width: 1280px) {
     .home {
-        height: 80%;
-        margin-top: 3rem;
+        height: auto;
+        margin-top: 0rem;
         width: 80%;
         padding: 7rem 1rem;
     }
@@ -483,9 +488,6 @@ input:-webkit-autofill:active {
         margin: 3rem auto;
         width: 30rem;
     }
-    .btn:hover{
-        background-color: #00abf0;
-    }
     .sendDiv {
         width: 100%;
     }
@@ -509,8 +511,8 @@ input:-webkit-autofill:active {
     }
 
     .home {
-        height: 77%;
-        margin-top: 3rem;
+        height: auto;
+        margin-top: 0rem;
         width: 85%;
         padding: 7rem 1rem;
     }
@@ -570,9 +572,6 @@ input:-webkit-autofill:active {
         margin: 3rem auto;
         width: 30rem;
     }
-    .btn:hover{
-        background-color: #00abf0;
-    }
     .sendDiv {
         width: 100%;
     }
@@ -596,9 +595,9 @@ input:-webkit-autofill:active {
     }
 
     main {
-        width: 80%;
+        width: auto;
         margin: 0 auto;
-        padding: 10rem 2rem;
+        padding: 2rem 1rem;
     }
     .main-home {
         margin-top: 5rem;
@@ -676,8 +675,8 @@ input:-webkit-autofill:active {
         color:#00abf0;
     }
     .home {
-        height: 85%;
-        width: 90%;
+        height: auto;
+        width: 95%;
         padding: 7rem 1rem;
     }
     .main-intro {
@@ -758,7 +757,6 @@ input:-webkit-autofill:active {
     .pic-name {
         display: block;
         padding-bottom: 2rem;
-        border-bottom: .1px solid #00abf0;
     }
     .main-home img {
         width: 15rem;
