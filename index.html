@@ -24,9 +24,14 @@
       <i class='bx bx-menu menu-icon' id="menu-icon"></i>
       <ul class="nav-menu">
         <i class='bx bx-x exit-icon' id="exit-icon" ></i>
-        <li onclick="mainVisible()"  id="about" class="nav-link about-link">About</li>
+        <div class="nav-links">
+          <li onclick="mainVisible()"  id="about" class="nav-link about-link">About</li>
+          <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
+          <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
+        </div>
+        <!-- <li onclick="mainVisible()"  id="about" class="nav-link about-link">About</li>
         <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
-        <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
+        <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li> -->
       </ul>
     </nav>
 
@@ -42,7 +47,7 @@
               <p class="wmu">A Computer Science Student @ <span>WMU</span></p>  
             </div>
           </div>
-          <!-- <p class="wmu">A Computer Science Student @<span>WMU</span></p> -->
+          <!-- <p class="wmu">A Computer Science Student @ <span>WMU</span></p> -->
           <p class="intro-bio" id="myIntro">
             I am currently an undergraduate student working towards my bachelor's degree in 
             computer science at Western Michigan University.
