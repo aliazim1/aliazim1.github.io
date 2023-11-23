@@ -104,7 +104,6 @@ nav ul {
     cursor: pointer;
 }
 
-
 #menu-icon {
     font-size: 3.6rem;
     line-height: 7rem;
@@ -112,12 +111,10 @@ nav ul {
     float: right;
     display: none;
 }
-
 #exit-icon {
     position: relative;
-    margin-top: -13rem;
+    margin-top: -11.5rem;
     font-size: 3.6rem;
-    line-height: 7rem;
     margin-right: 2rem;
     float: right;
     display: none;
@@ -649,25 +646,43 @@ input:-webkit-autofill:active {
         display: block;
     }
     .nav-menu {
-        position: fixed;
-        width: 100%;
-        height: 110%;
-        background: linear-gradient(to bottom, #131720, #003b52, #00222f);
+        position:fixed;
+        width: 20rem;
+        height: 25rem;
         top: -5rem; 
-        left: 0;
-        text-align: center;
+        right: 0rem;
+        margin-right: 0rem;
         padding-top: 15rem;
-        transition: all .3s ease;
         display: none;
+        z-index: 100;
+        border-bottom-left-radius: 5rem;
         transition: all 1s ease-in-out;
+        animation: fadIn 1s ease forwards;
+        background: linear-gradient(to bottom, #000000,#060715, #260000);
+    }
+    @keyframes fadIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .nav-link {
+        margin: 0px;
+        transition: transform 0.3s ease;
+        display: block;
+        padding: 2.5rem;
+        text-align: left;
+    }
+    .nav-links {
+        margin-top: -7rem;
+        width: 13rem;
+        border-right: 1px dashed white;
     }
     .nav-menu.active {
         display: block;
      }
-     .nav-menu li {
-        display: block;
-        margin: 5rem auto;
+     #exit-icon {
+        margin-bottom: -10rem;
      }
+   
      .nav-link:hover::before {
         width: 0;
     }
