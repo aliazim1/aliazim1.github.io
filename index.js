@@ -27,29 +27,24 @@ btnClick.addEventListener("click", function(){
 })
 
 // responsive navbar handling function for small screen
-var navIcon = document.querySelector('.menu-icon');
+var menuIcon = document.querySelector('.menu-icon');
 var exitIcon = document.querySelector('.exit-icon');
 var navMenu = document.querySelector('.nav-menu');
 
-navIcon.addEventListener("click", () => {
-    navIcon.classList.toggle('active');
+menuIcon.addEventListener("click", () => {
     navMenu.classList.toggle('active');
-})
-document.getElementById('menu-icon').addEventListener('click', function() {
-    this.style.display = 'none';
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
-    navIcon.style.display = 'block';
 }))
 document.querySelectorAll(".exit-icon").forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
-    navIcon.style.display = 'block';
+    menuIcon.style.display = 'block';
 }))
 
 // about me visivility
