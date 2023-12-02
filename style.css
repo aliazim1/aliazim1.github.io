@@ -289,11 +289,12 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 .proj-container .proj-box {
     width: 33rem;
-    background: linear-gradient(to bottom, #131720, #003b52, #00222f);
+    background-color: transparent;
     border-radius: 0.5rem;
     text-align: center;
     border: 0.2rem solid #5467858d;
@@ -311,7 +312,7 @@ span {
     font-size: 3rem;
     width: 90%;
     margin: 1.5rem auto;
-    text-align: left;
+    text-align: center;
 }
 
 .proj-box p {
@@ -333,9 +334,13 @@ span {
 .langs h3 {
     width: 8rem;
     padding: 1.5rem 0 1.5rem 0;
-    background: linear-gradient(to bottom, #131720, #003b52, #00222f);
     margin: 1rem 1rem;
     border-radius: 0.5rem;
+    border: 0.2rem solid #5467858d;
+    transition: transform 0.3s ease;
+}
+.langs h3:hover {
+    transform: translateY(-3px);
 }
 
 /* ================= contact section styling ================= */
@@ -656,10 +661,10 @@ input:-webkit-autofill:active {
         left: 0rem;
         padding-top: 15rem;
         display: none;
-        background-color:#081b29
+        background-color:#081b29;
     }
     .nav-link {
-        margin: 0px;
+        margin: 2rem;
         transition: transform 0.3s ease;
         display: block;
         padding: 2.5rem;
