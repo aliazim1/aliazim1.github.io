@@ -1,6 +1,14 @@
-.projects, .contact {
+:root {
+    --background-color: #081b29;
+    --background-light-color: #ffffff;
+    --border-color: #00abf0;
+    --font-color: #f8f8f8;
+    --box-border-color: #5467858d;
+    --nav-menu-background: #081b29;
+}  
+.projects, .contact, .social-media {
     display: none;
-}
+} 
 
 .projects, .contact{
     margin-top: -10rem;
@@ -15,7 +23,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-    color: #f8f8f8;
+    color: var(--font-color);
     scroll-snap-align: smooth;
     font-family: 'Poppins';
 }
@@ -24,7 +32,7 @@ body {
     padding: 0;
     height: 100vh;
     background-size: cover;
-    background: #081b29;
+    background: var(--background-color);
 }
 
 html {
@@ -43,7 +51,7 @@ p {
     margin-bottom: 4rem;
     width: 10rem;
     height: 0.01rem;
-    background-color: #00abf0;
+    background-color: var(--border-color);
 }
 
 /* ================= nav bar ================= */
@@ -54,30 +62,27 @@ nav {
     background-color: transparent;
     z-index: 100000;
 }
-
-
 .logo {
-    width: 4rem;
-    height: 3rem;
-    margin: 2.5rem 0 0 10rem;
+    width: 4.2rem;
+    height: 4rem;
+    margin: 1.5rem 0 auto 10rem;
     cursor: pointer;
+    float: left;
 }
-
 nav ul {
     float: right;
-    margin: 3rem 5rem auto auto;
+    margin: 2.5rem 5rem auto auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: bold;
 }
 
-.nav-link {
+.each-list {
     position: relative;
     display: inline-block;
     height: 3rem;
     font-size: 1.6rem;
-    text-transform: uppercase;
     margin: 1px 2rem;
     z-index: 1;
     overflow: hidden;
@@ -91,7 +96,7 @@ nav ul {
     width: 0;
     height: 0.2rem;
     border-radius: 1rem;
-    background-color: #0d8fc2;
+    background-color: var(--border-color);
     transition: 0.5s;
 }
 .nav-link:hover {
@@ -140,6 +145,7 @@ nav ul {
     width: 100%;
 }
 .main-home {
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -149,7 +155,7 @@ nav ul {
     display: flex;
     margin-top: 3rem;
     padding-bottom: 4rem;
-    border-bottom: .1px solid #00abf0;
+    border-bottom: .1px solid var(--border-color);
 }
 .main-home img {
     width: 15rem;
@@ -157,7 +163,7 @@ nav ul {
     margin-left: 5rem;
     border-radius: 50%;
     margin-top: -2rem;
-    border: 0.3rem solid #00abf0;
+    border: 0.3rem solid var(--border-color);
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -188,8 +194,46 @@ nav ul {
     align-items: left;
 }
 span {
-    color:  #00abf0;
+    color: var(--border-color);
     font-weight: 600;
+}
+
+
+/* social media links */
+/* parent div */
+.links-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+/* each link div */
+.links-div .each-link {
+    width: 15rem;
+    height: 15rem;
+    border: 0.2rem solid var(--box-border-color);
+    border-radius: 0.7rem;
+    transition: transform 0.3s ease;
+}
+.links-div .each-link:hover {
+    transform: translateY(-5px);
+
+}
+#ic {
+    /* color: var(--border-color); */
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 7rem;
+}
+.each-link .url .sub {
+    font-size: 1.6rem;
+}
+#network-line {
+    margin-top: 0.1rem;
 }
 
 .about-me {
@@ -207,7 +251,7 @@ span {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     padding: 1rem auto;
-    color: #e8e8e8;
+    /* color: var(--font-color); */
 }
 
 .btn {
@@ -220,7 +264,7 @@ span {
     width: auto;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-    background-color: #00abf0;
+    background-color: var(--border-color);
     transition: transform 0.3s ease;
 }
 
@@ -268,7 +312,7 @@ span {
     padding: 15px;
     width: 14rem;
     height: 13rem;
-    border: 0.2rem solid #5467858d;
+    border: 0.2rem solid var(--box-border-color);
     border-radius: 0.5rem;
     background-color: transparent;
     cursor: pointer;
@@ -297,7 +341,7 @@ span {
     background-color: transparent;
     border-radius: 0.5rem;
     text-align: center;
-    border: 0.2rem solid #5467858d;
+    border: 0.2rem solid var(--box-border-color);
 }
 
 .proj-box img {
@@ -336,7 +380,7 @@ span {
     padding: 1.5rem 0 1.5rem 0;
     margin: 1rem 1rem;
     border-radius: 0.5rem;
-    border: 0.2rem solid #5467858d;
+    border: 0.2rem solid var(--box-border-color);
     transition: transform 0.3s ease;
 }
 .langs h3:hover {
@@ -356,7 +400,7 @@ span {
     padding: 2rem; 
     width: 22rem;
     height: 130px;
-    border: 0.2rem solid #5467858d;
+    border: 0.2rem solid var(--box-border-color);
     border-radius: 0.5rem;
     background-color: transparent;
     transition: 0.5s;
@@ -388,7 +432,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-fill-color: var(--font-color);
 }
 
 /* the input fields */
@@ -411,10 +455,10 @@ input:-webkit-autofill:active {
     margin: 0.7rem auto;
     box-sizing: border-box;
     outline: none;
-    color: #f8f8f8;
+    /* color: var(--font-color); */
     font-size: 1.4rem;
     border-radius: 0.5rem;
-    border: 0.2rem solid #5467858d;
+    border: 0.2rem solid var(--box-border-color);
     background-color: transparent;
     transition: width 0.5s, height 0.5s, transform 0.5s ease;
 }
@@ -504,9 +548,9 @@ input:-webkit-autofill:active {
         padding-left: 50px;
     }
     .logo {
-        width: 3rem;
-        height: 2.2rem;
-        margin: 2.1rem 0 0 3rem;
+        width: 4rem;
+        height: 3.8rem;
+        margin: 1.5rem 0 auto 10rem;
     }
     nav ul li a {
         font-size: 16px;
@@ -588,9 +632,9 @@ input:-webkit-autofill:active {
         padding-left: 50px;
     }
     .logo {
-        width: 3rem;
-        height: 2.2rem;
-        margin: 2.1rem 0 0 3rem;
+        width: 4rem;
+        height: 3.8rem;
+        margin: 1.5rem 0 auto 4rem;
     }
     nav ul li a {
         font-size: 16px;
@@ -647,8 +691,17 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        width: 4rem;
+        height: 3.8rem;
+        margin: 1.5rem 0 auto 2rem;
+    }
     #menu-icon, #exit-icon {
         display: block;
+    }
+    .dark-mode {
+        margin-top: 2rem;
+        margin-right: 2rem;
     }
     #exit-icon {
         padding-top: 3rem;
@@ -661,7 +714,7 @@ input:-webkit-autofill:active {
         left: 0rem;
         padding-top: 15rem;
         display: none;
-        background-color:#081b29;
+        background-color: var(--nav-menu-background);
     }
     .nav-link {
         margin: 2rem;
@@ -682,7 +735,7 @@ input:-webkit-autofill:active {
         width: 0;
     }
      .nav-link.hover, .nav-link.active {
-        color:#00abf0;
+        color:var(--border-color);
     }
     .home {
         height: auto;
@@ -754,6 +807,11 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 540px) {
+    .logo {
+        width: 3.5rem;
+        height: 3.2rem;
+        margin: 1.5rem 0 auto 1.5rem;
+    }
     .main-intro {
         width: 100%;
         margin-top: -12rem;
@@ -774,7 +832,7 @@ input:-webkit-autofill:active {
         margin: auto;
         border-radius: 50%;
         margin-top: 0rem;
-        border: 0.3rem solid #00abf0;
+        border: 0.3rem solid var(--border-color);
     }
 
     .main-home img:hover {
@@ -818,6 +876,11 @@ input:-webkit-autofill:active {
 }
 /* -----------for cell phones----------- */
 @media (max-width: 480px) {
+    .logo {
+        width: 3.5rem;
+        height: 3.2rem;
+        margin: 1.5rem 0 auto 2rem;
+    }
     .home {
         height: 85%;
         width: 90%;
