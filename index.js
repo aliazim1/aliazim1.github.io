@@ -30,49 +30,50 @@ btnClick.addEventListener("click", function(){
 var menuIcon = document.querySelector('.menu-icon');
 var exitIcon = document.querySelector('.exit-icon');
 var navMenu = document.querySelector('.nav-menu');
+var mode = document.querySelector('.dark-mode');
 
 menuIcon.addEventListener("click", () => {
     navMenu.classList.toggle('active');
+    document.getElementById('dark-mode').style.display = "none";
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
+    mode.style.display = 'block';
 }))
 document.querySelectorAll(".exit-icon").forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
     menuIcon.style.display = 'block';
+    mode.style.display = 'block';
 }))
 
-// about me visivility
-function mainVisible() {
-    document.getElementById('main-intro').style.display = "block";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('contact').style.display = "none";
-    document.getElementById('about').style.color = '#00abf0';
-    document.getElementById('proj').style.color = '#f8f8f8';
-    document.getElementById('cont').style.color = '#f8f8f8';
+
+function updateVasibilityAndColor(activeSection) {
+    const sections = {
+        'main-intro': 'about',
+        'projects': 'proj',
+        'contact': 'cont',
+        'social-media-links': 'links'
+    };
+    for (let section in sections) {
+        document.getElementById(section).style.display = (section === activeSection) ? 'block' : 'none';
+        document.getElementById(sections[section]).style.color = (section === activeSection) ? 'var(--border-color)' : 'var(--background-light-color)';
+    }
 }
 
-// projects visibility
-function projectVisible() {
-    document.getElementById('projects').style.display = "block";
-    document.getElementById('contact').style.display = "none";
-    document.getElementById('main-intro').style.display = "none";
-    document.getElementById('proj').style.color = '#00abf0';
-    document.getElementById('about').style.color = '#f8f8f8';
-    document.getElementById('cont').style.color = '#f8f8f8';
-}
-
-// contact visivility
-function contactVisible() {
-    document.getElementById('contact').style.display = "block";
-    document.getElementById('main-intro').style.display = "none";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('cont').style.color = '#00abf0';
-    document.getElementById('about').style.color = '#f8f8f8';
-    document.getElementById('proj').style.color = '#f8f8f8';
-}
+document.getElementById('about').addEventListener('click', function() {
+    updateVasibilityAndColor('main-intro')
+})
+document.getElementById('proj').addEventListener('click', function() {
+    updateVasibilityAndColor('projects')
+})
+document.getElementById('cont').addEventListener('click', function() {
+    updateVasibilityAndColor('contact')
+})
+document.getElementById('links').addEventListener('click', function() {
+    updateVasibilityAndColor('social-media-links')
+})
