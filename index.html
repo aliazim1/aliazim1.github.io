@@ -20,20 +20,22 @@
     <!-- nav bar section design -->
     <nav >
       <!-- class="header" -->
-      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo" title="Home Page"></a>
+      <a href="/index.html"><img src="/images/ali.png" alt="logo" class="logo" title="Home Page"></a>  
       <i class='bx bx-menu menu-icon' id="menu-icon"></i>
       <ul class="nav-menu">
         <i class='bx bx-x exit-icon' id="exit-icon" ></i>
         <div class="nav-links">
-          <li onclick="mainVisible()"  id="about" class="nav-link about-link">About</li>
-          <li onclick="projectVisible()" id="proj" class="nav-link">Projects</li>
-          <li onclick="contactVisible()"  id="cont" class="nav-link">Contact</li>
+          <li onclick="mainVisible()"  id="about" class="nav-link each-list about-link">Home</li>
+          <li onclick="projectVisible()" id="proj" class="nav-link each-list">Projects</li>
+          <li onclick="contactVisible()"  id="cont" class="nav-link each-list">Contact</li>
+          <li onclick="linksVisibile()"  id="links" class="nav-link each-list">Links</li>
         </div>
       </ul>
     </nav>
 
-    <!-- home/profile section design -->
-    <main class="home" id="home">   <!-- for all divs -->
+
+    <!-- section design for all divs -->
+    <main class="home" id="home"> 
       <div class="main-intro" id="main-intro">
         <div class="main-home">
           <div class="pic-name">
@@ -54,6 +56,7 @@
         <div class="main-home">
           <a href="/images/myResume.pdf" target="_blank" class="btn" title="Click to see Resume">See My Resume</a>
         </div>
+        
         <!-- skills section design -->
         <div class="skills" id="skills">
           <div><h1 id="headings">Languages & Skills</h1></div>
@@ -93,9 +96,10 @@
           </div>
         </div>
       </div>
+
       <!-- projects section design -->
       <div class="projects" id="projects">
-        <h1 id="headings">Projects</h1>
+        <h1 id="headings">Project<span>s</span></h1>
         <div class="line"></div>
         <div class="proj-container">
           <a href="https://github.com/aliazim1/CWA">
@@ -116,6 +120,7 @@
           </a>
         </div>
       </div>
+
       <!-- contact section design -->
       <div class="contact" id="contact">
         <h1 id="headings">Contact <span>Me</span></h1>
@@ -163,6 +168,38 @@
           <div class="sendDiv">
             <p id="msg-disp"></p>
             <button class="btn" id="sendBtn">Send Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="social-media" id="social-media-links">
+        <div>
+          <h1 id="headings">Network <span>Links</span></h1>
+          <div class="line" id="network-line"></div>
+        </div>
+        <div class="links-div">
+          <div class="each-link">
+            <a href="https://github.com/aliazim1" class="url">
+              <div class="link-icon"><i class='bx bxl-github' id="ic"></i></div>
+              <p class="sub">Github</p>
+            </a>
+          </div>
+          <div class="each-link">
+            <a href="https://github.com/aliazim1" class="url">
+              <div class="link-icon"><i class='bx bxl-linkedin' id="ic"></i></div>
+              <p class="sub">LinkedIn</p>
+            </a>
+          </div>
+          <div class="each-link">
+            <a href="https://app.joinhandshake.com/stu/users/29432970" class="url">
+              <div class="link-icon"><i class='bx bx-heading' id="ic"></i></div>
+              <p class="sub">Handshake</p>
+            </a>
+          </div>
+          <div class="each-link">
+            <a href="https://www.facebook.com/ali.azimi.144181/" class="url">
+              <div class="link-icon"><i class='bx bxl-facebook'id="ic"></i></div>
+              <p class="sub">Facebook</p>
+            </a>
           </div>
         </div>
       </div>
