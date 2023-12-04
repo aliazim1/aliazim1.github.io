@@ -5,7 +5,8 @@
     --font-color: #f8f8f8;
     --box-border-color: #5467858d;
     --nav-menu-background: #081b29;
-}  
+}
+  
 .projects, .contact, .social-media {
     display: none;
 } 
@@ -63,8 +64,8 @@ nav {
     z-index: 100000;
 }
 .logo {
-    width: 4.2rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3rem;
     margin: 1.5rem 0 auto 10rem;
     cursor: pointer;
     float: left;
@@ -548,8 +549,8 @@ input:-webkit-autofill:active {
         padding-left: 50px;
     }
     .logo {
-        width: 4rem;
-        height: 3.8rem;
+        width: 3.5rem;
+        height: 3rem;
         margin: 1.5rem 0 auto 10rem;
     }
     nav ul li a {
@@ -632,9 +633,9 @@ input:-webkit-autofill:active {
         padding-left: 50px;
     }
     .logo {
-        width: 4rem;
-        height: 3.8rem;
-        margin: 1.5rem 0 auto 4rem;
+        width: 3.2rem;
+        height: 2.5rem;
+        margin: 1.5rem 0 auto 5rem;
     }
     nav ul li a {
         font-size: 16px;
@@ -692,9 +693,9 @@ input:-webkit-autofill:active {
 
 @media (max-width: 768px) {
     .logo {
-        width: 4rem;
-        height: 3.8rem;
-        margin: 1.5rem 0 auto 2rem;
+        width: 3rem;
+        height: 2.3rem;
+        margin: 1.5rem 0 auto 2.5rem;
     }
     #menu-icon, #exit-icon {
         display: block;
@@ -808,9 +809,7 @@ input:-webkit-autofill:active {
 
 @media (max-width: 540px) {
     .logo {
-        width: 3.5rem;
-        height: 3.2rem;
-        margin: 1.5rem 0 auto 1.5rem;
+        margin: 1.7rem 0 auto 2rem;
     }
     .main-intro {
         width: 100%;
@@ -876,11 +875,6 @@ input:-webkit-autofill:active {
 }
 /* -----------for cell phones----------- */
 @media (max-width: 480px) {
-    .logo {
-        width: 3.5rem;
-        height: 3.2rem;
-        margin: 1.5rem 0 auto 2rem;
-    }
     .home {
         height: 85%;
         width: 90%;
