@@ -2,6 +2,7 @@
     --background-color: #081b29;
     --background-light-color: #ffffff;
     --border-color: #00abf0;
+    --wmu: #F1C500;
     --font-color: #f8f8f8;
     --box-border-color: #5467858d;
     --nav-menu-background: #081b29;
@@ -244,8 +245,9 @@ span {
     color: var(--border-color);
     font-weight: 600;
 }
-
-
+#wmu {
+    color: var(--wmu);
+}
 /* social media links */
 /* parent div */
 .links-div {
