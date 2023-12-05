@@ -7,13 +7,9 @@
     --box-border-color: #5467858d;
     --nav-menu-background: #081b29;
 }
-  
 .projects, .contact, .social-media {
     display: none;
 } 
-
-
-
 .projects, .contact{
     margin-top: -10rem;
 }
@@ -45,7 +41,6 @@ html {
 p {
     font-size: 1.6rem;
 }
-
 /* ================= all heading lines ================= */
 .line {
     margin: auto auto;
@@ -59,10 +54,11 @@ p {
 .spin-parent {
     background-color: var(--background-light-color);
     width: 100%;
-    height: 100%;
+    height: 110%;
     position: fixed;
     z-index: 1000000000000;
     display: block;
+    margin-top: -3rem;
 }
 .load-text {
     color: black;
@@ -124,7 +120,6 @@ nav ul {
     text-align: center;
     font-weight: bold;
 }
-
 .each-list {
     position: relative;
     display: inline-block;
@@ -155,7 +150,6 @@ nav ul {
 .nav-link:hover {
     cursor: pointer;
 }
-
 #menu-icon {
     font-size: 3.6rem;
     line-height: 7rem;
@@ -172,7 +166,6 @@ nav ul {
     float: right;
     display: none;
 }
-
 /* =================  Home section ================= */
 .home {
     height: auto;
@@ -184,11 +177,9 @@ nav ul {
     z-index: 100;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar { /* hide the scroll-bar */
     display: none;
 }
-
 .main-intro {
     width: 100%;
 }
@@ -198,7 +189,6 @@ nav ul {
     align-items: center;
     text-align: center;
 }
-
 .pic-name {
     display: flex;
     margin-top: 3rem;
@@ -215,7 +205,6 @@ nav ul {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
 .main-home img:hover {
     transform: translateY(-3px);
 }
@@ -226,8 +215,6 @@ nav ul {
     margin-top: 3rem;
     text-align:left;
     font-size: 1.7rem;
-
-
 }
 .name-college h1 {
     margin-top: 3rem;
@@ -235,8 +222,6 @@ nav ul {
     font-weight: bold;
     text-align:left;
 }
-
-
 .name-college .wmu {
     font-size: 1.7rem;
     align-items: left;
@@ -270,7 +255,6 @@ span {
 }
 .links-div .each-link:hover {
     transform: translateY(-5px);
-
 }
 #ic {
     color: var(--border-color);
@@ -284,13 +268,11 @@ span {
 #network-line {
     margin-top: 0.1rem;
 }
-
 .about-me {
     font-size: 3rem;
     cursor: pointer;
     border-radius: 1rem;
 }
-
 .intro-bio {
     line-height: 3.5rem;
     font-weight: 100;
@@ -301,7 +283,6 @@ span {
     -moz-hyphens: auto;
     padding: 1rem auto;
 }
-
 .btn {
     position: relative;
     display: inline-flex;
@@ -315,7 +296,6 @@ span {
     background-color: var(--border-color);
     transition: transform 0.3s ease;
 }
-
 .btn:hover{
     transform: translateY(-5px);
 }
@@ -340,7 +320,6 @@ span {
     font-size: 5rem;
     transition: 0.5s ease;
 }
-
 .row {
     margin: auto auto;
     margin-top: 2rem;
@@ -350,7 +329,6 @@ span {
     flex-wrap: wrap;
     gap: 1rem;
 }
-
 .col {
     display: inline-block;
     position: relative;
@@ -369,7 +347,6 @@ span {
 .col:hover {
     transform: translateY(-10px);
 }
-
 .col h1 {
     margin-top: -3rem;
 }
@@ -383,7 +360,6 @@ span {
     gap: 2rem;
     margin-top: 1rem;
 }
-
 .proj-container .proj-box {
     width: 33rem;
     background-color: transparent;
@@ -391,7 +367,6 @@ span {
     text-align: center;
     border: 0.2rem solid var(--box-border-color);
 }
-
 .proj-box img {
     width: 30rem;
     height: 20rem;
@@ -399,21 +374,18 @@ span {
     margin-bottom: -5rem;
     margin-top: 1.4rem;
 }
-
 .proj-box h1 {
     font-size: 3rem;
     width: 90%;
     margin: 1.5rem auto;
     text-align: center;
 }
-
 .proj-box p {
     width: 90%;
     font-size: 1.6rem;
     margin: 1rem auto;
     text-align: left;
 }
-
 .langs {
     display: flex;
     align-items: center;
@@ -422,7 +394,6 @@ span {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .langs h3 {
     width: 8rem;
     padding: 1.5rem 0 1.5rem 0;
@@ -434,7 +405,6 @@ span {
 .langs h3:hover {
     transform: translateY(-3px);
 }
-
 /* ================= contact section styling ================= */
 .contact {
     width: 100%;
@@ -457,7 +427,6 @@ span {
     overflow: hidden;
     margin: 0.5rem 1rem;
     transition: transform 0.3s ease;
-
 }
 .row .contact-col:hover {
     transform:translateY(-5px)
@@ -468,13 +437,11 @@ span {
     margin-bottom: 2rem;
     font-size: 1.7rem;
 }
-
 .contact-col h1 {
     font-size: 1.5rem;
     margin-top: -2.7rem;
     transform: scale(1.02);
 }
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -482,7 +449,6 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: var(--font-color);
 }
-
 /* the input fields */
 #input-col {
     display: block;
@@ -496,7 +462,6 @@ input:-webkit-autofill:active {
 .input-col {
     display: block;
 }
-
 .data, .txt-area {
     padding: 10px;
     width: 65%;
@@ -523,12 +488,10 @@ input:-webkit-autofill:active {
         width: 80%;
         padding: 7rem 1rem;
     }
-
     .name-college h1 {
         margin-top: 2rem;
         font-size: 4rem;
     }
-    
     .main-intro {
         width: 90%;
         margin: auto;
@@ -602,7 +565,6 @@ input:-webkit-autofill:active {
     nav ul li a {
         font-size: 16px;
     }
-
     .home {
         height: auto;
         margin-top: 0rem;
@@ -613,7 +575,6 @@ input:-webkit-autofill:active {
         margin-top: 2rem;
         font-size: 4rem;
     }
-    
     .main-intro {
         width: 90%;
         margin: auto;
@@ -672,7 +633,6 @@ input:-webkit-autofill:active {
         width: 63rem;
     }
 }
-
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
@@ -686,7 +646,6 @@ input:-webkit-autofill:active {
     nav ul li a {
         font-size: 16px;
     }
-
     main {
         width: auto;
         margin: 0 auto;
@@ -699,7 +658,6 @@ input:-webkit-autofill:active {
         margin-top: 2rem;
         font-size: 4rem;
     }
-    
     .main-intro {
         width: 90%;
         margin: auto;
@@ -708,14 +666,12 @@ input:-webkit-autofill:active {
     .intro-bio {
         width: 100%;
     }
-
     .projects h1 {
         padding-top: 2rem;
     }
     .main-row {
         margin-bottom: -3rem;
     }
-
     .contact {
         width: 100%;
     }
@@ -736,7 +692,6 @@ input:-webkit-autofill:active {
         width: 40rem;
     }
 }
-
 @media (max-width: 768px) {
     .logo {
         width: 3rem;
@@ -772,12 +727,9 @@ input:-webkit-autofill:active {
         padding: 2.5rem;
         text-align: center;
     }
-  
-   
      #exit-icon {
         margin-bottom: -10rem;
      }
-   
      .nav-link:hover::before {
         width: 0;
     }
@@ -849,10 +801,8 @@ input:-webkit-autofill:active {
     }
     .data, .txt-area, #sendBtn, .sendDiv {
         width: 28rem;
-    }
-   
+    }  
 }
-
 @media (max-width: 540px) {
     .logo {
         margin: 1.7rem 0 auto 2rem;
@@ -886,12 +836,9 @@ input:-webkit-autofill:active {
         padding: 2.5rem;
         text-align: center;
     }
-  
-   
      #exit-icon {
         margin-bottom: -10rem;
      }
-   
      .nav-link:hover::before {
         width: 0;
     }
@@ -907,7 +854,6 @@ input:-webkit-autofill:active {
         align-items: center;
         text-align: center;
     }
-
     .pic-name {
         display: block;
         padding-bottom: 2rem;
@@ -920,7 +866,6 @@ input:-webkit-autofill:active {
         margin-top: 0rem;
         border: 0.3rem solid var(--border-color);
     }
-
     .main-home img:hover {
         transform: translateY(0px);
     }
@@ -930,7 +875,6 @@ input:-webkit-autofill:active {
     .name-college {
     margin-bottom: 3rem;
     }
-
     .name-college h1 {
         margin-top: 1rem;
         font-size: 3.5rem;
@@ -941,7 +885,6 @@ input:-webkit-autofill:active {
         font-size: 1.7rem;
         align-items: center;
     }
-
     .intro-bio {
         width: 100%;
     }
@@ -1032,7 +975,6 @@ input:-webkit-autofill:active {
         margin: 3rem auto;
         width: 100%;
     }
-   
     .sendDiv {
         width: 100%;
     }
