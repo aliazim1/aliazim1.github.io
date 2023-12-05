@@ -1,3 +1,7 @@
+// spin until the page is loaded
+window.addEventListener('load', function() {
+    document.querySelector('.spin-parent').style.display = 'none';
+});
 // send message btn handling
 var btnClick = document.getElementById("sendBtn");
 btnClick.addEventListener("click", function(){
@@ -30,27 +34,22 @@ btnClick.addEventListener("click", function(){
 var menuIcon = document.querySelector('.menu-icon');
 var exitIcon = document.querySelector('.exit-icon');
 var navMenu = document.querySelector('.nav-menu');
-var mode = document.querySelector('.dark-mode');
 
 menuIcon.addEventListener("click", () => {
-    navMenu.classList.toggle('active');
-    document.getElementById('dark-mode').style.display = "none";
+    navMenu.classList.add('active');
+    exitIcon.classList.add('active');
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
-    mode.style.display = 'block';
 }))
 document.querySelectorAll(".exit-icon").forEach(n => n.addEventListener("click",
 () => {
     exitIcon.classList.remove('active');
     navMenu.classList.remove('active');
-    menuIcon.style.display = 'block';
-    mode.style.display = 'block';
 }))
-
 
 function updateVasibilityAndColor(activeSection) {
     const sections = {
