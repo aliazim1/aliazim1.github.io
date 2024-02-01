@@ -332,16 +332,17 @@ span {
 .col {
     display: inline-block;
     position: relative;
-    z-index: 1;
+    cursor: pointer;
     overflow: hidden;
     margin: 0.5rem 1rem;
-    padding: 15px;
+    padding-top: 15px;
     width: 14rem;
     height: 13rem;
+    align-items: center;
+    justify-content: center;
     border: 0.2rem solid var(--box-border-color);
     border-radius: 0.5rem;
     background-color: transparent;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 .col:hover {
