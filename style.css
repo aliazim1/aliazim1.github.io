@@ -193,7 +193,7 @@ nav ul {
     display: flex;
     margin-top: 3rem;
     padding-bottom: 4rem;
-    border-bottom: .1px solid var(--border-color);
+    border-bottom: .1px solid var(--box-border-color);
 }
 .main-home img {
     width: 15rem;
