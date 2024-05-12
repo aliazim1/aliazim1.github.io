@@ -2,6 +2,7 @@
     --background-color: #081b29;
     --background-light-color: #ffffff;
     --border-color: #00abf0;
+    --border-hover-color: #5ad0ff;
     --wmu: #F1C500;
     --font-color: #f8f8f8;
     --box-border-color: #5467858d;
@@ -197,7 +198,7 @@ nav ul {
 }
 .main-home img {
     width: 15rem;
-    height: 15rem;
+    height: 14.9rem;
     margin-left: 5rem;
     border-radius: 50%;
     margin-top: -2rem;
@@ -294,10 +295,9 @@ span {
     font-size: 1.5rem;
     border-radius: 0.5rem;
     background-color: var(--border-color);
-    transition: transform 0.3s ease;
 }
 .btn:hover{
-    transform: translateY(-5px);
+    background-color: var(--border-hover-color);
 }
 /* ================= skills section styling ================= */
 .skills h1, .projects h1, .contact h1 {
