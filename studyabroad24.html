@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portfolio Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- spinner section -->
+    <div class="spin-parent">
+      <div class="new-spinner">
+        <div class="ring"></div>
+        <div class="load-text">loading...</div>
+      </div>
+    </div>
+    
+    <!-- nav bar section design -->
+    <nav >
+      <!-- class="header" -->
+      <a href="/index.html"><img src="/images/logo.png" alt="logo" class="logo" title="Home Page"></a>  
+      <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+      <ul class="nav-menu">
+        <i class='bx bx-x exit-icon' id="exit-icon" ></i>
+        <div class="nav-links">
+          <li onclick="mainVisible()"  id="about" class="nav-link each-list about-link">Home</li>
+          <li onclick="projectVisible()" id="proj" class="nav-link each-list">Projects</li>
+          <li onclick="contactVisible()"  id="cont" class="nav-link each-list">Contact</li>
+          <li onclick="linksVisibile()"  id="links" class="nav-link each-list">Links</li>
+        </div>
+      </ul>
+    </nav>
+
+
+    <!-- section design for all divs -->
+    <main class="home" id="home"> 
+      <div class="main-intro" id="main-intro">
+        <div class="main-home">
+          <div class="pic-name">
+            <img src="/images/profpic.png"  alt="profile piccture">
+            <div class="name-college">
+              <h1>Ali Azimi</h1>
+              <p class="wmu">Computer Science Student @<span id="wmu">WMU</span></p>  
+            </div>
+          </div>
+          <p class="intro-bio" id="myIntro">
+            I am currently an undergraduate student working towards my bachelor's degree in 
+            computer science at Western Michigan University.
+            My interests include software design and development, artificial intelligence, 
+            and machine learning. Throughout my studies, I have been learning about multiple 
+            disciplines to get a feel for what sparks my interest the most.
+          </p>
+        </div>
+        <div class="main-home">
+          <a href="/images/myResume.pdf" target="_blank" class="btn" title="Click to see Resume">See My Resume</a>
+        </div>
+        
+
+      <!-- projects section design -->
+      <div class="projects" id="projects">
+        <h1 id="headings">Project<span>s</span></h1>
+        <div class="line"></div>
+        <div class="proj-container">
+          <a href="https://github.com/aliazim1/CWA" target="blank">
+            <div class="proj-box" title="Click to open the project link">
+              <img src="/images/mac.png" alt="Average Down Calculator">
+              <h1>CWA Assessment</h1>
+              <p>Children With Autism Assessment is a website 
+                where you can use it to assess children with autism, without 
+                any verbal communication</p>
+              <div class="langs">
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>JavaScript</h3>
+                <h3>jQuery</h3>
+                <h3>PHP</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- contact section design -->
+      <div class="contact" id="contact">
+        <h1 id="headings">Contact <span>Me</span></h1>
+        <div class="line"></div>
+        <div class="row">
+          <div class="contact-col">
+            <div class="icons"><i class='bx bx-envelope' ></i></div>
+            <h1>aliazmnzhd@gmail.com</h1>
+          </div>
+          <div class="contact-col">
+            <div class="icons"><i class='bx bx-envelope' ></i></div>
+            <h1>ali.azimi@wmich.edu</h1>
+          </div>
+
+          <div class="contact-col">
+            <div  class="icons"><i class='bx bx-phone-call'></i></div>
+            <h1>+1 616-752-9529</h1>
+          </div>
+
+          <div class="contact-col">
+            <div  class="icons"><i class='bx bxs-map'></i></div>
+            <h1>Kalamazoo MI, USA</h1>
+          </div>
+        </div>
+        <!-- input row -->
+        <div class="row" id="input-col">
+          <div  class="input-col">
+            <div class="inputBox">
+              <input type="text" class="data" id="name" placeholder="First Name" required>
+            </div>
+            <div class="inputBox">
+              <input type="text" class="data" id="lname" placeholder="Last Name" required>
+            </div>
+            <div class="inputBox">
+              <input type="email" class="data" id="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="input-col">
+            <div class="inputBox">
+              <textarea type="text" class="txt-area" placeholder="type here . . . " id="textArea" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sendDiv">
+            <p id="msg-disp"></p>
+            <button class="btn" id="sendBtn">Send Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="social-media" id="social-media-links">
+        <div>
+          <h1 id="headings">Network <span>Links</span></h1>
+          <div class="line" id="network-line"></div>
+        </div>
+        <div class="links-div">
+          <div class="each-link">
+            <a href="https://github.com/aliazim1" target="blank" class="url">
+              <div class="link-icon"><i class='bx bxl-github' id="ic"></i></div>
+              <p class="sub">Github</p>
+            </a>
+          </div>
+          <div class="each-link">
+            <a href="https://app.joinhandshake.com/stu/users/29432970" target="blank" class="url">
+              <div class="link-icon"><i class='bx bx-heading' id="ic"></i></div>
+              <p class="sub">Handshake</p>
+            </a>
+          </div>
+          <div class="each-link">
+            <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="blank" class="url">
+              <div class="link-icon"><i class='bx bxl-linkedin' id="ic"></i></div>
+              <p class="sub">LinkedIn</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
