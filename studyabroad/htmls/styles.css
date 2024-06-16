@@ -616,4 +616,12 @@ main {
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
+    .daily-activities {
+        width: 95%;
+        height: auto;
+    }
+    .daily-img {
+        height: auto;
+    }
+    
 }
