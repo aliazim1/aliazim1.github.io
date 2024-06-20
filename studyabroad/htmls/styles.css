@@ -562,9 +562,17 @@ main {
 .link-icon:hover {
     color: var(--border-color);
 }
-
-
-
+#top-btn {
+    right: 15px;
+    z-index: 99;
+    float: right;
+    bottom: 35px;
+    display: none;
+    position: fixed;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--wmu);
+}
 
 
 /* =======================All Media Sizes======================== */
