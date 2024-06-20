@@ -170,7 +170,6 @@ span {
 
 /* ================= all main content ================= */
 main {
-    padding: 20px;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -182,7 +181,8 @@ main {
     background-color: var(--font-color);
 }
 .all-titles p {
-    margin-top: 2rem;
+    margin: 2rem auto;
+    width: 80%;
 }
 
 .about, .gallery, .contact {
@@ -325,62 +325,6 @@ main {
     color: var(--font-color);
     background-color: var(--border-color)
 }
-/* ================= contact section styling ================= */
-.heading-line {
-    text-align: center;
-}
-.heading-line h1 {
-    font-size: 3rem;
-}
-#head-line {
-    margin-top: 5rem;
-    text-align: center;
-    align-items: center;
-}
-
-#head-line h1 {
-    font-size: 2rem;
-}
-.row {
-    gap: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    text-align: center;
-    justify-content: center;
-}
-
-.row .col {
-    width: 15rem;
-    padding: 1rem;
-    transition: 0.5s;
-    overflow: hidden;
-    position: relative;
-    border-radius: 0.5rem;
-    transition: transform 0.3s ease;
-    border: 2px solid var(--box-border-color);
-    z-index: -10000;
-
-}
-.row .col:hover {
-    transform:translateY(-5px)
-}
-.col .icons i {
-    font-size: 4rem;
-    transition: 0.5s ease;
-    color: var(--background-color);
-}
-
-.row .col h1 {
-    font-size: 1rem;
-}
-.contact-div {
-    margin-bottom: 5rem;
-}
-.links-list {
-    list-style: none;
-}
-
 /* ================= gallery section styling ================= */
 
 .experiences {
@@ -507,6 +451,61 @@ main {
     margin-top: -1rem;
 }
 
+/* ================= contact section styling ================= */
+.heading-line {
+    text-align: center;
+}
+.heading-line h1 {
+    font-size: 3rem;
+}
+#head-line {
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+}
+
+#head-line h1 {
+    font-size: 2rem;
+}
+.row {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.row .col {
+    width: 15rem;
+    padding: 1rem;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--box-border-color);
+    z-index: -10000;
+
+}
+.row .col:hover {
+    transform:translateY(-5px)
+}
+.col .icons i {
+    font-size: 4rem;
+    transition: 0.5s ease;
+    color: var(--background-color);
+}
+
+.row .col h1 {
+    font-size: 1rem;
+}
+.contact-div {
+    margin-bottom: 5rem;
+}
+.links-list {
+    list-style: none;
+}
 
 
 
@@ -605,8 +604,9 @@ main {
         font-size: 2rem;
     }
     .all-titles p {
-        margin-top: 2rem;
         text-align: justify;
+        margin: 2rem auto;
+        width: 97%;
     }
     .card-parent {
         gap: 0.3rem;
@@ -631,5 +631,16 @@ main {
     .daily-img {
         height: auto;
     }
-    
+    .row {
+        gap: 1rem;
+    }
+    .row .col {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .row .col h1 {
+        font-size: 1.3rem;
+        font-weight: 100;
+        color: var(--background-color);
+    }
 }
