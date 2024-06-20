@@ -21,31 +21,31 @@ staff = [
 
     },
     {
-        name: 'Coach Peter',
-        position: 'Sr. Campus Coach, First-Year Experience Instructor for the incoming Seita Scholars',
+        name: 'Peter Thompson',
+        position: 'Sr. Campus Coach and First-Year-Experience Instructor for the incoming Seita Scholars',
         image: "/assets/staff/peter.png",
         link: "https://wmich.edu/fosteringsuccess/directory/thompson"
     },
     {
-        name: 'Coach Edward',
-        position: 'Seita Scholars Campus Coach since 2017',
+        name: 'Edward Lara',
+        position: 'Seita Scholars Campus Coach',
         image: "/assets/staff/edward.png",
         link: "https://wmich.edu/fosteringsuccess/directory/lara"
     },
     {
-        name: 'Coach Tim',
+        name: 'Tim Liggins',
         position: 'DHHS and Seita Scholars Campus Coach',
         image: "/assets/staff/tim.png",
         link: "https://wmich.edu/fosteringsuccess/directory/liggins"
     },
     {
-        name: 'Coach Amal',
+        name: 'Amal Mohamed',
         position: 'Seita Scholars Campus Coach',
         image: "/assets/staff/amal.png",
         link: "https://wmich.edu/fosteringsuccess/directory/mohamed"
     },
     {
-        name: 'Coach Anna',
+        name: 'Anna Glasgow',
         position: 'Seita Scholars Campus Coach',
         image: "/assets/staff/anna.png",
         link: "https://wmich.edu/fosteringsuccess/directory/glasgow"
