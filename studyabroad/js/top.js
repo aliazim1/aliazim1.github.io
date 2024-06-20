@@ -6,7 +6,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         toTopBtn.style.display = "block";
     } else {
         toTopBtn.style.display = "none";

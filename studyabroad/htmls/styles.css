@@ -165,9 +165,7 @@ span {
     .nav-section .off-screen-menu.active {
         right: 0;
     }
-
 }
-
 /* ================= all main content ================= */
 main {
     text-align: center;
@@ -570,7 +568,7 @@ main {
     position: fixed;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--wmu);
+    color: var(--border-color);
 }
 
 
@@ -598,6 +596,7 @@ main {
     
     .all-titles { /* for the all titles  */
         padding: 10px;
+        margin-top: 1rem;
         margin-bottom: 20px;
     }
     .all-titles h1 {
