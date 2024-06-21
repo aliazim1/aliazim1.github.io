@@ -423,6 +423,7 @@ main {
 .each-experience {
     margin: auto;
     margin-top: 1rem;
+    width: 95%;
     display: block;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
@@ -620,6 +621,7 @@ main {
     }
     .each-experience {
         margin: auto;
+        width: 100%;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
