@@ -3,7 +3,7 @@ activities = [
         image: '/assets/DRSAgallery/image_1.png',
         desc: 'On the first day, we took a tour of the Colonial Zone, \
         where all the historical buildings and structures from the 1500s \
-        are located'
+        are located.'
     },
     {
         image: '/assets/DRSAgallery/image_38.png',
@@ -13,7 +13,7 @@ activities = [
     {
         image: '/assets/DRSAgallery/image_29.png',
         desc: 'On the second day, we visited the Dominican Republic Congress \
-        and met one of the Dominican Senators, Felix Bautista',
+        and met one of the Dominican Senators, Felix Bautista.',
     },
     {
         image: '/assets/DRSAgallery/image_10.png',
@@ -37,8 +37,8 @@ activities = [
     },
     {
         image: '/assets/DRSAgallery/image_26.png',
-        desc: 'We visited UNIBE and worked on a small project with local students, \
-        focusing on social issues in the DR and proposing solutions.'
+         desc: 'We visited the Tres-Ojos National Park, a 50-yard open-air limestone \
+        cave, one of the most visited tourist attractions in the DR.',
     },
     {
         image: '/assets/DRSAgallery/image_43.png',
