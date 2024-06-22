@@ -10,7 +10,6 @@ images = [
     {image: "/assets/DRSAgallery/image_8.png"},
     {image: "/assets/DRSAgallery/image_9.png"},
     {image: "/assets/DRSAgallery/image_10.png"},
-    {image: "/assets/DRSAgallery/image_11.png"},
     {image: "/assets/DRSAgallery/image_12.png"},
     {image: "/assets/DRSAgallery/image_13.png"},
     {image: "/assets/DRSAgallery/image_14.png"},

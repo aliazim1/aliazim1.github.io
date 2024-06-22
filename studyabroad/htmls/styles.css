@@ -424,8 +424,7 @@ main {
     margin-top: 1rem;
     width: 95%;
     display: block;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-radius: 5px;
     background-color: var(--comment-bg);
     color: var(--black);
 }
