@@ -341,7 +341,7 @@ main {
     width: 20rem;
     height: 15rem;
     overflow: hidden;
-    border-radius: 5px; 
+    border-radius: 7px; 
     transition: transform 0.3s ease;
 }
 .card:hover {
@@ -352,8 +352,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px;
-
+    border-radius: 7px;
 }
 .modal {
     top: 0;
@@ -561,18 +560,21 @@ main {
     color: var(--border-color);
 }
 #top-btn {
-    right: 15px;
+    right: 0px;
     z-index: 99;
-    float: right;
+    width: 40px;
     bottom: 35px;
+    height: 35px;
+    float: right;
     display: none;
+    cursor: pointer;
     position: fixed;
     font-size: 2rem;
-    cursor: pointer;
-    color: var(--border-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--font-color);
+    background-color: var(--background-color);
 }
-
-
 /* =======================All Media Sizes======================== */
 /* ============================================================== */
 
