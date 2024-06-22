@@ -341,7 +341,7 @@ main {
     width: 20rem;
     height: 15rem;
     overflow: hidden;
-    border-radius: 7px; 
+    border-radius: 3px; 
     transition: transform 0.3s ease;
 }
 .card:hover {
@@ -352,7 +352,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 7px;
+    border-radius: 3px;
 }
 .modal {
     top: 0;
