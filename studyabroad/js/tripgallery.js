@@ -43,14 +43,17 @@ images = [
 
 // displaying all the images
 const cardContainer = document.querySelector('.card-parent');
-for (let i = 0; i < images.length; i++) {
+const fragment = document.createDocumentFragment();
+images.forEach(image => {
     const cardItem = document.createElement('div');
     cardItem.classList.add('card');
     cardItem.innerHTML = `
-        <img src="${images[i].image}" alt="Image not provided" class="thumbnail" />
+        <img src="${image.image}" alt="Image not provided" class="thumbnail" />
     `;
-    cardContainer.appendChild(cardItem);
-}
+    fragment.appendChild(cardItem);
+});
+cardContainer.appendChild(fragment);
+
 
 // Get the modal
 var modal = document.getElementById('modal');
