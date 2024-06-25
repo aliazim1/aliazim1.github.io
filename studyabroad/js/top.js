@@ -1,5 +1,5 @@
-// to-top button 
 
+// to-top button 
 let toTopBtn = document.getElementById('top-btn');
 window.onscroll = function() {
     scrollFunction();

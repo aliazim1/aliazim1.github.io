@@ -1,3 +1,4 @@
+
 // storing all the images' links
 images = [
     {image: "/assets/DRSAgallery/image_1.png"},
@@ -55,13 +56,9 @@ images.forEach(image => {
 cardContainer.appendChild(fragment);
 
 
-// Get the modal
+// enlarge the images
 var modal = document.getElementById('modal');
-
-// Get the modal image and caption elements
 var modalImg = document.getElementById('modal-image');
-
-// Get all images with class 'thumbnail' and loop through them to add click event
 var images = document.getElementsByClassName('thumbnail');
 for (var i = 0; i < images.length; i++) {
     images[i].onclick = function(){
