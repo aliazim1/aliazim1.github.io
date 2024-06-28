@@ -5,7 +5,7 @@ st_feedbacks = [
         buildings and structures from 1500s. I also witnessed the situations in which people are living in the DR, the big gap between each social classes. I also learned about \
         the Dominican government and the significant role that religion plays in soceity and in the government. We visited different places, met different people, and formed good \
         friendships with WMU alumni and others.",
-        advice: "Whether you're considering applying for this Study Abroad program or not, I strongly encourage you to do so while you're at WMU. I understand that the idea of \
+        advice: "Whether you're applying for this Study Abroad program or not, I strongly encourage you to consider this opportunity while you're at WMU. I understand that the idea of \
         \"Studying Abroad\" can be scary for some people, but believe me, it's not as intimidating as it seems. Financial worries should not hold you back either, as everything you \
         need is covered, you're in good hands. Missing this opportunity means missing out on an almost once-in-a-lifetime experience with \
         exceptional professor, coaches, and fellow students. You'll gain valuable insights, a fresh perspective on life and the world, and most importantly, you'll develop \
