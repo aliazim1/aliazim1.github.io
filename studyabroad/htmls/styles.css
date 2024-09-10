@@ -571,6 +571,9 @@ main {
 } 
 
 @media (max-width: 575.98px) { 
+    .flags {
+        display: none;
+    }
     main { 
         padding: 5px;
         margin-bottom: 2rem;
