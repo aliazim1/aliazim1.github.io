@@ -558,25 +558,25 @@ main {
 /* ============================================================== */
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    /* Styles for large devices */
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    /* Styles for medium devices */
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    /* Styles for small devices */
+    .flags {
+        display: none;
+    }
 } 
 
 @media (max-width: 575.98px) { 
-    main {  /* Styles for extra small devices */
+    main { 
         padding: 5px;
         margin-bottom: 2rem;
     }
     
-    .all-titles { /* for the all titles  */
+    .all-titles { 
         padding: 10px;
         margin-top: 1rem;
         margin-bottom: 20px;
