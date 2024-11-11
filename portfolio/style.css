@@ -8,10 +8,10 @@
     --box-border-color: #5467858d;
     --nav-menu-background: #081b29;
 }
-.projects, .contact, .social-media {
+.projects, .social-media {
     display: none;
 } 
-.projects, .contact{
+.projects {
     margin-top: -10rem;
 }
 .about-link {
@@ -170,21 +170,16 @@ nav ul {
     transform:  translateY(-10px) rotate(-45deg);
 }
 /* =================  Home section ================= */
-.home {
+#home {
     height: auto;
     overflow-y: auto;
-    width: 60%;
+    width: 100%;
     margin: auto;
-    margin-top: 0rem;
-    padding: 10rem 7rem;
-    border-radius: 10px;
 }
 ::-webkit-scrollbar { /* hide the scroll-bar */
     display: none;
 }
-.main-intro {
-    width: 100%;
-}
+
 .main-home {
     display: block;
     justify-content: center;
@@ -192,41 +187,36 @@ nav ul {
     text-align: center;
 }
 .pic-name {
+    width: 80%;
     display: flex;
-    margin-top: 3rem;
+    flex-direction: row;
     padding-bottom: 4rem;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
     border-bottom: .1px solid var(--box-border-color);
 }
 .main-home img {
-    width: 15rem;
-    height: 14.8rem;
-    margin-left: 5rem;
+    width: 17rem;
+    height: 17rem;
     border-radius: 50%;
-    margin-top: -2rem;
-    border: 0.3rem solid var(--border-color);
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
-.main-home img:hover {
-    transform: translateY(-3px);
+    border: 0.2rem solid var(--font-color);
 }
 .name-college {
-    padding-left: 2rem;
+    order: 1;
 }
-.name-college h2 {
-    margin-top: 3rem;
-    text-align:left;
-    font-size: 1.7rem;
+.profile-pic {
+    order: 2;
 }
 .name-college h1 {
-    margin-top: 3rem;
     font-size: 4rem;
     font-weight: bold;
     text-align:left;
 }
-.name-college .wmu {
-    font-size: 1.7rem;
-    align-items: left;
+.name-college h1, .name-college p {
+    margin: 0;
 }
 span {
     color: var(--border-color);
@@ -278,21 +268,18 @@ span {
 .intro-bio {
     line-height: 3.5rem;
     font-weight: 100;
-    margin-top: 4rem;
+    width: 90%;
+    margin: 4rem auto auto auto;
     text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    padding: 1rem auto;
 }
 .btn {
+    width: auto;
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 1.2rem;
     margin: 3rem auto;
-    width: auto;
     font-size: 1.5rem;
     border-radius: 0.5rem;
     background-color: var(--border-color);
@@ -301,8 +288,7 @@ span {
     background-color: var(--border-hover-color);
 }
 /* ================= skills section styling ================= */
-.skills h1, .projects h1, .contact h1 {
-    padding-top: 4rem;
+.skills h1, .projects h1 {
     font-size: 2rem;
     margin-bottom: 5rem;
     padding: 1rem auto;
@@ -354,6 +340,9 @@ span {
 }
 
 /* ================= projects section styling =================  */
+.projects {
+    width: 100%;
+}
 .proj-container {
     display: flex;
     justify-content: center;
@@ -383,7 +372,7 @@ span {
     text-align: center;
 }
 .proj-box p {
-    width: 90%;
+    width: 80%;
     font-size: 1.6rem;
     margin: 1rem auto;
     text-align: left;
@@ -407,78 +396,6 @@ span {
 .langs h3:hover {
     transform: translateY(-3px);
 }
-/* ================= contact section styling ================= */
-.contact {
-    width: 100%;
-    text-align: center;
-}
-.contact .contact-title {
-    margin-top: 5rem;
-}
-.row .contact-col {
-    margin: 5px auto; 
-    padding: 2rem; 
-    width: 22rem;
-    height: 130px;
-    border: 0.2rem solid var(--box-border-color);
-    border-radius: 0.5rem;
-    background-color: transparent;
-    transition: 0.5s;
-    position: relative;
-    overflow: hidden;
-    margin: 0.5rem 1rem;
-    transition: transform 0.3s ease;
-}
-.row .contact-col:hover {
-    transform:translateY(-5px)
-}
-
-#msg-disp {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1.7rem;
-}
-.contact-col h1 {
-    font-size: 1.5rem;
-    margin-top: -2.7rem;
-    transform: scale(1.02);
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: var(--font-color);
-}
-/* the input fields */
-#input-col {
-    display: block;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    margin-bottom: -3rem;
-}
-.input-col {
-    display: block;
-}
-.data, .txt-area {
-    padding: 10px;
-    width: 65%;
-    margin: 0.7rem auto;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 1.4rem;
-    border-radius: 0.5rem;
-    border: 0.2rem solid var(--box-border-color);
-    background-color: transparent;
-    transition: width 0.5s, height 0.5s, transform 0.5s ease;
-}
-.txt-area {
-    height: 13rem;
-    resize: none;
-}
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
@@ -499,9 +416,9 @@ input:-webkit-autofill:active {
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 100%;
+        width: 90%;
     }
-    .skills h1, .projects h1, .contact h1 {
+    .skills h1, .projects h1 {
         padding-top: 1rem;
     }
     #headings {
@@ -518,39 +435,18 @@ input:-webkit-autofill:active {
     .col h1 {
         font-size: 2rem;
     }
-    .projects, .contact {
+    .projects {
         margin-top: -4rem;
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
     .proj-box h1 {
         margin-top: 5rem;
     }
-    .contact {
-        width: 100%;
-    }
-    .cont-row {
-        width: 100%;
-    }
-    .row .contact-col {
-        width: 30rem;
-    }
-    .row .contact-col h1 {
-        font-size: 2rem;
-    }
-    .data, .txt-area {
-        width: 63rem;
-    }
     .btn {
         margin: 3rem auto;
         width: 30rem;
-    }
-    .sendDiv {
-        width: 100%;
-    }
-    #sendBtn {
-        width: 63rem;
-    }
+    }  
 }
 
 @media (max-width: 1024px) {
@@ -581,10 +477,8 @@ input:-webkit-autofill:active {
         margin: auto;
         margin-top: -4rem;
     }
-    .intro-bio {
-        width: 100%;
-    }
-    .skills h1, .projects h1, .contact h1 {
+  
+    .skills h1, .projects h1 {
         padding-top: 1rem;
         font-size: 2rem;
     }
@@ -608,30 +502,9 @@ input:-webkit-autofill:active {
     .proj-box h1 {
         margin-top: 5rem;
     }
-    .contact {
-        width: 100%;
-    }
-    .cont-row {
-        width: 100%;
-    }
-    .row .contact-col {
-        width: 30rem;
-    }
-    .row .contact-col h1 {
-        font-size: 2rem;
-    }
-    .data, .txt-area {
-        width: 63rem;
-    }
     .btn {
         margin: 3rem auto;
         width: 30rem;
-    }
-    .sendDiv {
-        width: 100%;
-    }
-    #sendBtn {
-        width: 63rem;
     }
 }
 @media (max-width: 952px) {
@@ -672,12 +545,6 @@ input:-webkit-autofill:active {
     }
     .main-row {
         margin-bottom: -3rem;
-    }
-    .row .contact-col h1 {
-        font-size: 2rem;
-    }
-    #sendBtn {
-        margin-top: 2rem;
     }
 }
 
@@ -735,25 +602,33 @@ input:-webkit-autofill:active {
     .main-home .wmu {
         margin-bottom: -3rem;
     }
-    .about-me {
-        font-size: 3rem;
-        cursor: pointer;
-        border-radius: 1rem;
-        margin-bottom: 12rem;
+    .main-home .wmu2 {
+        margin-top: 3rem;
     }
-    .main-home h1 {
-        font-size: 3.5rem;
-        font-weight: 500;
+    .pic-name {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .name-college {
+        order: 2;
+        margin-bottom: 3rem;
+    }   
+    .profile-pic {
+        order: 1;
+    }
+    .name-college h1 {
+        text-align:center;
     }
     .main-home .wmu {
-        font-size: 1.6rem;
+        margin-bottom: -3rem;
+    }
+    .main-home .wmu2 {
+        margin-top: 3rem;
     }
     .intro-bio {
-        width: 100%;
-    }
-    .skills h1, .projects h1, .contact h1 {
-        padding-top: 1rem;
-        font-size: 3rem;
+        width: 90%;
+        margin: auto;
     }
     #headings {
         font-size: 4rem;
@@ -768,10 +643,6 @@ input:-webkit-autofill:active {
     }
     .col h1 {
         font-size: 2rem;
-    }
-    .projects {
-        margin-top: -4rem;
-        width: 80%;
     }
     .proj-box h1 {
         margin-top: 5rem;
@@ -791,7 +662,6 @@ input:-webkit-autofill:active {
         margin-right: -2rem;
     }
     .main-intro {
-        width: 100%;
         margin-top: -12rem;
     }
     .main-home {
@@ -799,67 +669,20 @@ input:-webkit-autofill:active {
         align-items: center;
         text-align: center;
     }
-    .pic-name {
-        display: block;
-        padding-bottom: 2rem;
-    }
-    .main-home img {
-        width: 15rem;
-        height: 15rem;
-        margin: auto;
-        border-radius: 50%;
-        margin-top: 0rem;
-        border: 0.3rem solid var(--border-color);
-    }
-    .main-home img:hover {
-        transform: translateY(0px);
-    }
-    .name-college {
-        padding-left: 0px;
-    }   
-    .name-college {
-    margin-bottom: 3rem;
-    }
-    .name-college h1 {
-        margin-top: 1rem;
-        font-size: 3.5rem;
-        font-weight: bold;
-        text-align:center;
-    }
-    .name-college .wmu {
-        font-size: 1.7rem;
-        align-items: center;
-    }
-    .intro-bio {
-        width: 100%;
-    }
     .btn {
         margin: -1rem auto 3rem auto;
         width: auto;
-    }
-    .row .contact-col, .inputBox .data, .inputBox .txt-area, .row .sendDiv #sendBtn {
-        width: 30rem;
-    }
-    .sendDiv {
-        width: 30rem;
-    }
-    #sendBtn {
-        margin-top: 2rem;
-        width: 30rem;
     }
 }
 /* -----------for cell phones----------- */
 @media (max-width: 480px) {
     .home {
         height: 85%;
-        width: 90%;
+        width: 100%;
         padding: 7rem 1rem;
     }
     .main-home {
         margin-top: 5rem;
-    }
-    .main-intro {
-        width: 100%;
     }
     .main-home .wmu {
         margin-bottom: -3rem;
@@ -870,20 +693,7 @@ input:-webkit-autofill:active {
         border-radius: 1rem;
         margin-bottom: 12rem;
     }
-    .main-home h1 {
-        font-size: 3.5rem;
-        font-weight: 500;
-    }
-    .main-home .wmu {
-        font-size: 1.6rem;
-    }
-    .intro-bio {
-        width: 100%;
-    }
-    .skills h1, .projects h1, .contact h1 {
-        padding-top: 1rem;
-        font-size: 3rem;
-    }
+
     #headings {
         font-size: 4rem;
     }
@@ -898,11 +708,8 @@ input:-webkit-autofill:active {
     .col h1 {
         font-size: 2rem;
     }
-    .projects, .contact {
+    .projects {
         margin-top: -4rem;
-    }
-    .row .contact-col h1 {
-        font-size: 2rem;
     }
     .btn {
         margin: 3rem auto;
