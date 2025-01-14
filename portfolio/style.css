@@ -198,7 +198,7 @@ nav ul {
     border-bottom: .1px solid var(--box-border-color);
 }
 .main-home img {
-    width: 17rem;
+    width: 16.5rem;
     height: 17rem;
     border-radius: 50%;
     cursor: pointer;
@@ -249,9 +249,9 @@ span {
     transform: translateY(-5px);
 }
 #ic {
-    color: var(--border-color);
-    margin-top: 2rem;
-    margin-bottom: 0.7rem;
+    color: var(--font-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 7rem;
 }
 .each-link .url .sub {
@@ -268,7 +268,7 @@ span {
 .intro-bio {
     line-height: 3.5rem;
     font-weight: 100;
-    width: 90%;
+    width: 80%;
     margin: 4rem auto auto auto;
     text-align: justify;
 }
@@ -288,6 +288,11 @@ span {
     background-color: var(--border-hover-color);
 }
 /* ================= skills section styling ================= */
+.skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
 .skills h1, .projects h1 {
     font-size: 2rem;
     margin-bottom: 5rem;
@@ -300,21 +305,14 @@ span {
 }
 .icons {
     text-align: center;
-}
-.icons i {
-    width: 6rem;
-    height: 6rem;
-    font-size: 5rem;
-    transition: 0.5s ease;
+    font-size: 7rem;
 }
 .row {
-    margin: auto auto;
-    margin-top: 2rem;
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 5px;
 }
 .col {
     display: inline-block;
@@ -322,9 +320,8 @@ span {
     cursor: pointer;
     overflow: hidden;
     margin: 0.5rem 1rem;
-    padding-top: 15px;
     width: 14rem;
-    height: 13rem;
+    height: 14rem;
     align-items: center;
     justify-content: center;
     border: 0.2rem solid var(--box-border-color);
@@ -336,66 +333,50 @@ span {
     transform: translateY(-10px);
 }
 .col h1 {
-    margin-top: -3rem;
+    margin-top:-10px;
 }
 
 /* ================= projects section styling =================  */
 .projects {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 .proj-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
 }
 .proj-container .proj-box {
     width: 33rem;
-    background-color: transparent;
+    height: 430px;
     border-radius: 0.5rem;
     text-align: center;
+    background-color: transparent;
     border: 0.2rem solid var(--box-border-color);
 }
 .proj-box img {
     width: 30rem;
     height: 20rem;
     border-radius: 0.5rem;
-    margin-bottom: -5rem;
     margin-top: 1.4rem;
 }
 .proj-box h1 {
     font-size: 3rem;
     width: 90%;
     margin: 1.5rem auto;
-    text-align: center;
-}
-.proj-box p {
-    width: 80%;
-    font-size: 1.6rem;
-    margin: 1rem auto;
     text-align: left;
 }
-.langs {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
+.proj-box p {
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 1rem 20px;
+    text-align: left;
 }
-.langs h3 {
-    width: 8rem;
-    padding: 1.5rem 0 1.5rem 0;
-    margin: 1rem 1rem;
-    border-radius: 0.5rem;
-    border: 0.2rem solid var(--box-border-color);
-    transition: transform 0.3s ease;
-}
-.langs h3:hover {
-    transform: translateY(-3px);
-}
+
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
@@ -411,42 +392,17 @@ span {
         font-size: 4rem;
     }
     .main-intro {
-        width: 90%;
+        width: 80%;
         margin: auto;
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 90%;
-    }
-    .skills h1, .projects h1 {
-        padding-top: 1rem;
-    }
-    #headings {
-        font-size: 4rem;
-    }
-    .icons {
-        margin-bottom: 3.5rem;
-    }
-    .icons i {
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
-    }
-    .col h1 {
-        font-size: 2rem;
-    }
-    .projects {
-        margin-top: -4rem;
         width: 80%;
-        margin: auto;
-    }
-    .proj-box h1 {
-        margin-top: 5rem;
     }
     .btn {
-        margin: 3rem auto;
-        width: 30rem;
-    }  
+        margin: 5rem auto;
+        width: 38rem;
+    }   
 }
 
 @media (max-width: 1024px) {
@@ -477,30 +433,12 @@ span {
         margin: auto;
         margin-top: -4rem;
     }
-  
     .skills h1, .projects h1 {
         padding-top: 1rem;
         font-size: 2rem;
     }
     #headings {
         font-size: 4rem;
-    }
-    .icons {
-        margin-bottom: 3.5rem;
-    }
-    .icons i {
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
-    }
-    .col h1 {
-        font-size: 2rem;
-    }
-    .projects, .contact {
-        margin-top: -4rem;
-    }
-    .proj-box h1 {
-        margin-top: 5rem;
     }
     .btn {
         margin: 3rem auto;
@@ -537,14 +475,16 @@ span {
         margin: auto;
         margin-top: -4rem;
     }
-    .intro-bio {
-        width: 100%;
+    .proj-box h1 {
+        font-size: 3rem;
+        margin: 1rem auto;
+        text-align: left;
     }
-    .projects h1 {
-        padding-top: 2rem;
-    }
-    .main-row {
-        margin-bottom: -3rem;
+    .proj-box p {
+        width: 90%;
+        font-size: 1.6rem;
+        margin: 1rem auto;
+        text-align: left;
     }
 }
 
@@ -593,7 +533,7 @@ span {
     
     .home {
         height: auto;
-        width: 95%;
+        width: 90%;
         padding: 7rem 1rem;
     }
     .main-intro {
@@ -608,15 +548,14 @@ span {
     .pic-name {
         width: 90%;
         flex-direction: column;
-        padding-bottom: 2rem;
+    }
+    .profile-pic {
+        order: 1;
     }
     .name-college {
         order: 2;
         margin-bottom: 3rem;
     }   
-    .profile-pic {
-        order: 1;
-    }
     .name-college h1 {
         text-align:center;
     }
@@ -627,32 +566,11 @@ span {
         margin-top: 3rem;
     }
     .intro-bio {
-        width: 90%;
-        margin: auto;
+        width: 80%;
     }
-    #headings {
-        font-size: 4rem;
-    }
-    .icons {
-        margin-bottom: 3.5rem;
-    }
-    .icons i {
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
-    }
-    .col h1 {
-        font-size: 2rem;
-    }
-    .proj-box h1 {
-        margin-top: 5rem;
-    }
-    .row .contact-col, .inputBox .data, .inputBox .txt-area, .row .sendDiv #sendBtn {
-        width: 40rem;
-    }
-    .row .contact-col h1 {
-        font-size: 2rem;
-    } 
+
+    
+   
 }
 @media (max-width: 540px) {
     .logo {
@@ -664,54 +582,14 @@ span {
     .main-intro {
         margin-top: -12rem;
     }
-    .main-home {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .btn {
-        margin: -1rem auto 3rem auto;
-        width: auto;
-    }
 }
 /* -----------for cell phones----------- */
 @media (max-width: 480px) {
     .home {
-        height: 85%;
         width: 100%;
-        padding: 7rem 1rem;
+        padding-top: 7rem;
     }
-    .main-home {
-        margin-top: 5rem;
-    }
-    .main-home .wmu {
-        margin-bottom: -3rem;
-    }
-    .about-me {
-        font-size: 3rem;
-        cursor: pointer;
-        border-radius: 1rem;
-        margin-bottom: 12rem;
-    }
-
     #headings {
         font-size: 4rem;
-    }
-    .icons {
-        margin-bottom: 3.5rem;
-    }
-    .icons i {
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
-    }
-    .col h1 {
-        font-size: 2rem;
-    }
-    .projects {
-        margin-top: -4rem;
-    }
-    .btn {
-        margin: 3rem auto;
-    }
+    }   
 }
