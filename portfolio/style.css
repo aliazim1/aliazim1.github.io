@@ -354,7 +354,7 @@ span {
     width: 33rem;
     height: auto;
     text-align: center;
-    background-color: #07040f;
+    background-color: transparent;
     border-radius: 5px;
     border: 2px solid var(--box-border-color);
 }
