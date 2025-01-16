@@ -353,16 +353,12 @@ span {
 .proj-container .proj-box {
     width: 33rem;
     height: 430px;
-    border-radius: 0.5rem;
     text-align: center;
-    background-color: transparent;
-    border: 0.2rem solid var(--box-border-color);
+    background-color: #060414;
 }
 .proj-box img {
-    width: 30rem;
+    width: 32.94rem;
     height: 20rem;
-    border-radius: 0.5rem;
-    margin-top: 1.4rem;
 }
 .proj-box h1 {
     font-size: 3rem;
@@ -375,6 +371,7 @@ span {
     font-size: 1.6rem;
     margin: 1rem 20px;
     text-align: left;
+    padding-bottom: 2rem;
 }
 
 /* ##################################### */
@@ -397,7 +394,10 @@ span {
         margin-top: -4rem;
     }
     .intro-bio {
-        width: 80%;
+        width: 100%;
+    }
+    .skills {
+        width: 100%;
     }
     .btn {
         margin: 5rem auto;
@@ -420,8 +420,7 @@ span {
     }
     .home {
         height: auto;
-        margin-top: 0rem;
-        width: 85%;
+        margin-top: 0px;
         padding: 7rem 1rem;
     }
     .name-college h1 {
@@ -429,7 +428,6 @@ span {
         font-size: 4rem;
     }
     .main-intro {
-        width: 90%;
         margin: auto;
         margin-top: -4rem;
     }
@@ -443,6 +441,9 @@ span {
     .btn {
         margin: 3rem auto;
         width: 30rem;
+    }
+    .proj-box p {
+        padding-bottom: 1rem;
     }
 }
 @media (max-width: 952px) {
@@ -566,11 +567,8 @@ span {
         margin-top: 3rem;
     }
     .intro-bio {
-        width: 80%;
-    }
-
-    
-   
+        width: 90%;
+    }   
 }
 @media (max-width: 540px) {
     .logo {
@@ -592,4 +590,16 @@ span {
     #headings {
         font-size: 4rem;
     }   
+    .skills {
+        width: 100%;
+    }
+    .projects {
+        margin-top: -5rem;
+    }
+    .projects .proj-box {
+        height: auto;
+    }
+    .projects .proj-box h1 {
+        font-size: 24px;
+    }
 }
