@@ -1,18 +1,13 @@
 :root {
-    --background-color: #081b29;
-    --background-light-color:#f9f9f9;
-    --border-color: #00abf0;
-    --border-hover-color: #5ad0ff;
     --wmu: #F1C500;
-    --font-color: #f8f8f8;
+    --black: #0a1116;
+    --font-color: #dbdbdb;
+    --border-color: #00abf0;
+    --background-color: #081b29;
     --box-border-color: #5467858d;
+    --border-hover-color: #5ad0ff;
     --nav-menu-background: #081b29;
-}
-.projects, .social-media {
-    display: none;
-} 
-.projects {
-    margin-top: -10rem;
+    --background-light-color:#f9f9f9;
 }
 .about-link {
     color: #00abf0;
@@ -29,10 +24,6 @@
     font-family: 'Poppins';
 }
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-size: cover;
     background: var(--background-color);
 }
 
@@ -42,16 +33,35 @@ html {
 p {
     font-size: 1.6rem;
 }
+span {
+    color: var(--border-color);
+    font-weight: 600;
+}
+.btn {
+    width: auto;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem auto;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--border-color);
+    box-shadow: 0 0 20px #000000;
+}
+.btn:hover{
+    background-color: var(--border-hover-color);
+}
 /* ================= all heading lines ================= */
 .line {
-    margin: auto auto;
+    margin: auto;
     margin-top: -4.5rem;
     margin-bottom: 4rem;
     width: 10rem;
     height: 0.01rem;
     background-color: var(--border-color);
 }
-
 
 /* ================= spinner ================= */
 .spin-parent {
@@ -170,43 +180,40 @@ nav ul {
     transform:  translateY(-10px) rotate(-45deg);
 }
 /* =================  Home section ================= */
-#home {
-    height: auto;
-    overflow-y: auto;
-    width: 100%;
+.main-intro { /* main intro section */
+    width: 60%;
     margin: auto;
-}
-::-webkit-scrollbar { /* hide the scroll-bar */
-    display: none;
-}
-
-.main-home {
     display: block;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 5rem;
 }
-.pic-name {
-    width: 80%;
+.pic-name { /* name and pic section */
+    margin: auto;
     display: flex;
     flex-direction: row;
-    padding-bottom: 4rem;
-    margin: auto;
-    text-align: center;
     align-items: center;
+    padding-bottom: 2rem;
     justify-content: space-evenly;
-    border-bottom: .1px solid var(--box-border-color);
 }
-.main-home img {
+.main-intro img { 
     width: 16.5rem;
     height: 17rem;
     border-radius: 50%;
     cursor: pointer;
-    border: 0.2rem solid var(--font-color);
+    border: 0.1rem solid var(--font-color);
+    box-shadow: 10px 10px 30px #00acf04d;
 }
 .name-college {
     order: 1;
 }
+
+.intro-bio {
+    line-height: 3rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
 .profile-pic {
     order: 2;
 }
@@ -215,125 +222,49 @@ nav ul {
     font-weight: bold;
     text-align:left;
 }
-.name-college h1, .name-college p {
-    margin: 0;
-}
-span {
-    color: var(--border-color);
-    font-weight: 600;
-}
-#wmu {
-    color: var(--wmu);
-}
-/* social media links */
-/* parent div */
-.links-div {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 7rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    margin-top: -5rem;
-}
-/* each link div */
-.links-div .each-link {
-    width: 15rem;
-    height: 15rem;
-    border: 0.2rem solid var(--box-border-color);
-    border-radius: 0.7rem;
-    transition: transform 0.3s ease;
-}
-.links-div .each-link:hover {
-    transform: translateY(-5px);
-}
-#ic {
-    color: var(--font-color);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 7rem;
-}
-.each-link .url .sub {
-    font-size: 1.6rem;
-}
-#network-line {
-    margin-top: 0.1rem;
-}
-.about-me {
-    font-size: 3rem;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-.intro-bio {
-    line-height: 3.5rem;
-    font-weight: 100;
-    width: 80%;
-    margin: 4rem auto auto auto;
-    text-align: justify;
-}
-.btn {
-    width: auto;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem;
+#line {
+    width: 60%;
     margin: 3rem auto;
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--border-color);
 }
-.btn:hover{
-    background-color: var(--border-hover-color);
-}
+
 /* ================= skills section styling ================= */
 .skills {
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-bottom: 50px;
 }
-.skills h1, .projects h1 {
-    font-size: 2rem;
-    margin-bottom: 5rem;
-    padding: 1rem auto;
-    text-align: center;
-}
-#headings {
+.skills h1, .projects h1,  .contact h1 {
     font-size: 5rem;
+    margin: 1rem auto 5rem auto; 
     text-align: center;
 }
+
 .icons {
     text-align: center;
-    font-size: 7rem;
+    font-size: 4rem;
+}
+.col h1 {
+    font-size: 1.5rem;
+    margin-top:0px;
 }
 .row {
-    justify-content: center;
+    gap: 10px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 .col {
     display: inline-block;
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    margin: 0.5rem 1rem;
-    width: 14rem;
-    height: 14rem;
+    width: 11rem;
+    height: 9rem;
     align-items: center;
     justify-content: center;
     border: 0.2rem solid var(--box-border-color);
     border-radius: 0.5rem;
-    background-color: transparent;
-    transition: transform 0.3s ease;
-}
-.col:hover {
-    transform: translateY(-10px);
-}
-.col h1 {
-    margin-top:-10px;
 }
 
 /* ================= projects section styling =================  */
@@ -388,138 +319,127 @@ span {
     padding-bottom: 2rem;
 }
 
+/* ================= contact section styling =================  */
+.contact {
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+/* ================= footer section ================= */
+
+.footer {
+    margin-top: 5rem;
+    width: 100%;    
+    display: flex;  
+    padding: 4rem;
+    text-align: center;
+    flex-direction: column; 
+    background-color: var(--black);
+}
+.footer-txt {
+    text-align: center;
+}
+
+.links {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5rem;
+    padding-top: 7rem;
+    justify-content: center;
+}
+
+.links .each-link {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid var(--background-light-color);
+}
+
+.links .each-link:hover {
+    transform: translateY(-5px);
+}
+
+.link-icon {
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--wmu);
+}
+
+.link-icon:hover {
+    color: var(--border-color);
+    color: #F1C500;
+}
+#top-btn {
+    width: 30px;
+    height: 30px;
+    bottom: 55px;
+    right: 15px;
+    float: right;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--font-color);
+    background-color: var(--wmu);
+}
+
 /* ##################################### */
 /* ---------responsive styling---------- */
 /* ##################################### */
 @media (max-width: 1280px) {
-    .home {
-        height: auto;
-        margin-top: 0rem;
+    .logo {
+        margin: 1rem 0 auto 0.7rem;
+    }
+    .main-intro {
         width: 80%;
-        padding: 7rem 1rem;
     }
     .name-college h1 {
         margin-top: 2rem;
         font-size: 4rem;
     }
-    .main-intro {
-        width: 80%;
-        margin: auto;
-        margin-top: -4rem;
-    }
-    .intro-bio {
-        width: 100%;
-    }
+
     .skills {
-        width: 100%;
-    }
-    .btn {
-        margin: 5rem auto;
-        width: 38rem;
-    }   
+        width: 80%;
+    } 
 }
 
 @media (max-width: 1024px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .logo {
-        width: 3.5rem;
-        height: 3rem;
-        margin: 1.5rem 0 auto 10rem;
-    }
     nav ul li a {
         font-size: 16px;
-    }
-    .home {
-        height: auto;
-        margin-top: 0px;
-        padding: 7rem 1rem;
-    }
-    .name-college h1 {
-        margin-top: 2rem;
-        font-size: 4rem;
-    }
-    .main-intro {
-        margin: auto;
-        margin-top: -4rem;
-    }
-    .skills h1, .projects h1 {
-        padding-top: 1rem;
-        font-size: 2rem;
-    }
-    #headings {
-        font-size: 4rem;
-    }
-    .btn {
-        margin: 3rem auto;
-        width: 30rem;
-    }
-    .proj-box p {
-        padding-bottom: 1rem;
     }
 }
 @media (max-width: 952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .logo {
-        width: 3.2rem;
-        height: 2.5rem;
-        margin: 1.5rem 0 auto 5rem;
-    }
     nav ul li a {
         font-size: 16px;
-    }
-    main {
-        width: auto;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
-    .main-home {
-        margin-top: 5rem;
     }
     .name-college h1 {
         margin-top: 2rem;
         font-size: 4rem;
     }
     .main-intro {
-        width: 90%;
-        margin: auto;
-        margin-top: -4rem;
-    }
-    .proj-box h1 {
-        font-size: 3rem;
-        margin: 1rem auto;
-        text-align: left;
-    }
-    .proj-box p {
-        width: 90%;
-        font-size: 1.6rem;
-        margin: 1rem auto;
-        text-align: left;
+        margin-top: 10rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 775px) {
     .hamburger {
         display: flex;
         margin-top: 1.5rem;
         margin-right: 0rem;
         z-index: 1;
     }
-    .logo {
-        width: 3rem;
-        height: 2.3rem;
-        margin-top: 1.5rem;
-        margin-left:0rem;
-    }
     .nav-link:hover::before {
         width: 0;
     }
-    
     .nav-menu {
         top: 0;
         padding-top: 10rem;
@@ -545,24 +465,11 @@ span {
     .nav-menu.active {
         right: 0;
     }
-    
-    .home {
-        height: auto;
-        width: 90%;
-        padding: 7rem 1rem;
-    }
     .main-intro {
-        width: 100%;
-    }
-    .main-home .wmu {
-        margin-bottom: -3rem;
-    }
-    .main-home .wmu2 {
-        margin-top: 3rem;
+        margin-top: 10rem;
+        width: 90%;
     }
     .pic-name {
-        width: 90%;
-        padding-bottom: 0px;
         flex-direction: column;
     }
     .profile-pic {
@@ -570,52 +477,24 @@ span {
     }
     .name-college {
         order: 2;
-        margin-bottom: 3rem;
     }   
     .name-college h1 {
         text-align:center;
     }
-    .main-home .wmu {
-        margin-bottom: -3rem;
-    }
-    .main-home .wmu2 {
-        margin-top: 3rem;
-    }
     .intro-bio {
-        width: 90%;
         margin-top: 12px;
     }   
-}
-@media (max-width: 540px) {
-    .logo {
-        margin: 1.6rem 0 auto -1.5rem;
-    }
-    .hamburger {
-        margin-right: -2rem;
-    }
-    .main-intro {
-        margin-top: -12rem;
-    }
-}
-/* -----------for cell phones----------- */
-@media (max-width: 480px) {
-    .home {
-        width: 100%;
-        padding-top: 7rem;
-    }
-    #headings {
-        font-size: 4rem;
-    }   
     .skills {
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5rem;
     }
-    .projects {
-        margin-top: -5rem;
+    .projects{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5rem;
     }
-    .projects .proj-box {
-        height: auto;
-    }
-    .projects .proj-box h1 {
-        font-size: 24px;
+    .contact {
+        width: 90%;
     }
 }

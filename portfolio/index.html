@@ -8,8 +8,6 @@
     <title>Portfolio Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
-
     <!-- box icons link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -28,9 +26,9 @@
       <a href="/portfolio/index.html"><img src="/assets/ppAssets/logo.png" alt="logo" class="logo" title="Home Page"></a>  
       <ul class="nav-menu">
         <div class="nav-links">
-          <li onclick="mainVisible()"  id="about" class="nav-link each-list about-link">Home</li>
-          <li onclick="projectVisible()" id="proj" class="nav-link each-list">Projects</li>
-          <li onclick="linksVisibile()"  id="links" class="nav-link each-list">Links</li>
+          <li onclick="mainVisible()"  id="about" class="nav-link each-list about-link"><a href="/portfolio/index.html" class="nav-link">Home</a></a> </li>
+          <li onclick="projectVisible()" id="proj" class="nav-link each-list"><a href="#projects" class="nav-link">Projects</a></li>
+          <li onclick="linksVisibile()"  id="links" class="nav-link each-list"><a href="#contact" class="nav-link">Contact</a></li>
         </div>
       </ul>
       <div class="hamburger">
@@ -41,97 +39,90 @@
     </nav>
 
 
-    <!-- section design for all divs -->
-    <main class="home" id="home"> 
+    <!-- intro section -->
       <div class="main-intro" id="main-intro">
-        <div class="main-home">
-          <div class="pic-name">
-            <div class="name-college">
-              <h1>Ali Azimi</h1>
-              <p class="wmu">
-                Computer Science Student
-              </p>
-              <p class="wmu2">September 2021-April 2025</p>
-            </div>
-            <img
-              src="/assets/ppAssets/profpic.png"
-              alt="profile picture"
-              class="profile-pic"
-            />
+        <div class="pic-name">
+          <div class="name-college">
+            <h1>Ali Azimi</h1>
+            <p class="wmu">
+              Computer Science Student
+            </p>
+            <p class="wmu2">September 2021-April 2025</p>
           </div>
-                
-          <p class="intro-bio" id="myIntro">
-            Hi there, and welcome to my portfolio. I’m Ali Azimi, a senior studying 
-            Computer Science at Western Michigan University. I’m passionate about
-             software design and development and always eager to learn and make a 
-             difference through meaningful projects. I’ll be graduating in April 2025,
-              and I’m currently on the lookout for internship or part-time job 
-              opportunities to sharpen my skills and dive deeper into the tech world.
-          </p>
+          <img src="/assets/ppAssets/profpic.png" alt="profile picture" class="profile-pic"/>
         </div>
-        <div class="main-home">
+        <div class="line" id="line"></div>
+        <p class="intro-bio" id="myIntro">
+          Hi there, and welcome to my portfolio. I’m Ali Azimi, a senior studying 
+          Computer Science at Western Michigan University. I’m passionate about
+            software design and development and always eager to learn and make a 
+            difference through meaningful projects. I’ll be graduating in April 2025,
+            and I’m currently on the lookout for internship or part-time job 
+            opportunities to sharpen my skills and dive deeper into the tech world.
+        </p>
+        <div class="myResume">
           <a href="/assets/ppAssets/myResume.pdf" target="_blank" class="btn" title="Click to see Resume">See My Resume</a>
         </div>
+      </div>
         
-        <!-- skills section design -->
-        <div class="skills" id="skills">
-          <div><h1 id="headings">Technical Skills</h1></div>
-          <div class="line"></div>
-          <div class="row"> 
-            <div class="col">
-              <div class="icons"><i class='bx bxl-python'></i></div>
-              <h1>Python</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-html5' ></i></div>
-              <h1>HTML5</h1>
-            </div>
+      <!-- skills section -->
+      <div class="skills" id="skills">
+        <div><h1>Technical Skill<span>s</span></h1></div>
+        <div class="line"></div>
+        <div class="row"> 
+          <div class="col">
+            <div class="icons"><i class='bx bxl-python'></i></div>
+            <h1>Python</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-html5' ></i></div>
+            <h1>HTML5</h1>
+          </div>
 
-            <div class="col">
-              <div class="icons"><i class='bx bxl-css3'></i></div>
-              <h1>CSS3</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-bootstrap'></i></div>
-              <h1>Bootstrap</h1>
-            </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-css3'></i></div>
+            <h1>CSS3</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-bootstrap'></i></div>
+            <h1>Bootstrap</h1>
+          </div>
 
-            <div class="col">
-              <div class="icons"><i class='bx bxl-javascript' ></i></div>
-              <h1>JavaScript</h1>
-            </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-javascript' ></i></div>
+            <h1>JavaScript</h1>
+          </div>
 
-            <div class="col">
-              <div class="icons"><i class='bx bxl-jquery' ></i></div>
-              <h1>jQuery</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-react' ></i></div>
-              <h1>ReactNative</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-php'></i></div>
-              <h1>PHP</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-flutter'></i></div>
-              <h1>Flutter</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-git'></i></div>
-              <h1>Git</h1>
-            </div>
-            <div class="col">
-              <div class="icons"><i class='bx bxl-firebase'></i></div>
-              <h1>Firebase</h1>
-            </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-jquery' ></i></div>
+            <h1>jQuery</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-react' ></i></div>
+            <h1>ReactNative</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-php'></i></div>
+            <h1>PHP</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-flutter'></i></div>
+            <h1>Flutter</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-git'></i></div>
+            <h1>Git</h1>
+          </div>
+          <div class="col">
+            <div class="icons"><i class='bx bxl-firebase'></i></div>
+            <h1>Firebase</h1>
           </div>
         </div>
       </div>
 
-      <!-- projects section design -->
+      <!-- projects section -->
       <div class="projects" id="projects">
-        <h1 id="headings">Project<span>s</span></h1>
+        <h1>Project<span>s</span></h1>
         <div class="line"></div>
         <div class="row">
           <div>
@@ -193,39 +184,65 @@
           </div>
         </div>
       </div>
-      <div class="social-media" id="social-media-links">
+
+      <!-- contact section -->
+      <div class="contact" id="contact">
         <div>
-          <h1 id="headings">Networking <span>Links</span></h1>
-          <div class="line" id="network-line"></div>
+          <h1>Let's Conne<span>t</span></h1>
+          <div class="line"></div>
         </div>
-        <div class="links-div">
-          <div class="each-link">
-            <a href="https://github.com/aliazim1" target="blank" class="url">
-              <div class="link-icon"><i class='bx bxl-github' id="ic"></i></div>
-              <p class="sub">Github</p>
+        <div class="row"> 
+          <div class="col">
+            <a href="https://github.com/aliazim1" target="blank">
+              <div class="icons"><i class='bx bxl-github'></i></div>
+              <h1>Github</h1>
             </a>
           </div>
-          <div class="each-link">
-            <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="blank" class="url">
-              <div class="link-icon"><i class='bx bxl-linkedin' id="ic"></i></div>
-              <p class="sub">LinkedIn</p>
+          <div class="col">
+            <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="blank">
+              <div class="icons"><i class='bx bxl-linkedin'></i></div>
+              <h1>LinkedIn</h1>
             </a>
           </div>
-          <div class="each-link">
-            <a href="mailto:emailtoazimi@gmail.com" target="blank" class="url">
-              <div class="link-icon"><i class='bx bxs-envelope' id="ic"></i></div>
-              <p class="sub">Email</p>
+          <div class="col">
+            <a href="mailto:emailtoazimi@gmail.com" target="blank">
+              <div class="icons"><i class='bx bxs-envelope'></i></div>
+              <h1>Email</h1>
             </a>
           </div>
-          <div class="each-link">
-            <a href="tel:+16167529529" target="blank" class="url">
-              <div class="link-icon"><i class='bx bxs-phone'  id="ic"></i></div>
-              <p class="sub">Phone</p>
+          <div class="col">
+            <a href="tel:+16167529529" target="blank">
+              <div class="icons"><i class='bx bxs-phone'></i></div>
+              <h1>Phone</h1>
             </a>
           </div>
         </div>
       </div>
-    </main>
+
+      <!-- footer section -->
+      <footer class="footer">
+        <div class="footer-txt">
+            <p>Created by Ali Azimi @2025</p>
+        </div>
+        <div class="links">
+            <div class="each-link">
+                <a href="https://github.com/aliazim1" target="blank" >
+                <div class="link-icon"><i class='bx bxl-github'></i></div>
+                </a>
+            </div>
+            <div class="each-link">
+                <a href="https://app.joinhandshake.com/stu/users/29432970" target="blank" >
+                <div class="link-icon"><i class='bx bx-heading'></i></div>
+                </a>
+            </div>
+            <div class="each-link">
+                <a href="https://www.linkedin.com/in/ali-azimi-977a74275/" target="blank" >
+                <div class="link-icon"><i class='bx bxl-linkedin'></i></div>
+                </a>
+            </div>
+        </div>
+        <div id="top-btn" onclick="scrollToTop()"><i class='bx bx-arrow-to-top'></i></div>
+      </footer>
     <script src="index.js"></script>
   </body>
 </html>
