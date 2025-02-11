@@ -562,6 +562,7 @@ span {
     }
     .pic-name {
         width: 90%;
+        padding-bottom: 0px;
         flex-direction: column;
     }
     .profile-pic {
@@ -582,6 +583,7 @@ span {
     }
     .intro-bio {
         width: 90%;
+        margin-top: 12px;
     }   
 }
 @media (max-width: 540px) {
