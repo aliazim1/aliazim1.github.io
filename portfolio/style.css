@@ -2,7 +2,7 @@
     --wmu: #F1C500;
     --black: #0a1116;
     --font-color: #dbdbdb;
-    --border-color: #00abf0;
+    --theme-color: #00abf0;
     --background-color: #081b29;
     --box-border-color: #5467858d;
     --border-hover-color: #5ad0ff;
@@ -10,7 +10,7 @@
     --background-light-color:#f9f9f9;
 }
 .about-link {
-    color: #00abf0;
+    color: var(--theme-color);
 }
 * {
     margin: 0;
@@ -34,7 +34,7 @@ p {
     font-size: 1.6rem;
 }
 span {
-    color: var(--border-color);
+    color: var(--theme-color);
     font-weight: 600;
 }
 .btn {
@@ -47,7 +47,7 @@ span {
     margin: 3rem auto;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-    background-color: var(--border-color);
+    background-color: var(--theme-color);
     box-shadow: 0 0 20px #000000;
 }
 .btn:hover{
@@ -60,7 +60,7 @@ span {
     margin-bottom: 4rem;
     width: 10rem;
     height: 0.01rem;
-    background-color: var(--border-color);
+    background-color: var(--theme-color);
 }
 
 /* ================= spinner ================= */
@@ -138,7 +138,7 @@ nav ul {
     width: 0;
     height: 0.2rem;
     border-radius: 1rem;
-    background-color: var(--border-color);
+    background-color: var(--theme-color);
     transition: 0.5s;
 }
 .nav-link:hover {
@@ -375,7 +375,7 @@ nav ul {
 }
 
 .link-icon:hover {
-    color: var(--border-color);
+    color: var(--theme-color);
     color: #F1C500;
 }
 #top-btn {
