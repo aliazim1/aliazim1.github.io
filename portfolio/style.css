@@ -1,5 +1,5 @@
 :root {
-    --wmu: #F1C500;
+    --wmu: #be9c00;
     --black: #0a1116;
     --font-color: #dbdbdb;
     --theme-color: #00abf0;
@@ -334,7 +334,7 @@ nav ul {
     margin-top: 5rem;
     width: 100%;    
     display: flex;  
-    padding: 4rem;
+    padding: 5rem;
     text-align: center;
     flex-direction: column; 
     background-color: var(--black);
@@ -370,19 +370,30 @@ nav ul {
 .link-icon {
     display: flex;
     font-size: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     color: var(--wmu);
+    transition: transform 0.3s ease-in-out;
 }
 
 .link-icon:hover {
-    color: var(--theme-color);
-    color: #F1C500;
+    background-color: var(--font-color);
+}
+.link-icon i:hover {
+    color: var(--background-color);
+}
+#top-btn i {
+    margin-top: 0.1rem;
+    font-size: 2.5rem;
+    color: var(--font-color);
 }
 #top-btn {
-    width: 30px;
-    height: 30px;
-    bottom: 55px;
+    width: 3rem;
+    height: 3rem;
+    bottom: 50px;
     right: 15px;
     float: right;
     display: none;
@@ -390,8 +401,8 @@ nav ul {
     position: fixed;
     font-size: 2rem;
     border-radius: 50%;
-    color: var(--font-color);
-    background-color: var(--wmu);
+    background-color: transparent; 
+    border: 1px solid var(--background-light-color);
 }
 
 /* ##################################### */
