@@ -241,11 +241,11 @@ nav ul {
 
 .icons {
     text-align: center;
-    font-size: 4rem;
+    font-size: 5.5rem;
 }
 .col h1 {
     font-size: 1.5rem;
-    margin-top:0px;
+    margin-top: -20px;
 }
 .row {
     gap: 10px;
@@ -263,8 +263,10 @@ nav ul {
     height: 9rem;
     align-items: center;
     justify-content: center;
-    border: 0.2rem solid var(--box-border-color);
+    border: 0.15rem solid var(--box-border-color);
     border-radius: 0.5rem;
+    background-color: var(--black);
+
 }
 
 /* ================= projects section styling =================  */
@@ -285,15 +287,14 @@ nav ul {
     width: 33rem;
     height: auto;
     text-align: center;
-    background-color: transparent;
     border-radius: 5px;
-    border: 2px solid var(--box-border-color);
+    background-color: var(--black);
 }
 .proj-box img {
-    width: 31.5rem;
+    width: 33rem;
     height: 20rem;
-    margin-top: 0.6rem;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .proj-box h1 {
     font-size: 2rem;
