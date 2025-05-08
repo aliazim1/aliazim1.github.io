@@ -48,9 +48,6 @@ p {
   background-color: var(--theme-color);
   box-shadow: 0 0 20px #000000;
 }
-.btn:hover {
-  background-color: var(--border-hover-color);
-}
 
 .container {
   width: 50rem;
@@ -115,6 +112,7 @@ p {
     padding: 0;
     width: 95%;
     padding-top: 50px;
+    margin-top: 3rem;
     border-radius: 20px;
   }
   .container h1 {
