@@ -1,0 +1,154 @@
+:root {
+  --wmu: #be9c00;
+  --black: #0a1116;
+  --font-color: #dbdbdb;
+  --theme-color: #00abf0;
+  --background-color: #081b29;
+  --box-border-color: #5467858d;
+  --border-hover-color: #5ad0ff;
+  --nav-menu-background: #081b29;
+  --background-light-color: #f9f9f9;
+}
+.about-link {
+  color: var(--theme-color);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: var(--font-color);
+  scroll-snap-align: smooth;
+  font-family: "Poppins";
+}
+body {
+  background: var(--background-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 15rem;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 3rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: var(--theme-color);
+  box-shadow: 0 0 20px #000000;
+}
+.btn:hover {
+  background-color: var(--border-hover-color);
+}
+
+.container {
+  width: 50rem;
+  padding: 30px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+  border: 0.15rem solid var(--box-border-color);
+}
+.container h1 {
+  font-size: 3rem;
+  color: var(--theme-color);
+  margin-bottom: 50px;
+}
+
+.row {
+  gap: 12px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.col label {
+  font-size: 16px;
+}
+.col input {
+  margin-top: 12px;
+  border-radius: 12px;
+  height: 2.7rem;
+  padding: 10px;
+  color: #000;
+}
+.results {
+  margin-top: 20px;
+}
+.results .result-text {
+  margin-bottom: 5px;
+}
+
+/* ##################################### */
+/* ---------responsive styling---------- */
+/* ##################################### */
+
+@media (max-width: 775px) {
+  .container {
+    padding: 0;
+    width: 95%;
+    padding-top: 50px;
+    border-radius: 20px;
+  }
+  .container h1 {
+    margin-bottom: 20px;
+  }
+  .row {
+    gap: 10px;
+    width: 100%;
+  }
+  .col {
+    width: auto;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .col label {
+    font-size: 16px;
+  }
+  .col input {
+    border-radius: 15px;
+    height: 3rem;
+    padding: 10px;
+  }
+  .results {
+    font-size: 20px;
+    margin: 2rem auto;
+  }
+  .results h3 {
+    margin-bottom: 15px;
+  }
+  .calculate {
+    width: 88%;
+  }
+  .btn {
+    width: 100%;
+    margin: 2rem auto 0 auto;
+  }
+}
