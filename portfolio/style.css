@@ -273,7 +273,6 @@ nav ul {
   justify-content: center;
   border: 0.15rem solid var(--box-border-color);
   border-radius: 0.5rem;
-  background-color: var(--black);
 }
 
 /* ================= projects section styling =================  */
@@ -295,7 +294,6 @@ nav ul {
   height: auto;
   text-align: center;
   border-radius: 5px;
-  background-color: var(--black);
 }
 .proj-box img {
   width: 33rem;
@@ -343,7 +341,7 @@ nav ul {
   padding: 5rem;
   text-align: center;
   flex-direction: column;
-  background-color: var(--black);
+  border-top: var(--box-border-color) solid 2px;
 }
 .footer-txt {
   text-align: center;
@@ -408,7 +406,7 @@ nav ul {
   font-size: 2rem;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid var(--background-light-color);
+  border: 1px solid var(--font-color);
 }
 
 /* ##################################### */
