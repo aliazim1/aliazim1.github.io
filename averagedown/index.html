@@ -20,42 +20,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Stock Average Down</h1>
-      <div class="row">
-        <!-- each row -->
-        <div class="col">
-          <!-- each column -->
-          <label for="buy1">Shares I own:</label><br />
-          <input type="number" step="any" id="buy1" name="buy1" />
-        </div>
-        <div class="col">
-          <label for="avg1">At price:</label><br />
-          <input type="number" step="any" id="avg1" name="avg1" />
+    <div class="tab-container">
+      <div class="tabs">
+        <button class="tab-btn active avg" data-tab="avg-down">
+          Avrg Down
+        </button>
+        <button class="tab-btn calc" data-tab="regular-calc">Calculator</button>
+      </div>
+
+      <div id="avg-down" class="tab-content active">
+        <div class="container">
+          <h1>Stock Average Down</h1>
+          <div class="row">
+            <div class="col">
+              <label for="buy1">Shares I own:</label><br />
+              <input type="number" step="any" id="buy1" name="buy1" />
+            </div>
+            <div class="col">
+              <label for="avg1">At price:</label><br />
+              <input type="number" step="any" id="avg1" name="avg1" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="buy2">New shares:</label><br />
+              <input type="number" step="any" id="buy2" name="buy2" />
+            </div>
+            <div class="col">
+              <label for="avg2">At price:</label><br />
+              <input type="number" step="any" id="avg2" name="avg2" />
+            </div>
+          </div>
+          <div class="calculate-btns">
+            <a target="_blank" class="btn" title="clear" id="clear-btn"
+              >Clear</a
+            >
+            <a target="_blank" class="btn" title="Calculate" id="avg-calc-btn"
+              >Calculate</a
+            >
+          </div>
+          <div class="results">
+            <h3 id="resultLabel"></h3>
+            <p id="result" class="result-text"></p>
+            <p id="shares" class="result-text"></p>
+            <p id="totalcost" class="result-text"></p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- each row -->
-        <div class="col">
-          <label for="buy2">New shares:</label><br />
-          <input type="number" step="any" id="buy2" name="buy2" />
+
+      <div id="regular-calc" class="tab-content">
+        <div class="container">
+          <h1 class="calc-title">Calculator</h1>
+          <div class="row">
+            <div class="col">
+              <label for="num1">First entry:</label><br />
+              <input type="number" step="any" id="num1" />
+            </div>
+            <div class="col">
+              <label for="num2">Second entry:</label><br />
+              <input type="number" step="any" id="num2" />
+            </div>
+          </div>
+          <div class="calculate-btns">
+            <a target="_blank" class="btn" title="clear" id="clear-btn2"
+              >Clear</a
+            >
+            <a target="_blank" class="btn" title="Divide" id="regular-calc-btn"
+              >Divide</a
+            >
+          </div>
+          <div class="results">
+            <p id="regular-result" class="result-text"></p>
+          </div>
         </div>
-        <div class="col">
-          <label for="avg2">At price:</label><br />
-          <input type="number" step="any" id="avg2" name="avg2" />
-        </div>
-      </div>
-      <div>
-        <a target="_blank" class="btn" title="Calculate">Calculate</a>
-      </div>
-      <div class="results">
-        <h3 id="resultLabel"></h3>
-        <p id="result" class="result-text"></p>
-        <p id="shares" class="result-text"></p>
-        <p id="totalcost" class="result-text"></p>
       </div>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
