@@ -51,7 +51,10 @@ I’m a recent graduate from Western Michigan University with a bachelor’s deg
 
 ## 📬 How to reach me
 - 📫 [LinkedIn](https://www.linkedin.com/in/ali-azimi-977a74275/)
+- 🌐 [Portfolio](https://aliazim1.github.io/portfolio/index.html)
 - 📧 [emailtoazimi@gmail.com](mailto:emailtoazimi@gmail.com)
+
+
 
 ---
 
